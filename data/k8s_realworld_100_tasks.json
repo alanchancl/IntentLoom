@@ -1,0 +1,139 @@
+[
+  {
+    "id": "real_k8s100_0001_over_permissive",
+    "intent": "Reach pod:src-977 pod:dst-1535 AND Isolate pod:decoy-8785 pod:dst-1535",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs. Only allow policies are supported (no deny semantics): do not create deny/block policies. Do not use ports:null; since intents specify port/protocol, keep ports as an explicit list. For Isolate violations, remove or narrow the allow policy/rule that enables the forbidden path (prioritize blame_set)."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "src-977",
+            "namespace": "default",
+            "labels": {
+              "app": "frontend"
+            }
+          },
+          {
+            "name": "dst-1535",
+            "namespace": "default",
+            "labels": {
+              "app": "backend"
+            }
+          },
+          {
+            "name": "decoy-8785",
+            "namespace": "default",
+            "labels": {
+              "app": "decoy-frontend"
+            }
+          }
+        ],
+        "services": [],
+        "semantics": "option_c"
+      },
+      "policies": [
+        {
+          "name": "backend-ingress-allow-frontend",
+          "action": "allow",
+          "from": {
+            "namespace": "default",
+            "podSelector": null,
+            "ipBlock": null
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "backend"
+            },
+            "ipBlock": null
+          }
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6,
+    "meta": {
+      "source": {
+        "owner": "networkpolicy",
+        "repo": "tutorial",
+        "branch": "master",
+        "path": "tutorial/02-backend-ingress-allow-frontend.yaml",
+        "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/02-backend-ingress-allow-frontend.yaml"
+      },
+      "mode": "over_permissive",
+      "policy": "backend-ingress-allow-frontend"
+    }
+  },
+  {
+    "id": "real_k8s100_0002_selector_typo",
+    "intent": "Reach pod:src-495 pod:dst-1053",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs. Only allow policies are supported (no deny semantics): do not create deny/block policies. Do not use ports:null; since intents specify port/protocol, keep ports as an explicit list. For Isolate violations, remove or narrow the allow policy/rule that enables the forbidden path (prioritize blame_set)."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "src-495",
+            "namespace": "default",
+            "labels": {
+              "app": "frontend"
+            }
+          },
+          {
+            "name": "dst-1053",
+            "namespace": "default",
+            "labels": {
+              "app": "backend"
+            }
+          }
+        ],
+        "services": [],
+        "semantics": "option_c"
+      },
+      "policies": [
+        {
+          "name": "frontend-egress-allow-to-backend",
+          "action": "allow",
+          "from": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "frontend-typo"
+            },
+            "ipBlock": null
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "backend"
+            },
+            "ipBlock": null
+          }
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6,
+    "meta": {
+      "source": {
+        "owner": "networkpolicy",
+        "repo": "tutorial",
+        "branch": "master",
+        "path": "tutorial/07-frontend-egress-allow-to-backend.yaml",
+        "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/07-frontend-egress-allow-to-backend.yaml"
+      },
+      "mode": "selector_typo",
+      "policy": "frontend-egress-allow-to-backend"
+    }
+  }
+]

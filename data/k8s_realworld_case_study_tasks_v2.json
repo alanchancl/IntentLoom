@@ -1,0 +1,456 @@
+[
+  {
+    "id": "real_gke_0001_reach_hello_server_from_selector_typo",
+    "intent": "Reach pod:hello-client-allowed svc:hello-server port=8080 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "hello-server",
+            "namespace": "default",
+            "labels": {
+              "app": "hello-server"
+            }
+          },
+          {
+            "name": "hello-client-allowed",
+            "namespace": "default",
+            "labels": {
+              "app": "hello"
+            }
+          },
+          {
+            "name": "hello-client-blocked",
+            "namespace": "default",
+            "labels": {
+              "app": "not-hello"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "hello-server",
+            "namespace": "default",
+            "selector": {
+              "app": "hello-server"
+            }
+          }
+        ],
+        "semantics": "option_c"
+      },
+      "policies": [
+        {
+          "name": "allow-hello-to-hello-server",
+          "action": "allow",
+          "from": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "hell0"
+            }
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "hello-server"
+            }
+          },
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1"
+    }
+  },
+  {
+    "id": "real_gke_0002_isolate_hello_client_blocked_should_not_reach",
+    "intent": "Isolate pod:hello-client-blocked svc:hello-server port=8080 protocol=tcp AND Reach pod:hello-client-allowed svc:hello-server port=8080 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "hello-server",
+            "namespace": "default",
+            "labels": {
+              "app": "hello-server"
+            }
+          },
+          {
+            "name": "hello-client-allowed",
+            "namespace": "default",
+            "labels": {
+              "app": "hello"
+            }
+          },
+          {
+            "name": "hello-client-blocked",
+            "namespace": "default",
+            "labels": {
+              "app": "not-hello"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "hello-server",
+            "namespace": "default",
+            "selector": {
+              "app": "hello-server"
+            }
+          }
+        ],
+        "semantics": "option_c"
+      },
+      "policies": [
+        {
+          "name": "allow-all-to-hello-server",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "hello-server"
+            }
+          },
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1"
+    }
+  },
+  {
+    "id": "real_k8snetpol_0001_reach_web_to_api_port_mismatch",
+    "intent": "Reach pod:web svc:api port=3000 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "web",
+            "namespace": "default",
+            "labels": {
+              "app": "web"
+            }
+          },
+          {
+            "name": "api",
+            "namespace": "default",
+            "labels": {
+              "app": "api"
+            }
+          },
+          {
+            "name": "db",
+            "namespace": "default",
+            "labels": {
+              "app": "db"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "web",
+            "namespace": "default",
+            "selector": {
+              "app": "web"
+            }
+          },
+          {
+            "name": "api",
+            "namespace": "default",
+            "selector": {
+              "app": "api"
+            }
+          },
+          {
+            "name": "db",
+            "namespace": "default",
+            "selector": {
+              "app": "db"
+            }
+          }
+        ],
+        "semantics": "option_c"
+      },
+      "policies": [
+        {
+          "name": "allow-web-to-api",
+          "action": "allow",
+          "from": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "web"
+            }
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "api"
+            }
+          },
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1"
+    }
+  },
+  {
+    "id": "real_k8snetpol_0002_reach_api_to_db_port_mismatch",
+    "intent": "Reach pod:api svc:db port=5984 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "web",
+            "namespace": "default",
+            "labels": {
+              "app": "web"
+            }
+          },
+          {
+            "name": "api",
+            "namespace": "default",
+            "labels": {
+              "app": "api"
+            }
+          },
+          {
+            "name": "db",
+            "namespace": "default",
+            "labels": {
+              "app": "db"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "web",
+            "namespace": "default",
+            "selector": {
+              "app": "web"
+            }
+          },
+          {
+            "name": "api",
+            "namespace": "default",
+            "selector": {
+              "app": "api"
+            }
+          },
+          {
+            "name": "db",
+            "namespace": "default",
+            "selector": {
+              "app": "db"
+            }
+          }
+        ],
+        "semantics": "option_c"
+      },
+      "policies": [
+        {
+          "name": "allow-api-to-db",
+          "action": "allow",
+          "from": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "api"
+            }
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "db"
+            }
+          },
+          "ports": [
+            {
+              "port": 15984,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1"
+    }
+  },
+  {
+    "id": "real_k8snetpol_0003_isolate_web_should_not_reach_db",
+    "intent": "Isolate pod:web svc:db port=5984 protocol=tcp AND Reach pod:web svc:api port=3000 protocol=tcp AND Reach pod:api svc:db port=5984 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "web",
+            "namespace": "default",
+            "labels": {
+              "app": "web"
+            }
+          },
+          {
+            "name": "api",
+            "namespace": "default",
+            "labels": {
+              "app": "api"
+            }
+          },
+          {
+            "name": "db",
+            "namespace": "default",
+            "labels": {
+              "app": "db"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "web",
+            "namespace": "default",
+            "selector": {
+              "app": "web"
+            }
+          },
+          {
+            "name": "api",
+            "namespace": "default",
+            "selector": {
+              "app": "api"
+            }
+          },
+          {
+            "name": "db",
+            "namespace": "default",
+            "selector": {
+              "app": "db"
+            }
+          }
+        ],
+        "semantics": "option_c"
+      },
+      "policies": [
+        {
+          "name": "allow-web-to-api",
+          "action": "allow",
+          "from": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "web"
+            }
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "api"
+            }
+          },
+          "ports": [
+            {
+              "port": 3000,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-api-to-db",
+          "action": "allow",
+          "from": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "api"
+            }
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "db"
+            }
+          },
+          "ports": [
+            {
+              "port": 5984,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-web-to-db-accidental",
+          "action": "allow",
+          "from": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "web"
+            }
+          },
+          "to": {
+            "namespace": "default",
+            "podSelector": {
+              "app": "db"
+            }
+          },
+          "ports": [
+            {
+              "port": 5984,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1"
+    }
+  }
+]

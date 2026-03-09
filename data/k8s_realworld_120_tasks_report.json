@@ -1,0 +1,34 @@
+{
+  "tasks": 120,
+  "candidates": 206,
+  "modes": {
+    "selector_typo": 48,
+    "over_permissive": 36,
+    "port_mismatch": 36
+  },
+  "unique_repos": 40,
+  "top_repos": {
+    "giovannicg/BrainLens": 11,
+    "zyadelfeki/cctv_face_detection": 10,
+    "ShifengHuGit/K8S-DemoRepo": 6,
+    "kase1111-hash/NatLangChain": 6,
+    "tom1299/web-ingress": 6,
+    "MohamedMFouad/nodeapi": 4,
+    "gespinozat/ws-challenge-2": 4,
+    "jongikhaya1203/IDP-SDBIP": 4,
+    "junghoon2/k8s-01": 4,
+    "phoenixvc/Mystira.workspace": 4,
+    "rorsat-ltd/kosmos": 4,
+    "HARISH1211998/cka": 3,
+    "youngstone89/kubernetes-mastery": 3,
+    "AS207960/esign": 2,
+    "FabioChiodini/kiodo-pks-test": 2,
+    "Joluckyboy/FYP-Solution-Archi-TECH-Bias-News-Detection": 2,
+    "arunrao/rampart-ai": 2,
+    "asifehtesham/Kubernetes": 2,
+    "aws-samples/eks-workshop-v2": 2,
+    "edaena/TestManifestRepo": 2
+  },
+  "ports_explicit_rate": 0.7833333333333333,
+  "ipblock_rate": 0.09166666666666666
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "step_1_spec_conflict_1",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.1.0/24)",
+    "raw_intent": "Connectivity from milan to 100.0.1.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_3",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.24.0/24)",
+    "raw_intent": "Connectivity from paris to 100.0.24.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_5",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.22.0/24)",
+    "raw_intent": "100.0.22.0/24 is accessible from kiev.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_7",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.1.0/24)",
+    "raw_intent": "100.0.1.0/24 is accessible from london.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_9",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(athens, 100.0.25.0/24)",
+    "raw_intent": "Connectivity from athens to 100.0.25.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_11",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(warsaw, 100.0.9.0/24)",
+    "raw_intent": "The subnet 100.0.9.0/24 is reachable from warsaw.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_13",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.13.0/24)",
+    "raw_intent": "lyon can reach 100.0.13.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_15",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.31.0/24)",
+    "raw_intent": "Connectivity from frankfurt to 100.0.31.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_17",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(luxembourg, 100.0.14.0/24)",
+    "raw_intent": "The subnet 100.0.14.0/24 is reachable from luxembourg.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_19",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.1.0/24)",
+    "raw_intent": "100.0.1.0/24 is accessible from frankfurt.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_21",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.31.0/24)",
+    "raw_intent": "100.0.31.0/24 is accessible from bucharest.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_23",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.31.0/24)",
+    "raw_intent": "brussels can reach 100.0.31.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_25",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.22.0/24)",
+    "raw_intent": "Connectivity from praha to 100.0.22.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_27",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.10.0/24)",
+    "raw_intent": "Traffic originating from sofia can reach the subnet 100.0.10.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_29",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.9.0/24)",
+    "raw_intent": "100.0.9.0/24 is accessible from zurich.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_31",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.24.0/24)",
+    "raw_intent": "100.0.24.0/24 is accessible from kiev.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_33",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(warsaw, 100.0.20.0/24)",
+    "raw_intent": "The subnet 100.0.20.0/24 is reachable from warsaw.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_35",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.25.0/24)",
+    "raw_intent": "london can reach 100.0.25.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_37",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.13.0/24)",
+    "raw_intent": "Traffic originating from vienna can reach the subnet 100.0.13.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_39",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.20.0/24)",
+    "raw_intent": "milan can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 4
+  }
+]

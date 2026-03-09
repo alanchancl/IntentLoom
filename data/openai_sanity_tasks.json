@@ -1,0 +1,35 @@
+[
+  {
+    "id": "openai_sanity_reach_1",
+    "intent": "Reach(milan, 100.0.1.0/24)",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60
+    },
+    "max_rounds": 3
+  },
+  {
+    "id": "openai_sanity_isolate_and_reach_1",
+    "intent": "Isolate(finance, office) AND Reach(finance, internet)",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "openai_sanity_unsat_isolate_and_reach",
+    "intent": "Isolate(finance, internet) AND Reach(finance, internet)",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60
+    },
+    "max_rounds": 2
+  }
+]

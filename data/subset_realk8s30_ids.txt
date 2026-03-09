@@ -1,0 +1,36 @@
+# Stratified RealK8s-120 subset (30 tasks; 10 per mode), fixed seed=2026
+# selector_typo (10)
+real_k8s100_0008_selector_typo
+real_k8s100_0014_selector_typo
+real_k8s100_0018_selector_typo
+real_k8s100_0021_selector_typo
+real_k8s100_0058_selector_typo
+real_k8s100_0071_selector_typo
+real_k8s100_0080_selector_typo
+real_k8s100_0097_selector_typo
+real_k8s100_0098_selector_typo
+real_k8s100_0118_selector_typo
+
+# port_mismatch (10)
+real_k8s100_0007_port_mismatch
+real_k8s100_0013_port_mismatch
+real_k8s100_0031_port_mismatch
+real_k8s100_0039_port_mismatch
+real_k8s100_0051_port_mismatch
+real_k8s100_0064_port_mismatch
+real_k8s100_0069_port_mismatch
+real_k8s100_0081_port_mismatch
+real_k8s100_0099_port_mismatch
+real_k8s100_0108_port_mismatch
+
+# over_permissive (10)
+real_k8s100_0004_over_permissive
+real_k8s100_0012_over_permissive
+real_k8s100_0016_over_permissive
+real_k8s100_0041_over_permissive
+real_k8s100_0055_over_permissive
+real_k8s100_0068_over_permissive
+real_k8s100_0070_over_permissive
+real_k8s100_0091_over_permissive
+real_k8s100_0094_over_permissive
+real_k8s100_0109_over_permissive

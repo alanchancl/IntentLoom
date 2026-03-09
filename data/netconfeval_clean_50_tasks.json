@@ -1,0 +1,652 @@
+[
+  {
+    "id": "step_1_spec_conflict_1",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.1.0/24)",
+    "raw_intent": "Connectivity from milan to 100.0.1.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_3",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.24.0/24)",
+    "raw_intent": "Connectivity from paris to 100.0.24.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_5",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.22.0/24)",
+    "raw_intent": "100.0.22.0/24 is accessible from kiev.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_7",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.1.0/24)",
+    "raw_intent": "100.0.1.0/24 is accessible from london.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_9",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(athens, 100.0.25.0/24)",
+    "raw_intent": "Connectivity from athens to 100.0.25.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_11",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(warsaw, 100.0.9.0/24)",
+    "raw_intent": "The subnet 100.0.9.0/24 is reachable from warsaw.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_13",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.13.0/24)",
+    "raw_intent": "lyon can reach 100.0.13.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_15",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.31.0/24)",
+    "raw_intent": "Connectivity from frankfurt to 100.0.31.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_17",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(luxembourg, 100.0.14.0/24)",
+    "raw_intent": "The subnet 100.0.14.0/24 is reachable from luxembourg.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_19",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.1.0/24)",
+    "raw_intent": "100.0.1.0/24 is accessible from frankfurt.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_21",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.31.0/24)",
+    "raw_intent": "100.0.31.0/24 is accessible from bucharest.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_23",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.31.0/24)",
+    "raw_intent": "brussels can reach 100.0.31.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_25",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.22.0/24)",
+    "raw_intent": "Connectivity from praha to 100.0.22.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_27",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.10.0/24)",
+    "raw_intent": "Traffic originating from sofia can reach the subnet 100.0.10.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_29",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.9.0/24)",
+    "raw_intent": "100.0.9.0/24 is accessible from zurich.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_31",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.24.0/24)",
+    "raw_intent": "100.0.24.0/24 is accessible from kiev.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_33",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(warsaw, 100.0.20.0/24)",
+    "raw_intent": "The subnet 100.0.20.0/24 is reachable from warsaw.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_35",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.25.0/24)",
+    "raw_intent": "london can reach 100.0.25.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_37",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.13.0/24)",
+    "raw_intent": "Traffic originating from vienna can reach the subnet 100.0.13.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_39",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.20.0/24)",
+    "raw_intent": "milan can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_41",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.15.0/24)",
+    "raw_intent": "The subnet 100.0.15.0/24 is reachable from london.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_43",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.15.0/24)",
+    "raw_intent": "100.0.15.0/24 is accessible from milan.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_45",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.5.0/24)",
+    "raw_intent": "praha can reach 100.0.5.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_47",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(roma, 100.0.3.0/24)",
+    "raw_intent": "Connectivity from roma to 100.0.3.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_49",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(barcelona, 100.0.25.0/24)",
+    "raw_intent": "100.0.25.0/24 is accessible from barcelona.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_51",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.11.0/24)",
+    "raw_intent": "Connectivity from lyon to 100.0.11.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_53",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.14.0/24)",
+    "raw_intent": "Connectivity from london to 100.0.14.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_55",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.31.0/24)",
+    "raw_intent": "Connectivity from vienna to 100.0.31.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_57",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.29.0/24)",
+    "raw_intent": "sofia can reach 100.0.29.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_59",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(madrid, 100.0.13.0/24)",
+    "raw_intent": "The subnet 100.0.13.0/24 is reachable from madrid.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_61",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(roma, 100.0.15.0/24)",
+    "raw_intent": "100.0.15.0/24 is accessible from roma.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_63",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.21.0/24)",
+    "raw_intent": "zurich can reach 100.0.21.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_65",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(roma, 100.0.4.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from roma.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_67",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(athens, 100.0.31.0/24)",
+    "raw_intent": "Traffic originating from athens can reach the subnet 100.0.31.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_69",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.4.0/24)",
+    "raw_intent": "100.0.4.0/24 is accessible from praha.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_71",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.25.0/24)",
+    "raw_intent": "Connectivity from sofia to 100.0.25.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_73",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(basel, 100.0.14.0/24)",
+    "raw_intent": "Connectivity from basel to 100.0.14.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_75",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.20.0/24)",
+    "raw_intent": "kiev can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_77",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(amsterdam, 100.0.15.0/24)",
+    "raw_intent": "100.0.15.0/24 is accessible from amsterdam.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_79",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.8.0/24)",
+    "raw_intent": "kiev can reach 100.0.8.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_81",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.6.0/24)",
+    "raw_intent": "Connectivity from kiev to 100.0.6.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_83",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(madrid, 100.0.10.0/24)",
+    "raw_intent": "madrid can reach 100.0.10.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_85",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.21.0/24)",
+    "raw_intent": "100.0.21.0/24 is accessible from lyon.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_87",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(budapest, 100.0.20.0/24)",
+    "raw_intent": "Connectivity from budapest to 100.0.20.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_89",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(geneva, 100.0.4.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from geneva.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_91",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.23.0/24)",
+    "raw_intent": "Connectivity from vienna to 100.0.23.0/24 is established.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_93",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.14.0/24)",
+    "raw_intent": "100.0.14.0/24 is accessible from bucharest.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_95",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.20.0/24)",
+    "raw_intent": "lyon can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_97",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.14.0/24)",
+    "raw_intent": "zurich can reach 100.0.14.0/24.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "step_1_spec_conflict_99",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "The subnet 100.0.26.0/24 is reachable from basel.",
+    "llm": {
+      "type": "openai",
+      "model": "openai/gpt-4o-mini",
+      "base_url": "https://openrouter.ai/api/v1",
+      "timeout": 60.0
+    },
+    "max_rounds": 4
+  }
+]

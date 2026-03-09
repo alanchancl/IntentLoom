@@ -1,0 +1,232 @@
+[
+  {
+    "id": "k8s_t1_isolate_ns_and_reach_service__perturbed",
+    "intent": "Isolate ns:prod ns:dev AND Reach pod:frontend svc:db",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {"name": "frontend", "namespace": "prod", "labels": {"app": "frontend", "exposure": "public"}},
+          {"name": "db", "namespace": "prod", "labels": {"app": "db"}},
+          {"name": "debug", "namespace": "dev", "labels": {"app": "debug", "exposure": "public"}}
+        ],
+        "services": [
+          {"name": "db", "namespace": "prod", "selector": {"app": "db"}}
+        ]
+      },
+      "policies": [
+        {
+          "name": "allow-frontend-to-db",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": {"app": "frontend"}},
+          "to": {"namespace": "prod", "podSelector": {"app": "db"}}
+        },
+        {
+          "name": "allow-prod-internal",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": null},
+          "to": {"namespace": "prod", "podSelector": null}
+        },
+        {
+          "name": "allow-dev-internal",
+          "action": "allow",
+          "from": {"namespace": "dev", "podSelector": null},
+          "to": {"namespace": "dev", "podSelector": null}
+        },
+        {
+          "name": "allow-frontend-to-dev-public",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": {"app": "frontend"}},
+          "to": {"namespace": "dev", "podSelector": {"exposure": "public"}}
+        },
+        {
+          "name": "allow-prod-to-dev-any",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": null},
+          "to": {"namespace": "dev", "podSelector": null}
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 5
+  },
+  {
+    "id": "k8s_t2_reach_label_mismatch__perturbed",
+    "intent": "Reach pod:frontend svc:db",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {"name": "frontend", "namespace": "prod", "labels": {"app": "frontend"}},
+          {"name": "db", "namespace": "prod", "labels": {"app": "db"}}
+        ],
+        "services": [
+          {"name": "db", "namespace": "prod", "selector": {"app": "db"}}
+        ]
+      },
+      "policies": [
+        {
+          "name": "allow-frontend-to-db-typo",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": {"app": "frontend"}},
+          "to": {"namespace": "prod", "podSelector": {"app": "database"}}
+        },
+        {
+          "name": "allow-frontend-to-db-typo-case",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": {"app": "frontend"}},
+          "to": {"namespace": "prod", "podSelector": {"app": "DB"}}
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "k8s_t3_isolate_allow_all_namespace_selector__perturbed",
+    "intent": "Isolate ns:prod ns:dev",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {"name": "frontend", "namespace": "prod", "labels": {"app": "frontend", "exposure": "public"}},
+          {"name": "debug", "namespace": "dev", "labels": {"app": "debug", "exposure": "public"}}
+        ],
+        "services": []
+      },
+      "policies": [
+        {
+          "name": "allow-public-anywhere",
+          "action": "allow",
+          "from": {"namespace": "*", "podSelector": {"exposure": "public"}},
+          "to": {"namespace": "*", "podSelector": {"exposure": "public"}}
+        },
+        {
+          "name": "allow-prod-to-dev-any",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": null},
+          "to": {"namespace": "dev", "podSelector": null}
+        },
+        {
+          "name": "allow-dev-to-prod-any",
+          "action": "allow",
+          "from": {"namespace": "dev", "podSelector": null},
+          "to": {"namespace": "prod", "podSelector": null}
+        },
+        {
+          "name": "allow-prod-internal",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": null},
+          "to": {"namespace": "prod", "podSelector": null}
+        },
+        {
+          "name": "allow-dev-internal",
+          "action": "allow",
+          "from": {"namespace": "dev", "podSelector": null},
+          "to": {"namespace": "dev", "podSelector": null}
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 5
+  },
+  {
+    "id": "k8s_t4_reach_missing_policy__perturbed",
+    "intent": "Reach pod:frontend pod:db",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {"name": "frontend", "namespace": "prod", "labels": {"app": "frontend"}},
+          {"name": "db", "namespace": "prod", "labels": {"app": "db"}}
+        ],
+        "services": []
+      },
+      "policies": [
+        {
+          "name": "allow-frontend-to-db-wrong-ns",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": {"app": "frontend"}},
+          "to": {"namespace": "dev", "podSelector": {"app": "db"}}
+        },
+        {
+          "name": "allow-prod-internal",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": null},
+          "to": {"namespace": "prod", "podSelector": null}
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 4
+  },
+  {
+    "id": "k8s_t5_reach_and_isolate_pod_level__perturbed",
+    "intent": "Reach pod:frontend svc:db AND Isolate pod:frontend pod:debug",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {"name": "frontend", "namespace": "prod", "labels": {"app": "frontend"}},
+          {"name": "db", "namespace": "prod", "labels": {"app": "db"}},
+          {"name": "debug", "namespace": "dev", "labels": {"app": "debug"}}
+        ],
+        "services": [
+          {"name": "db", "namespace": "prod", "selector": {"app": "db"}}
+        ]
+      },
+      "policies": [
+        {
+          "name": "allow-frontend-to-db",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": {"app": "frontend"}},
+          "to": {"namespace": "prod", "podSelector": {"app": "db"}}
+        },
+        {
+          "name": "allow-frontend-to-debug",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": {"app": "frontend"}},
+          "to": {"namespace": "dev", "podSelector": {"app": "debug"}}
+        },
+        {
+          "name": "allow-frontend-to-dev-any",
+          "action": "allow",
+          "from": {"namespace": "prod", "podSelector": {"app": "frontend"}},
+          "to": {"namespace": "dev", "podSelector": null}
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 5
+  }
+]

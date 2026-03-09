@@ -1,0 +1,2074 @@
+[
+  {
+    "owner": "networkpolicy",
+    "repo": "tutorial",
+    "branch": "master",
+    "path": "tutorial/01-backend-ingress-deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/01-backend-ingress-deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\networkpolicy\\tutorial\\tutorial\\01-backend-ingress-deny.yaml",
+    "size": 176
+  },
+  {
+    "owner": "networkpolicy",
+    "repo": "tutorial",
+    "branch": "master",
+    "path": "tutorial/02-backend-ingress-allow-frontend.yaml",
+    "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/02-backend-ingress-allow-frontend.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\networkpolicy\\tutorial\\tutorial\\02-backend-ingress-allow-frontend.yaml",
+    "size": 252
+  },
+  {
+    "owner": "networkpolicy",
+    "repo": "tutorial",
+    "branch": "master",
+    "path": "tutorial/03-all-pods-allow-within-namespace.yaml",
+    "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/03-all-pods-allow-within-namespace.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\networkpolicy\\tutorial\\tutorial\\03-all-pods-allow-within-namespace.yaml",
+    "size": 182
+  },
+  {
+    "owner": "networkpolicy",
+    "repo": "tutorial",
+    "branch": "master",
+    "path": "tutorial/04-backend-ingress-allow-monitoring-namespace.yaml",
+    "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/04-backend-ingress-allow-monitoring-namespace.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\networkpolicy\\tutorial\\tutorial\\04-backend-ingress-allow-monitoring-namespace.yaml",
+    "size": 279
+  },
+  {
+    "owner": "networkpolicy",
+    "repo": "tutorial",
+    "branch": "master",
+    "path": "tutorial/05-backend-ingress-allow-monitoring-app.yaml",
+    "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/05-backend-ingress-allow-monitoring-app.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\networkpolicy\\tutorial\\tutorial\\05-backend-ingress-allow-monitoring-app.yaml",
+    "size": 351
+  },
+  {
+    "owner": "networkpolicy",
+    "repo": "tutorial",
+    "branch": "master",
+    "path": "tutorial/06-frontend-egress-deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/06-frontend-egress-deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\networkpolicy\\tutorial\\tutorial\\06-frontend-egress-deny.yaml",
+    "size": 176
+  },
+  {
+    "owner": "networkpolicy",
+    "repo": "tutorial",
+    "branch": "master",
+    "path": "tutorial/07-frontend-egress-allow-to-backend.yaml",
+    "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/07-frontend-egress-allow-to-backend.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\networkpolicy\\tutorial\\tutorial\\07-frontend-egress-allow-to-backend.yaml",
+    "size": 277
+  },
+  {
+    "owner": "networkpolicy",
+    "repo": "tutorial",
+    "branch": "master",
+    "path": "tutorial/08-all-pods-egress-allow-dns.yaml",
+    "raw_url": "https://raw.githubusercontent.com/networkpolicy/tutorial/master/tutorial/08-all-pods-egress-allow-dns.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\networkpolicy\\tutorial\\tutorial\\08-all-pods-egress-allow-dns.yaml",
+    "size": 321
+  },
+  {
+    "owner": "i-am-bee",
+    "repo": "agentstack",
+    "branch": "main",
+    "path": "policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/i-am-bee/agentstack/main/policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\i-am-bee\\agentstack\\policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "kase1111-hash",
+    "repo": "NatLangChain",
+    "branch": "main",
+    "path": "_deferred/docs/k8s/k8s/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/kase1111-hash/NatLangChain/main/_deferred/docs/k8s/k8s/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\kase1111-hash\\NatLangChain\\_deferred\\docs\\k8s\\k8s\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "HARISH1211998",
+    "repo": "cka",
+    "branch": "main",
+    "path": "networkPolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/HARISH1211998/cka/main/networkPolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\HARISH1211998\\cka\\networkPolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "BigKAA",
+    "repo": "youtube",
+    "branch": "master",
+    "path": "net/04-NetworkPolicies/np/np-01.yaml",
+    "raw_url": "https://raw.githubusercontent.com/BigKAA/youtube/master/net/04-NetworkPolicies/np/np-01.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\BigKAA\\youtube\\net\\04-NetworkPolicies\\np\\np-01.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "webner",
+    "repo": "network-policies",
+    "branch": "master",
+    "path": "allow-same-namespace-networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/webner/network-policies/master/allow-same-namespace-networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\webner\\network-policies\\allow-same-namespace-networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "nano871022",
+    "repo": "K8S-learning",
+    "branch": "master",
+    "path": "15-advance-topic/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/nano871022/K8S-learning/master/15-advance-topic/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\nano871022\\K8S-learning\\15-advance-topic\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Netcracker",
+    "repo": "KubeMarine",
+    "branch": "main",
+    "path": "kubemarine/plugins/yaml/calico-v3.22.2-original.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Netcracker/KubeMarine/main/kubemarine/plugins/yaml/calico-v3.22.2-original.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Netcracker\\KubeMarine\\kubemarine\\plugins\\yaml\\calico-v3.22.2-original.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "yash509",
+    "repo": "DevSecOps-ChuckNorrisJokesGenerator-WebApp-Deployment",
+    "branch": "main",
+    "path": "nwp.yaml",
+    "raw_url": "https://raw.githubusercontent.com/yash509/DevSecOps-ChuckNorrisJokesGenerator-WebApp-Deployment/main/nwp.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\yash509\\DevSecOps-ChuckNorrisJokesGenerator-WebApp-Deployment\\nwp.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "scholzj",
+    "repo": "zoo-entrance",
+    "branch": "main",
+    "path": "deploy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/scholzj/zoo-entrance/main/deploy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\scholzj\\zoo-entrance\\deploy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "laik",
+    "repo": "k8s-script",
+    "branch": "master",
+    "path": "calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/laik/k8s-script/master/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\laik\\k8s-script\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "mlkmhd",
+    "repo": "hekura",
+    "branch": "main",
+    "path": "all.yaml",
+    "raw_url": "https://raw.githubusercontent.com/mlkmhd/hekura/main/all.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\mlkmhd\\hekura\\all.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "rorsat-ltd",
+    "repo": "kosmos",
+    "branch": "root",
+    "path": "kubes.yaml",
+    "raw_url": "https://raw.githubusercontent.com/rorsat-ltd/kosmos/root/kubes.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\rorsat-ltd\\kosmos\\kubes.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "gianlucam76",
+    "repo": "workshop",
+    "branch": "main",
+    "path": "events.yaml",
+    "raw_url": "https://raw.githubusercontent.com/gianlucam76/workshop/main/events.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\gianlucam76\\workshop\\events.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ebenhamu",
+    "repo": "Monithor-K8s",
+    "branch": "main",
+    "path": "K8s/be.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ebenhamu/Monithor-K8s/main/K8s/be.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ebenhamu\\Monithor-K8s\\K8s\\be.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "marcus-sa",
+    "repo": "helm-charts",
+    "branch": "master",
+    "path": "repositories/jfrog/kubexray/0.3.9/chart/templates/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/marcus-sa/helm-charts/master/repositories/jfrog/kubexray/0.3.9/chart/templates/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\marcus-sa\\helm-charts\\repositories\\jfrog\\kubexray\\0.3.9\\chart\\templates\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "dyrnq",
+    "repo": "dist",
+    "branch": "main",
+    "path": "calico/3.6/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/dyrnq/dist/main/calico/3.6/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\dyrnq\\dist\\calico\\3.6\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "yash509",
+    "repo": "DevSecOps-Secret-Santa-Generator-WebApp-Deployment",
+    "branch": "main",
+    "path": "nwp.yaml",
+    "raw_url": "https://raw.githubusercontent.com/yash509/DevSecOps-Secret-Santa-Generator-WebApp-Deployment/main/nwp.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\yash509\\DevSecOps-Secret-Santa-Generator-WebApp-Deployment\\nwp.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "yash509",
+    "repo": "DevSecOps-Mutiple-Sentiments-Analyzer-WebApp-Deployment",
+    "branch": "main",
+    "path": "nwp.yaml",
+    "raw_url": "https://raw.githubusercontent.com/yash509/DevSecOps-Mutiple-Sentiments-Analyzer-WebApp-Deployment/main/nwp.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\yash509\\DevSecOps-Mutiple-Sentiments-Analyzer-WebApp-Deployment\\nwp.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "phamcs",
+    "repo": "k8s",
+    "branch": "main",
+    "path": "calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/phamcs/k8s/main/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\phamcs\\k8s\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "richcobrien1",
+    "repo": "TrafficJamz",
+    "branch": "main",
+    "path": "calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/richcobrien1/TrafficJamz/main/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\richcobrien1\\TrafficJamz\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "felipevelasco7",
+    "repo": "Lab-networking-policies",
+    "branch": "main",
+    "path": "db.yaml",
+    "raw_url": "https://raw.githubusercontent.com/felipevelasco7/Lab-networking-policies/main/db.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\felipevelasco7\\Lab-networking-policies\\db.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Alevsk",
+    "repo": "rbac-atlas",
+    "branch": "master",
+    "path": "risks.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Alevsk/rbac-atlas/master/risks.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Alevsk\\rbac-atlas\\risks.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "dyrnq",
+    "repo": "dist",
+    "branch": "main",
+    "path": "calico/v3.28.2/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/dyrnq/dist/main/calico/v3.28.2/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\dyrnq\\dist\\calico\\v3.28.2\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "xTrilton",
+    "repo": "implementing-Etherium-blockchain-in-android-using-web3j",
+    "branch": "main",
+    "path": "netwak.yaml",
+    "raw_url": "https://raw.githubusercontent.com/xTrilton/implementing-Etherium-blockchain-in-android-using-web3j/main/netwak.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\xTrilton\\implementing-Etherium-blockchain-in-android-using-web3j\\netwak.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "mario21ic",
+    "repo": "k8s-security-2024",
+    "branch": "main",
+    "path": "clase5/networkpolicy/np-deny-all-ingress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/mario21ic/k8s-security-2024/main/clase5/networkpolicy/np-deny-all-ingress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\mario21ic\\k8s-security-2024\\clase5\\networkpolicy\\np-deny-all-ingress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Johnonyango",
+    "repo": "K8s-microservice-boilerplate",
+    "branch": "main",
+    "path": "policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Johnonyango/K8s-microservice-boilerplate/main/policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Johnonyango\\K8s-microservice-boilerplate\\policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "HoussemDellai",
+    "repo": "ProductsStoreOnKubernetes",
+    "branch": "main",
+    "path": "network-policy/1-backend-policy-deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/HoussemDellai/ProductsStoreOnKubernetes/main/network-policy/1-backend-policy-deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\HoussemDellai\\ProductsStoreOnKubernetes\\network-policy\\1-backend-policy-deny.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "saghosh8",
+    "repo": "kubernetes",
+    "branch": "main",
+    "path": "egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/saghosh8/kubernetes/main/egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\saghosh8\\kubernetes\\egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Joshua-Stringfellow",
+    "repo": "rancher-demo",
+    "branch": "main",
+    "path": "app.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Joshua-Stringfellow/rancher-demo/main/app.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Joshua-Stringfellow\\rancher-demo\\app.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "vfarcic",
+    "repo": "cf-terraform-eks",
+    "branch": "master",
+    "path": "apps.yaml",
+    "raw_url": "https://raw.githubusercontent.com/vfarcic/cf-terraform-eks/master/apps.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\vfarcic\\cf-terraform-eks\\apps.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "gespinozat",
+    "repo": "ws-challenge-2",
+    "branch": "main",
+    "path": "nginx.yaml",
+    "raw_url": "https://raw.githubusercontent.com/gespinozat/ws-challenge-2/main/nginx.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\gespinozat\\ws-challenge-2\\nginx.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "sowmyav27",
+    "repo": "addon",
+    "branch": "master",
+    "path": "addon.yaml",
+    "raw_url": "https://raw.githubusercontent.com/sowmyav27/addon/master/addon.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\sowmyav27\\addon\\addon.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "sowmyav27",
+    "repo": "addon-2",
+    "branch": "master",
+    "path": "addon.yaml",
+    "raw_url": "https://raw.githubusercontent.com/sowmyav27/addon-2/master/addon.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\sowmyav27\\addon-2\\addon.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ilkilab",
+    "repo": "cka",
+    "branch": "main",
+    "path": "canal.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ilkilab/cka/main/canal.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ilkilab\\cka\\canal.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "sree7k7",
+    "repo": "k8s",
+    "branch": "main",
+    "path": "NetworkPolicy/egress-network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/sree7k7/k8s/main/NetworkPolicy/egress-network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\sree7k7\\k8s\\NetworkPolicy\\egress-network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ykhadilkar",
+    "repo": "sample-policies",
+    "branch": "main",
+    "path": "within-ns.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ykhadilkar/sample-policies/main/within-ns.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ykhadilkar\\sample-policies\\within-ns.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "edaena",
+    "repo": "TestManifestRepo",
+    "branch": "master",
+    "path": "kafka.yaml",
+    "raw_url": "https://raw.githubusercontent.com/edaena/TestManifestRepo/master/kafka.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\edaena\\TestManifestRepo\\kafka.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "hoyle1974",
+    "repo": "synthetic_infra",
+    "branch": "main",
+    "path": "gitea.yaml",
+    "raw_url": "https://raw.githubusercontent.com/hoyle1974/synthetic_infra/main/gitea.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\hoyle1974\\synthetic_infra\\gitea.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "RainerSegebrecht",
+    "repo": "network-policies",
+    "branch": "main",
+    "path": "allow.yaml",
+    "raw_url": "https://raw.githubusercontent.com/RainerSegebrecht/network-policies/main/allow.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\RainerSegebrecht\\network-policies\\allow.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "AS207960",
+    "repo": "smime-relay",
+    "branch": "root",
+    "path": "kube.yaml",
+    "raw_url": "https://raw.githubusercontent.com/AS207960/smime-relay/root/kube.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\AS207960\\smime-relay\\kube.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "yash509",
+    "repo": "DevSecOps-APrimeC-WebApp-Deployment",
+    "branch": "main",
+    "path": "nwp.yaml",
+    "raw_url": "https://raw.githubusercontent.com/yash509/DevSecOps-APrimeC-WebApp-Deployment/main/nwp.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\yash509\\DevSecOps-APrimeC-WebApp-Deployment\\nwp.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "AS207960",
+    "repo": "esign",
+    "branch": "root",
+    "path": "kube.yaml",
+    "raw_url": "https://raw.githubusercontent.com/AS207960/esign/root/kube.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\AS207960\\esign\\kube.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "bcgov",
+    "repo": "put",
+    "branch": "main",
+    "path": "containers/workflow/openshift/n8n.dc.yaml",
+    "raw_url": "https://raw.githubusercontent.com/bcgov/put/main/containers/workflow/openshift/n8n.dc.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\bcgov\\put\\containers\\workflow\\openshift\\n8n.dc.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "aharrisonx",
+    "repo": "ocp-templates",
+    "branch": "main",
+    "path": "network-policies/allow-same-namespace.yaml",
+    "raw_url": "https://raw.githubusercontent.com/aharrisonx/ocp-templates/main/network-policies/allow-same-namespace.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\aharrisonx\\ocp-templates\\network-policies\\allow-same-namespace.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ARPITJAINECE",
+    "repo": "kubernetes_learning",
+    "branch": "main",
+    "path": "Kubernetes/networking/egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ARPITJAINECE/kubernetes_learning/main/Kubernetes/networking/egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ARPITJAINECE\\kubernetes_learning\\Kubernetes\\networking\\egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "MuaadAkmal",
+    "repo": "k8_yaml_templates",
+    "branch": "main",
+    "path": "networkPolicy_with_default_dns.yaml",
+    "raw_url": "https://raw.githubusercontent.com/MuaadAkmal/k8_yaml_templates/main/networkPolicy_with_default_dns.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\MuaadAkmal\\k8_yaml_templates\\networkPolicy_with_default_dns.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "youngstone89",
+    "repo": "kubernetes-mastery",
+    "branch": "master",
+    "path": "Objects/NetworkPolicy/internal-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/youngstone89/kubernetes-mastery/master/Objects/NetworkPolicy/internal-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\youngstone89\\kubernetes-mastery\\Objects\\NetworkPolicy\\internal-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "elyesjabri",
+    "repo": "Kubestronaut-Program",
+    "branch": "main",
+    "path": "CKA/Notes/04-Security/network-policy/internal-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/elyesjabri/Kubestronaut-Program/main/CKA/Notes/04-Security/network-policy/internal-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\elyesjabri\\Kubestronaut-Program\\CKA\\Notes\\04-Security\\network-policy\\internal-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "sajjadkhan12",
+    "repo": "my-learning-resources",
+    "branch": "main",
+    "path": "learning-kubernetes/examples/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/sajjadkhan12/my-learning-resources/main/learning-kubernetes/examples/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\sajjadkhan12\\my-learning-resources\\learning-kubernetes\\examples\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "NazarSenchuk",
+    "repo": "devops",
+    "branch": "main",
+    "path": "kubernetes/CKA/NetworkPolicy/np-01.yaml",
+    "raw_url": "https://raw.githubusercontent.com/NazarSenchuk/devops/main/kubernetes/CKA/NetworkPolicy/np-01.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\NazarSenchuk\\devops\\kubernetes\\CKA\\NetworkPolicy\\np-01.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "j1nn33",
+    "repo": "study",
+    "branch": "master",
+    "path": "K8S/tasks/kryukov/network_policies/network_policy/np-01.yaml",
+    "raw_url": "https://raw.githubusercontent.com/j1nn33/study/master/K8S/tasks/kryukov/network_policies/network_policy/np-01.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\j1nn33\\study\\K8S\\tasks\\kryukov\\network_policies\\network_policy\\np-01.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "duyanyan",
+    "repo": "testfiles",
+    "branch": "master",
+    "path": "networkpolicy/allowfromsamenamespace.yaml",
+    "raw_url": "https://raw.githubusercontent.com/duyanyan/testfiles/master/networkpolicy/allowfromsamenamespace.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\duyanyan\\testfiles\\networkpolicy\\allowfromsamenamespace.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ArctiqTeam",
+    "repo": "community-events",
+    "branch": "master",
+    "path": "ansible-toronto-operators/onboard-operator/roles/appteam/files/netpol_namespaces.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ArctiqTeam/community-events/master/ansible-toronto-operators/onboard-operator/roles/appteam/files/netpol_namespaces.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ArctiqTeam\\community-events\\ansible-toronto-operators\\onboard-operator\\roles\\appteam\\files\\netpol_namespaces.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "openshift",
+    "repo": "origin",
+    "branch": "main",
+    "path": "test/extended/util/compat_otp/testdata/apiserverauth/allow-same-namespace.yaml",
+    "raw_url": "https://raw.githubusercontent.com/openshift/origin/main/test/extended/util/compat_otp/testdata/apiserverauth/allow-same-namespace.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\openshift\\origin\\test\\extended\\util\\compat_otp\\testdata\\apiserverauth\\allow-same-namespace.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "openshift",
+    "repo": "origin",
+    "branch": "main",
+    "path": "test/extended/util/compat_otp/testdata/securityandcompliance/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/openshift/origin/main/test/extended/util/compat_otp/testdata/securityandcompliance/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\openshift\\origin\\test\\extended\\util\\compat_otp\\testdata\\securityandcompliance\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "harrylbi",
+    "repo": "minikube",
+    "branch": "main",
+    "path": "networkpolices.yaml",
+    "raw_url": "https://raw.githubusercontent.com/harrylbi/minikube/main/networkpolices.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\harrylbi\\minikube\\networkpolices.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "drorvt",
+    "repo": "MultiNodeKubernetesCluster",
+    "branch": "master",
+    "path": "calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/drorvt/MultiNodeKubernetesCluster/master/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\drorvt\\MultiNodeKubernetesCluster\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "tarsoqueiroz",
+    "repo": "aboutContainers",
+    "branch": "main",
+    "path": "KinD/firstTest/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/tarsoqueiroz/aboutContainers/main/KinD/firstTest/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\tarsoqueiroz\\aboutContainers\\KinD\\firstTest\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "richcobrien1",
+    "repo": "SafeShipping",
+    "branch": "main",
+    "path": "kubernetes/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/richcobrien1/SafeShipping/main/kubernetes/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\richcobrien1\\SafeShipping\\kubernetes\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "richcobrien1",
+    "repo": "TrafficJamz",
+    "branch": "main",
+    "path": "kubernetes/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/richcobrien1/TrafficJamz/main/kubernetes/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\richcobrien1\\TrafficJamz\\kubernetes\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "pekware",
+    "repo": "home-infra",
+    "branch": "main",
+    "path": "misc/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/pekware/home-infra/main/misc/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\pekware\\home-infra\\misc\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "asongent",
+    "repo": "cncf-exam",
+    "branch": "master",
+    "path": "install/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/asongent/cncf-exam/master/install/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\asongent\\cncf-exam\\install\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "relay70",
+    "repo": "Kubernetes-Install-Fedora",
+    "branch": "main",
+    "path": "srcFiles/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/relay70/Kubernetes-Install-Fedora/main/srcFiles/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\relay70\\Kubernetes-Install-Fedora\\srcFiles\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "relay70",
+    "repo": "Kubernetes-Install-Fedora",
+    "branch": "main",
+    "path": "srcFiles/tmp_calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/relay70/Kubernetes-Install-Fedora/main/srcFiles/tmp_calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\relay70\\Kubernetes-Install-Fedora\\srcFiles\\tmp_calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "mario21ic",
+    "repo": "k8s-security-2024",
+    "branch": "main",
+    "path": "clase5/networkpolicy/np-allow-all-egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/mario21ic/k8s-security-2024/main/clase5/networkpolicy/np-allow-all-egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\mario21ic\\k8s-security-2024\\clase5\\networkpolicy\\np-allow-all-egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "youngstone89",
+    "repo": "kubernetes-mastery",
+    "branch": "master",
+    "path": "Objects/NetworkPolicy/network-policy-allow-all-egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/youngstone89/kubernetes-mastery/master/Objects/NetworkPolicy/network-policy-allow-all-egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\youngstone89\\kubernetes-mastery\\Objects\\NetworkPolicy\\network-policy-allow-all-egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "nishanthkumarpathi",
+    "repo": "k8s-calico-istio-training",
+    "branch": "main",
+    "path": "calico/ns-policies/backend-policy-deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/nishanthkumarpathi/k8s-calico-istio-training/main/calico/ns-policies/backend-policy-deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\nishanthkumarpathi\\k8s-calico-istio-training\\calico\\ns-policies\\backend-policy-deny.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "HenryFitzgerald",
+    "repo": "ProductsStoreOnKubernetes",
+    "branch": "main",
+    "path": "network-policy/1-backend-policy-deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/HenryFitzgerald/ProductsStoreOnKubernetes/main/network-policy/1-backend-policy-deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\HenryFitzgerald\\ProductsStoreOnKubernetes\\network-policy\\1-backend-policy-deny.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "nehafathimaa",
+    "repo": "hossin",
+    "branch": "main",
+    "path": "network-policy/1-backend-policy-deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/nehafathimaa/hossin/main/network-policy/1-backend-policy-deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\nehafathimaa\\hossin\\network-policy\\1-backend-policy-deny.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "NayanBhut",
+    "repo": "Github_Actions",
+    "branch": "main",
+    "path": "ProductsStoreOnKubernetes/network-policy/1-backend-policy-deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/NayanBhut/Github_Actions/main/ProductsStoreOnKubernetes/network-policy/1-backend-policy-deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\NayanBhut\\Github_Actions\\ProductsStoreOnKubernetes\\network-policy\\1-backend-policy-deny.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "vfarcic",
+    "repo": "cf-terraform-aks",
+    "branch": "master",
+    "path": "apps.yaml",
+    "raw_url": "https://raw.githubusercontent.com/vfarcic/cf-terraform-aks/master/apps.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\vfarcic\\cf-terraform-aks\\apps.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "felipemunozri",
+    "repo": "wschallenge2",
+    "branch": "main",
+    "path": "app/nginx.yaml",
+    "raw_url": "https://raw.githubusercontent.com/felipemunozri/wschallenge2/main/app/nginx.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\felipemunozri\\wschallenge2\\app\\nginx.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ilkilab",
+    "repo": "cka",
+    "branch": "main",
+    "path": "canal2.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ilkilab/cka/main/canal2.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ilkilab\\cka\\canal2.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ministryofjustice",
+    "repo": "cloud-platform-environments",
+    "branch": "main",
+    "path": "namespaces/live.cloud-platform.service.justice.gov.uk/cvl-improvements-prototype/04-networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ministryofjustice/cloud-platform-environments/main/namespaces/live.cloud-platform.service.justice.gov.uk/cvl-improvements-prototype/04-networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ministryofjustice\\cloud-platform-environments\\namespaces\\live.cloud-platform.service.justice.gov.uk\\cvl-improvements-prototype\\04-networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "tomeroz802",
+    "repo": "Tomer-Joseph_project",
+    "branch": "main",
+    "path": "react-spring-networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/tomeroz802/Tomer-Joseph_project/main/react-spring-networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\tomeroz802\\Tomer-Joseph_project\\react-spring-networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "wandersonwhcr",
+    "repo": "k8s-examples",
+    "branch": "main",
+    "path": "network-policy/app-service/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/wandersonwhcr/k8s-examples/main/network-policy/app-service/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\wandersonwhcr\\k8s-examples\\network-policy\\app-service\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "icp4a",
+    "repo": "cert-kubernetes",
+    "branch": "25.0.1",
+    "path": "scripts/cpfs/installer_scripts/cp3-networkpolicy/egress/zen/zen-egress-zen-watchdog-create-tables-job.yaml",
+    "raw_url": "https://raw.githubusercontent.com/icp4a/cert-kubernetes/25.0.1/scripts/cpfs/installer_scripts/cp3-networkpolicy/egress/zen/zen-egress-zen-watchdog-create-tables-job.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\icp4a\\cert-kubernetes\\scripts\\cpfs\\installer_scripts\\cp3-networkpolicy\\egress\\zen\\zen-egress-zen-watchdog-create-tables-job.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "MuriloVieiraCruz",
+    "repo": "Microservices",
+    "branch": "main",
+    "path": "section16/helm/grafana-tempo/templates/distributor/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/MuriloVieiraCruz/Microservices/main/section16/helm/grafana-tempo/templates/distributor/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\MuriloVieiraCruz\\Microservices\\section16\\helm\\grafana-tempo\\templates\\distributor\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "IBM",
+    "repo": "charts",
+    "branch": "master",
+    "path": "components/ibm-watson-assistant-prod/charts/ibm-watson-assistant-ingress/charts/ibm-watson-gateway/templates/02-networkpolicy-intrapods.yaml",
+    "raw_url": "https://raw.githubusercontent.com/IBM/charts/master/components/ibm-watson-assistant-prod/charts/ibm-watson-assistant-ingress/charts/ibm-watson-gateway/templates/02-networkpolicy-intrapods.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\IBM\\charts\\components\\ibm-watson-assistant-prod\\charts\\ibm-watson-assistant-ingress\\charts\\ibm-watson-gateway\\templates\\02-networkpolicy-intrapods.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "nguie2",
+    "repo": "terraform-multicloud-eks-aks-gke",
+    "branch": "main",
+    "path": "configs/linkerd/linkerd-config.yaml",
+    "raw_url": "https://raw.githubusercontent.com/nguie2/terraform-multicloud-eks-aks-gke/main/configs/linkerd/linkerd-config.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\nguie2\\terraform-multicloud-eks-aks-gke\\configs\\linkerd\\linkerd-config.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "projectbeskar",
+    "repo": "virtrigaud",
+    "branch": "main",
+    "path": "docs/src/examples/security/networkpolicies/strict-isolation.yaml",
+    "raw_url": "https://raw.githubusercontent.com/projectbeskar/virtrigaud/main/docs/src/examples/security/networkpolicies/strict-isolation.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\projectbeskar\\virtrigaud\\docs\\src\\examples\\security\\networkpolicies\\strict-isolation.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "tom1299",
+    "repo": "web-ingress",
+    "branch": "main",
+    "path": "ref/deployment/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/tom1299/web-ingress/main/ref/deployment/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\tom1299\\web-ingress\\ref\\deployment\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "konippi",
+    "repo": "study-container-security-in-k8s",
+    "branch": "main",
+    "path": "security-strategy/restrict-communications-to-pod/mysql/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/konippi/study-container-security-in-k8s/main/security-strategy/restrict-communications-to-pod/mysql/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\konippi\\study-container-security-in-k8s\\security-strategy\\restrict-communications-to-pod\\mysql\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "torimono",
+    "repo": "sockshop-groupe",
+    "branch": "master",
+    "path": "deploy/kubernetes/manifests-policy/netpol-payment-access.yaml",
+    "raw_url": "https://raw.githubusercontent.com/torimono/sockshop-groupe/master/deploy/kubernetes/manifests-policy/netpol-payment-access.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\torimono\\sockshop-groupe\\deploy\\kubernetes\\manifests-policy\\netpol-payment-access.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ministryofjustice",
+    "repo": "cloud-platform-environments",
+    "branch": "main",
+    "path": "namespaces/live.cloud-platform.service.justice.gov.uk/hmpps-prisoner-search-preprod/04-networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ministryofjustice/cloud-platform-environments/main/namespaces/live.cloud-platform.service.justice.gov.uk/hmpps-prisoner-search-preprod/04-networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ministryofjustice\\cloud-platform-environments\\namespaces\\live.cloud-platform.service.justice.gov.uk\\hmpps-prisoner-search-preprod\\04-networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "aws-samples",
+    "repo": "eks-workshop-v2",
+    "branch": "main",
+    "path": "manifests/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/aws-samples/eks-workshop-v2/main/manifests/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\aws-samples\\eks-workshop-v2\\manifests\\modules\\networking\\network-policies\\apply-network-policies\\allow-ui-egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "sojohnnysaid",
+    "repo": "homelab-platform",
+    "branch": "main",
+    "path": "tenant-templates/networkpolicy-allow-dns.yaml",
+    "raw_url": "https://raw.githubusercontent.com/sojohnnysaid/homelab-platform/main/tenant-templates/networkpolicy-allow-dns.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\sojohnnysaid\\homelab-platform\\tenant-templates\\networkpolicy-allow-dns.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "k8-scalar",
+    "repo": "grasshopper",
+    "branch": "main",
+    "path": "expt/deny-all.yaml",
+    "raw_url": "https://raw.githubusercontent.com/k8-scalar/grasshopper/main/expt/deny-all.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\k8-scalar\\grasshopper\\expt\\deny-all.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "maimonin",
+    "repo": "CORAL",
+    "branch": "main",
+    "path": "testbed/microservice_replication/framework/yamls-to-apply/shippingservice-apply/shippingservice-netpol-5-frontend-1.yaml",
+    "raw_url": "https://raw.githubusercontent.com/maimonin/CORAL/main/testbed/microservice_replication/framework/yamls-to-apply/shippingservice-apply/shippingservice-netpol-5-frontend-1.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\maimonin\\CORAL\\testbed\\microservice_replication\\framework\\yamls-to-apply\\shippingservice-apply\\shippingservice-netpol-5-frontend-1.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "SimonelDavid",
+    "repo": "Calico-Kubernetes-Demo",
+    "branch": "main",
+    "path": "namespaced-policies.yaml",
+    "raw_url": "https://raw.githubusercontent.com/SimonelDavid/Calico-Kubernetes-Demo/main/namespaced-policies.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\SimonelDavid\\Calico-Kubernetes-Demo\\namespaced-policies.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "siddhant792",
+    "repo": "SIT753-7.3HD",
+    "branch": "main",
+    "path": "k8s/base/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/siddhant792/SIT753-7.3HD/main/k8s/base/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\siddhant792\\SIT753-7.3HD\\k8s\\base\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "DoD-Platform-One",
+    "repo": "cluster-auditor",
+    "branch": "main",
+    "path": "chart/templates/bigbang/network-policies/egress-dns.yaml",
+    "raw_url": "https://raw.githubusercontent.com/DoD-Platform-One/cluster-auditor/main/chart/templates/bigbang/network-policies/egress-dns.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\DoD-Platform-One\\cluster-auditor\\chart\\templates\\bigbang\\network-policies\\egress-dns.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "lbalasubramani",
+    "repo": "mini-controller",
+    "branch": "feat-mini-controller",
+    "path": "config/network-policy/allow-metrics-traffic.yaml",
+    "raw_url": "https://raw.githubusercontent.com/lbalasubramani/mini-controller/feat-mini-controller/config/network-policy/allow-metrics-traffic.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\lbalasubramani\\mini-controller\\config\\network-policy\\allow-metrics-traffic.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "mauilion",
+    "repo": "kind-cni-playground",
+    "branch": "master",
+    "path": "calico/cni/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/mauilion/kind-cni-playground/master/calico/cni/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\mauilion\\kind-cni-playground\\calico\\cni\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "jongikhaya1203",
+    "repo": "IDP-SDBIP",
+    "branch": "main",
+    "path": "k8s/ingress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/jongikhaya1203/IDP-SDBIP/main/k8s/ingress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\jongikhaya1203\\IDP-SDBIP\\k8s\\ingress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ministryofjustice",
+    "repo": "fb-submitter",
+    "branch": "main",
+    "path": "deploy-eks/fb-submitter-chart/templates/service_monitor.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ministryofjustice/fb-submitter/main/deploy-eks/fb-submitter-chart/templates/service_monitor.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ministryofjustice\\fb-submitter\\deploy-eks\\fb-submitter-chart\\templates\\service_monitor.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "zyadelfeki",
+    "repo": "cctv_face_detection",
+    "branch": "main",
+    "path": "k8s/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/zyadelfeki/cctv_face_detection/main/k8s/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\zyadelfeki\\cctv_face_detection\\k8s\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "tkestack",
+    "repo": "charts",
+    "branch": "main",
+    "path": "incubator/influxdb/templates/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/tkestack/charts/main/incubator/influxdb/templates/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\tkestack\\charts\\incubator\\influxdb\\templates\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "dyrnq",
+    "repo": "dist",
+    "branch": "main",
+    "path": "calico/v3.28.3/calico-bpf.yaml",
+    "raw_url": "https://raw.githubusercontent.com/dyrnq/dist/main/calico/v3.28.3/calico-bpf.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\dyrnq\\dist\\calico\\v3.28.3\\calico-bpf.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "MarcelMYSchmitt",
+    "repo": "matomo_docker_k8s",
+    "branch": "master",
+    "path": "k8s/mariadb/templates/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/MarcelMYSchmitt/matomo_docker_k8s/master/k8s/mariadb/templates/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\MarcelMYSchmitt\\matomo_docker_k8s\\k8s\\mariadb\\templates\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "nyuen",
+    "repo": "k2",
+    "branch": "dev",
+    "path": "5-networkPolicy/backend-policy-namespace.yaml",
+    "raw_url": "https://raw.githubusercontent.com/nyuen/k2/dev/5-networkPolicy/backend-policy-namespace.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\nyuen\\k2\\5-networkPolicy\\backend-policy-namespace.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ShifengHuGit",
+    "repo": "K8S-DemoRepo",
+    "branch": "main",
+    "path": "phase2/networking/policy/example.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ShifengHuGit/K8S-DemoRepo/main/phase2/networking/policy/example.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ShifengHuGit\\K8S-DemoRepo\\phase2\\networking\\policy\\example.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "JadissEL",
+    "repo": "rosistat-devops",
+    "branch": "main",
+    "path": "infrastructure/k8s/webhook-networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/JadissEL/rosistat-devops/main/infrastructure/k8s/webhook-networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\JadissEL\\rosistat-devops\\infrastructure\\k8s\\webhook-networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "bcgov",
+    "repo": "cas-ggircs",
+    "branch": "develop",
+    "path": "helm/cas-ggircs/templates/networkPolicies/intra-release-by-name.yaml",
+    "raw_url": "https://raw.githubusercontent.com/bcgov/cas-ggircs/develop/helm/cas-ggircs/templates/networkPolicies/intra-release-by-name.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\bcgov\\cas-ggircs\\helm\\cas-ggircs\\templates\\networkPolicies\\intra-release-by-name.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "im-knots",
+    "repo": "ea-monorepo",
+    "branch": "main",
+    "path": "ea-platform/ea-job-operator/chart/templates/networkpolicy-allow.yaml",
+    "raw_url": "https://raw.githubusercontent.com/im-knots/ea-monorepo/main/ea-platform/ea-job-operator/chart/templates/networkpolicy-allow.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\im-knots\\ea-monorepo\\ea-platform\\ea-job-operator\\chart\\templates\\networkpolicy-allow.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "v3io",
+    "repo": "helm-charts",
+    "branch": "development",
+    "path": "stable/jupyterhub/templates/proxy/netpol.yaml",
+    "raw_url": "https://raw.githubusercontent.com/v3io/helm-charts/development/stable/jupyterhub/templates/proxy/netpol.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\v3io\\helm-charts\\stable\\jupyterhub\\templates\\proxy\\netpol.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "stackticio",
+    "repo": "strimzi_basic_setup",
+    "branch": "main",
+    "path": "networkpolicy/networkpolicy__basic_kafka_setup__ingress-apisix__exception__system__egress__ports__443__nr23__lines18.yaml",
+    "raw_url": "https://raw.githubusercontent.com/stackticio/strimzi_basic_setup/main/networkpolicy/networkpolicy__basic_kafka_setup__ingress-apisix__exception__system__egress__ports__443__nr23__lines18.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\stackticio\\strimzi_basic_setup\\networkpolicy\\networkpolicy__basic_kafka_setup__ingress-apisix__exception__system__egress__ports__443__nr23__lines18.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "williamzelesny",
+    "repo": "homelab-kube-cluster",
+    "branch": "main",
+    "path": "manifests/bootstrapping/argocd/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/williamzelesny/homelab-kube-cluster/main/manifests/bootstrapping/argocd/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\williamzelesny\\homelab-kube-cluster\\manifests\\bootstrapping\\argocd\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "barney-s",
+    "repo": "cs-hnc-test",
+    "branch": "main",
+    "path": "policies/namespaces/acme-org/eng/np-allow-eng.yaml",
+    "raw_url": "https://raw.githubusercontent.com/barney-s/cs-hnc-test/main/policies/namespaces/acme-org/eng/np-allow-eng.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\barney-s\\cs-hnc-test\\policies\\namespaces\\acme-org\\eng\\np-allow-eng.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "onaio",
+    "repo": "helm-dirt-tile-server",
+    "branch": "main",
+    "path": "templates/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/onaio/helm-dirt-tile-server/main/templates/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\onaio\\helm-dirt-tile-server\\templates\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "prowler0305",
+    "repo": "kpi_rest_api",
+    "branch": "development",
+    "path": ".openshift/prod/default_deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/prowler0305/kpi_rest_api/development/.openshift/prod/default_deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\prowler0305\\kpi_rest_api\\.openshift\\prod\\default_deny.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ministryofjustice",
+    "repo": "cloud-platform-environments",
+    "branch": "main",
+    "path": "namespaces/live.cloud-platform.service.justice.gov.uk/hmpps-user-preferences-prod/04-networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ministryofjustice/cloud-platform-environments/main/namespaces/live.cloud-platform.service.justice.gov.uk/hmpps-user-preferences-prod/04-networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ministryofjustice\\cloud-platform-environments\\namespaces\\live.cloud-platform.service.justice.gov.uk\\hmpps-user-preferences-prod\\04-networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "goworkshops",
+    "repo": "k8s-example-kubedredger",
+    "branch": "main",
+    "path": "config/network-policy/allow-metrics-traffic.yaml",
+    "raw_url": "https://raw.githubusercontent.com/goworkshops/k8s-example-kubedredger/main/config/network-policy/allow-metrics-traffic.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\goworkshops\\k8s-example-kubedredger\\config\\network-policy\\allow-metrics-traffic.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "AFKD98",
+    "repo": "LLM_devops",
+    "branch": "main",
+    "path": "config_v2_feedback/generated_configs_v2/pgsql/codellama13b_rag/level_6/config_2.yaml",
+    "raw_url": "https://raw.githubusercontent.com/AFKD98/LLM_devops/main/config_v2_feedback/generated_configs_v2/pgsql/codellama13b_rag/level_6/config_2.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\AFKD98\\LLM_devops\\config_v2_feedback\\generated_configs_v2\\pgsql\\codellama13b_rag\\level_6\\config_2.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "bcgov",
+    "repo": "nr-brmb-pim",
+    "branch": "master",
+    "path": "openshift/cirras-underwriting-liquibase-db-access.yaml",
+    "raw_url": "https://raw.githubusercontent.com/bcgov/nr-brmb-pim/master/openshift/cirras-underwriting-liquibase-db-access.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\bcgov\\nr-brmb-pim\\openshift\\cirras-underwriting-liquibase-db-access.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "kluevandrew",
+    "repo": "calico-bgp-kind",
+    "branch": "master",
+    "path": "cluster-b/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/kluevandrew/calico-bgp-kind/master/cluster-b/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\kluevandrew\\calico-bgp-kind\\cluster-b\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "bcgov",
+    "repo": "sso-keycloak",
+    "branch": "dev",
+    "path": "helm/keycloak/templates/network-policies/intra-project-comms.yaml",
+    "raw_url": "https://raw.githubusercontent.com/bcgov/sso-keycloak/dev/helm/keycloak/templates/network-policies/intra-project-comms.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\bcgov\\sso-keycloak\\helm\\keycloak\\templates\\network-policies\\intra-project-comms.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "sadri-fertani",
+    "repo": "k8s",
+    "branch": "main",
+    "path": "helm/monapp/templates/networking-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/sadri-fertani/k8s/main/helm/monapp/templates/networking-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\sadri-fertani\\k8s\\helm\\monapp\\templates\\networking-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ministryofjustice",
+    "repo": "cloud-platform-environments",
+    "branch": "main",
+    "path": "namespaces/live.cloud-platform.service.justice.gov.uk/hmpps-activities-management-dev/04-networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ministryofjustice/cloud-platform-environments/main/namespaces/live.cloud-platform.service.justice.gov.uk/hmpps-activities-management-dev/04-networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ministryofjustice\\cloud-platform-environments\\namespaces\\live.cloud-platform.service.justice.gov.uk\\hmpps-activities-management-dev\\04-networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "epam",
+    "repo": "edp-sonar-operator",
+    "branch": "master",
+    "path": "config/network-policy/allow-webhook-traffic.yaml",
+    "raw_url": "https://raw.githubusercontent.com/epam/edp-sonar-operator/master/config/network-policy/allow-webhook-traffic.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\epam\\edp-sonar-operator\\config\\network-policy\\allow-webhook-traffic.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "go-micro",
+    "repo": "demo",
+    "branch": "main",
+    "path": "docs/network-policies/network-policy-checkoutservice.yaml",
+    "raw_url": "https://raw.githubusercontent.com/go-micro/demo/main/docs/network-policies/network-policy-checkoutservice.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\go-micro\\demo\\docs\\network-policies\\network-policy-checkoutservice.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "frizner",
+    "repo": "zookeeper-helm",
+    "branch": "master",
+    "path": "templates/server-network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/frizner/zookeeper-helm/master/templates/server-network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\frizner\\zookeeper-helm\\templates\\server-network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "giovannicg",
+    "repo": "BrainLens",
+    "branch": "main",
+    "path": "k8s/network-policies.yaml",
+    "raw_url": "https://raw.githubusercontent.com/giovannicg/BrainLens/main/k8s/network-policies.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\giovannicg\\BrainLens\\k8s\\network-policies.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "hupe1980",
+    "repo": "rivven",
+    "branch": "main",
+    "path": "charts/rivven-operator/templates/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/hupe1980/rivven/main/charts/rivven-operator/templates/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\hupe1980\\rivven\\charts\\rivven-operator\\templates\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "HUFS-MCO",
+    "repo": "MC-Kube-proto",
+    "branch": "main",
+    "path": "config/network-policy/allow-metrics-traffic.yaml",
+    "raw_url": "https://raw.githubusercontent.com/HUFS-MCO/MC-Kube-proto/main/config/network-policy/allow-metrics-traffic.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\HUFS-MCO\\MC-Kube-proto\\config\\network-policy\\allow-metrics-traffic.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "maistra-prow-testing",
+    "repo": "istio-operator",
+    "branch": "maistra-1.1",
+    "path": "resources/helm/v1.0/istio/charts/galley/templates/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/maistra-prow-testing/istio-operator/maistra-1.1/resources/helm/v1.0/istio/charts/galley/templates/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\maistra-prow-testing\\istio-operator\\resources\\helm\\v1.0\\istio\\charts\\galley\\templates\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "shikanime",
+    "repo": "manifests",
+    "branch": "main",
+    "path": "apps/jellyfin/overlays/nishir-tailnet/netpol.yaml",
+    "raw_url": "https://raw.githubusercontent.com/shikanime/manifests/main/apps/jellyfin/overlays/nishir-tailnet/netpol.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\shikanime\\manifests\\apps\\jellyfin\\overlays\\nishir-tailnet\\netpol.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "karthickselvamdbt",
+    "repo": "Guacamole",
+    "branch": "main",
+    "path": "guacamole/performance-optimization.yaml",
+    "raw_url": "https://raw.githubusercontent.com/karthickselvamdbt/Guacamole/main/guacamole/performance-optimization.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\karthickselvamdbt\\Guacamole\\guacamole\\performance-optimization.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "tigera-solutions",
+    "repo": "calicocloud-openshift-workshop",
+    "branch": "main",
+    "path": "demo/app-control/default.centos.yaml",
+    "raw_url": "https://raw.githubusercontent.com/tigera-solutions/calicocloud-openshift-workshop/main/demo/app-control/default.centos.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\tigera-solutions\\calicocloud-openshift-workshop\\demo\\app-control\\default.centos.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Revyy",
+    "repo": "manifests-diff-action",
+    "branch": "main",
+    "path": "__fixtures__/target.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Revyy/manifests-diff-action/main/__fixtures__/target.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Revyy\\manifests-diff-action\\__fixtures__\\target.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Vertiquo",
+    "repo": "SWE-Gruppe8-Abg1",
+    "branch": "main",
+    "path": "extras/fakesmtp/mailserver/templates/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Vertiquo/SWE-Gruppe8-Abg1/main/extras/fakesmtp/mailserver/templates/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Vertiquo\\SWE-Gruppe8-Abg1\\extras\\fakesmtp\\mailserver\\templates\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "heemmanshuu",
+    "repo": "Audit_LLM_SecConFig",
+    "branch": "main",
+    "path": "fetch_artifacthub/assets/bitnami_parse.yaml",
+    "raw_url": "https://raw.githubusercontent.com/heemmanshuu/Audit_LLM_SecConFig/main/fetch_artifacthub/assets/bitnami_parse.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\heemmanshuu\\Audit_LLM_SecConFig\\fetch_artifacthub\\assets\\bitnami_parse.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "sebastian-colomar",
+    "repo": "simplilearn-dockercoins",
+    "branch": "main",
+    "path": "docker/etc/kubernetes/manifests/rng-netpol.yaml",
+    "raw_url": "https://raw.githubusercontent.com/sebastian-colomar/simplilearn-dockercoins/main/docker/etc/kubernetes/manifests/rng-netpol.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\sebastian-colomar\\simplilearn-dockercoins\\docker\\etc\\kubernetes\\manifests\\rng-netpol.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "sofianedjerbi",
+    "repo": "etcdme",
+    "branch": "main",
+    "path": "argocd/base/resources/network-policies/n8n-mcp/allow-health-probes.yaml",
+    "raw_url": "https://raw.githubusercontent.com/sofianedjerbi/etcdme/main/argocd/base/resources/network-policies/n8n-mcp/allow-health-probes.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\sofianedjerbi\\etcdme\\argocd\\base\\resources\\network-policies\\n8n-mcp\\allow-health-probes.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "khaledhawil",
+    "repo": "DevOps",
+    "branch": "master",
+    "path": "nwp.yaml",
+    "raw_url": "https://raw.githubusercontent.com/khaledhawil/DevOps/master/nwp.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\khaledhawil\\DevOps\\nwp.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "CesaragsUC",
+    "repo": "kubernetes-pratices",
+    "branch": "main",
+    "path": "modulo18-seguranca/network-policy/network-policy-02.yaml",
+    "raw_url": "https://raw.githubusercontent.com/CesaragsUC/kubernetes-pratices/main/modulo18-seguranca/network-policy/network-policy-02.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\CesaragsUC\\kubernetes-pratices\\modulo18-seguranca\\network-policy\\network-policy-02.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Joluckyboy",
+    "repo": "FYP-Solution-Archi-TECH-Bias-News-Detection",
+    "branch": "main",
+    "path": "infrastructure/tf/manifests/service-telebot.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Joluckyboy/FYP-Solution-Archi-TECH-Bias-News-Detection/main/infrastructure/tf/manifests/service-telebot.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Joluckyboy\\FYP-Solution-Archi-TECH-Bias-News-Detection\\infrastructure\\tf\\manifests\\service-telebot.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "KedArch",
+    "repo": "mgr",
+    "branch": "master",
+    "path": "ansible/roles/manifests/templates/manifests/k3s/srsdu.yaml",
+    "raw_url": "https://raw.githubusercontent.com/KedArch/mgr/master/ansible/roles/manifests/templates/manifests/k3s/srsdu.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\KedArch\\mgr\\ansible\\roles\\manifests\\templates\\manifests\\k3s\\srsdu.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "vibeforge1111",
+    "repo": "vibeship-spawner-skills",
+    "branch": "main",
+    "path": "devops/kubernetes-deployment/skill.yaml",
+    "raw_url": "https://raw.githubusercontent.com/vibeforge1111/vibeship-spawner-skills/main/devops/kubernetes-deployment/skill.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\vibeforge1111\\vibeship-spawner-skills\\devops\\kubernetes-deployment\\skill.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "arunrao",
+    "repo": "rampart-ai",
+    "branch": "main",
+    "path": "infrastructure/k8s/deployment.yaml",
+    "raw_url": "https://raw.githubusercontent.com/arunrao/rampart-ai/main/infrastructure/k8s/deployment.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\arunrao\\rampart-ai\\infrastructure\\k8s\\deployment.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "amayache",
+    "repo": "pulsewatch_kubernetes",
+    "branch": "main",
+    "path": "helm/web/templates/networkpolicy-egress-api.yaml",
+    "raw_url": "https://raw.githubusercontent.com/amayache/pulsewatch_kubernetes/main/helm/web/templates/networkpolicy-egress-api.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\amayache\\pulsewatch_kubernetes\\helm\\web\\templates\\networkpolicy-egress-api.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "JamesAtIntegratnIO",
+    "repo": "gitops_homelab_2_0",
+    "branch": "main",
+    "path": "addons/cluster-roles/control-plane/addons/observability-secrets/observability-httproutes.yaml",
+    "raw_url": "https://raw.githubusercontent.com/JamesAtIntegratnIO/gitops_homelab_2_0/main/addons/cluster-roles/control-plane/addons/observability-secrets/observability-httproutes.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\JamesAtIntegratnIO\\gitops_homelab_2_0\\addons\\cluster-roles\\control-plane\\addons\\observability-secrets\\observability-httproutes.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "GuzAnton",
+    "repo": "mustage_test",
+    "branch": "main",
+    "path": "k8s/charts/templates/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/GuzAnton/mustage_test/main/k8s/charts/templates/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\GuzAnton\\mustage_test\\k8s\\charts\\templates\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ariel-zilber",
+    "repo": "CyberBattleSimCloudEnvironemtGenerator",
+    "branch": "main",
+    "path": "outputs/generated_env/kubernetes/network_policies/cybersim-zone-a-allow-prometheus-to-jupyterhub.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ariel-zilber/CyberBattleSimCloudEnvironemtGenerator/main/outputs/generated_env/kubernetes/network_policies/cybersim-zone-a-allow-prometheus-to-jupyterhub.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ariel-zilber\\CyberBattleSimCloudEnvironemtGenerator\\outputs\\generated_env\\kubernetes\\network_policies\\cybersim-zone-a-allow-prometheus-to-jupyterhub.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "phoenixvc",
+    "repo": "Mystira.workspace",
+    "branch": "dev",
+    "path": "infra/kubernetes/base/admin-api/network-policy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/phoenixvc/Mystira.workspace/dev/infra/kubernetes/base/admin-api/network-policy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\phoenixvc\\Mystira.workspace\\infra\\kubernetes\\base\\admin-api\\network-policy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "saeedmaghdam",
+    "repo": "k8s",
+    "branch": "main",
+    "path": "networking/network-policy-allow-internet.yaml",
+    "raw_url": "https://raw.githubusercontent.com/saeedmaghdam/k8s/main/networking/network-policy-allow-internet.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\saeedmaghdam\\k8s\\networking\\network-policy-allow-internet.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "catface996",
+    "repo": "ladder",
+    "branch": "main",
+    "path": "code/k8s/network/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/catface996/ladder/main/code/k8s/network/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\catface996\\ladder\\code\\k8s\\network\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "eagle-dai",
+    "repo": "kyma",
+    "branch": "main",
+    "path": "resources/logging/charts/loki/templates/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/eagle-dai/kyma/main/resources/logging/charts/loki/templates/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\eagle-dai\\kyma\\resources\\logging\\charts\\loki\\templates\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "trevorbox",
+    "repo": "service-mesh-patterns",
+    "branch": "master",
+    "path": "ossm-2.4/secure-ingressgateway/helm/user-workload-monitoring/templates/networkpolicy-allow-from-openshift-ingress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/trevorbox/service-mesh-patterns/master/ossm-2.4/secure-ingressgateway/helm/user-workload-monitoring/templates/networkpolicy-allow-from-openshift-ingress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\trevorbox\\service-mesh-patterns\\ossm-2.4\\secure-ingressgateway\\helm\\user-workload-monitoring\\templates\\networkpolicy-allow-from-openshift-ingress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "csye7125-su24-team17",
+    "repo": "helm-webapp-cve-consumer",
+    "branch": "main",
+    "path": "templates/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/csye7125-su24-team17/helm-webapp-cve-consumer/main/templates/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\csye7125-su24-team17\\helm-webapp-cve-consumer\\templates\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "fminna",
+    "repo": "Group_C_AM_24",
+    "branch": "main",
+    "path": "templates/traefik_template.yaml",
+    "raw_url": "https://raw.githubusercontent.com/fminna/Group_C_AM_24/main/templates/traefik_template.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\fminna\\Group_C_AM_24\\templates\\traefik_template.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "patrik-fredon",
+    "repo": "ZipChat",
+    "branch": "main",
+    "path": "k8s/frontend-deployment.yaml",
+    "raw_url": "https://raw.githubusercontent.com/patrik-fredon/ZipChat/main/k8s/frontend-deployment.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\patrik-fredon\\ZipChat\\k8s\\frontend-deployment.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "gccloudone-aurora",
+    "repo": "podtracker",
+    "branch": "main",
+    "path": "charts/podtracker/templates/network_policies.yaml",
+    "raw_url": "https://raw.githubusercontent.com/gccloudone-aurora/podtracker/main/charts/podtracker/templates/network_policies.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\gccloudone-aurora\\podtracker\\charts\\podtracker\\templates\\network_policies.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "cesaregarza",
+    "repo": "SplatTop",
+    "branch": "main",
+    "path": "k8s/monitoring/prometheus/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/cesaregarza/SplatTop/main/k8s/monitoring/prometheus/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\cesaregarza\\SplatTop\\k8s\\monitoring\\prometheus\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "AbhijithGanesh",
+    "repo": "Microservices-deployment-example",
+    "branch": "prod",
+    "path": "helm/templates/networkpolicy/shippingservice.yaml",
+    "raw_url": "https://raw.githubusercontent.com/AbhijithGanesh/Microservices-deployment-example/prod/helm/templates/networkpolicy/shippingservice.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\AbhijithGanesh\\Microservices-deployment-example\\helm\\templates\\networkpolicy\\shippingservice.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "DoTruong1",
+    "repo": "RookCephFS-refVolume-operator",
+    "branch": "main",
+    "path": "config/network-policy/allow-metrics-traffic.yaml",
+    "raw_url": "https://raw.githubusercontent.com/DoTruong1/RookCephFS-refVolume-operator/main/config/network-policy/allow-metrics-traffic.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\DoTruong1\\RookCephFS-refVolume-operator\\config\\network-policy\\allow-metrics-traffic.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Adhanik",
+    "repo": "kb-with-kops",
+    "branch": "main",
+    "path": "Day 11 - Network Policies/e1. podsinsamens.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Adhanik/kb-with-kops/main/Day 11 - Network Policies/e1. podsinsamens.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Adhanik\\kb-with-kops\\Day 11 - Network Policies\\e1. podsinsamens.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "redhat-cop",
+    "repo": "namespace-configuration-operator",
+    "branch": "master",
+    "path": "examples/team-onboarding/namespace-config.yaml",
+    "raw_url": "https://raw.githubusercontent.com/redhat-cop/namespace-configuration-operator/master/examples/team-onboarding/namespace-config.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\redhat-cop\\namespace-configuration-operator\\examples\\team-onboarding\\namespace-config.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "QualiTorque",
+    "repo": "Torque-Samples",
+    "branch": "main",
+    "path": "assets/helm/airflow/templates/web/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/QualiTorque/Torque-Samples/main/assets/helm/airflow/templates/web/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\QualiTorque\\Torque-Samples\\assets\\helm\\airflow\\templates\\web\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "csye7125-sp25-team05",
+    "repo": "helm-charts",
+    "branch": "main",
+    "path": "templates/network-policy-deny.yaml",
+    "raw_url": "https://raw.githubusercontent.com/csye7125-sp25-team05/helm-charts/main/templates/network-policy-deny.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\csye7125-sp25-team05\\helm-charts\\templates\\network-policy-deny.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ruslanen",
+    "repo": "architecture-propdevelopment",
+    "branch": "main",
+    "path": "Task5/non-admin-api-allow.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ruslanen/architecture-propdevelopment/main/Task5/non-admin-api-allow.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ruslanen\\architecture-propdevelopment\\Task5\\non-admin-api-allow.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "planb438",
+    "repo": "Kubernetes",
+    "branch": "main",
+    "path": "gitops/clusters/cks-lab/manifests/06-network-policies/policies/03-tiered-access.yaml",
+    "raw_url": "https://raw.githubusercontent.com/planb438/Kubernetes/main/gitops/clusters/cks-lab/manifests/06-network-policies/policies/03-tiered-access.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\planb438\\Kubernetes\\gitops\\clusters\\cks-lab\\manifests\\06-network-policies\\policies\\03-tiered-access.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "istio-ecosystem",
+    "repo": "sail-operator",
+    "branch": "main",
+    "path": "chart/samples/ingress-gateway.yaml",
+    "raw_url": "https://raw.githubusercontent.com/istio-ecosystem/sail-operator/main/chart/samples/ingress-gateway.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\istio-ecosystem\\sail-operator\\chart\\samples\\ingress-gateway.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "maimonin",
+    "repo": "CORAL",
+    "branch": "main",
+    "path": "testbed/microservice_replication/framework/yamls-to-apply/currencyservice-apply/currencyservice-netpol-5-frontend-6.yaml",
+    "raw_url": "https://raw.githubusercontent.com/maimonin/CORAL/main/testbed/microservice_replication/framework/yamls-to-apply/currencyservice-apply/currencyservice-netpol-5-frontend-6.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\maimonin\\CORAL\\testbed\\microservice_replication\\framework\\yamls-to-apply\\currencyservice-apply\\currencyservice-netpol-5-frontend-6.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "somtochiama",
+    "repo": "fleet-infra2",
+    "branch": "master",
+    "path": "clusters/my-cluster/flux-system/gotk-components.yaml",
+    "raw_url": "https://raw.githubusercontent.com/somtochiama/fleet-infra2/master/clusters/my-cluster/flux-system/gotk-components.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\somtochiama\\fleet-infra2\\clusters\\my-cluster\\flux-system\\gotk-components.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "davralin",
+    "repo": "cluster-ops",
+    "branch": "main",
+    "path": "kubernetes/apps/kyverno/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/davralin/cluster-ops/main/kubernetes/apps/kyverno/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\davralin\\cluster-ops\\kubernetes\\apps\\kyverno\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ryanjsalva",
+    "repo": "microservices-demo",
+    "branch": "main",
+    "path": "helm-chart/templates/emailservice.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ryanjsalva/microservices-demo/main/helm-chart/templates/emailservice.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ryanjsalva\\microservices-demo\\helm-chart\\templates\\emailservice.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ibmbpm",
+    "repo": "cert-kubernetes-baw",
+    "branch": "master",
+    "path": "scripts/cpfs/installer_scripts/cp3-networkpolicy/egress/zen/zen-egress-zen-watchdog-create-tables-job.yaml",
+    "raw_url": "https://raw.githubusercontent.com/ibmbpm/cert-kubernetes-baw/master/scripts/cpfs/installer_scripts/cp3-networkpolicy/egress/zen/zen-egress-zen-watchdog-create-tables-job.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ibmbpm\\cert-kubernetes-baw\\scripts\\cpfs\\installer_scripts\\cp3-networkpolicy\\egress\\zen\\zen-egress-zen-watchdog-create-tables-job.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "icp4a",
+    "repo": "cert-kubernetes-bai",
+    "branch": "25.0.1",
+    "path": "scripts/cpfs/installer_scripts/cp3-networkpolicy/egress/zen/zen-egress-zen-watchdog-create-tables-job.yaml",
+    "raw_url": "https://raw.githubusercontent.com/icp4a/cert-kubernetes-bai/25.0.1/scripts/cpfs/installer_scripts/cp3-networkpolicy/egress/zen/zen-egress-zen-watchdog-create-tables-job.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\icp4a\\cert-kubernetes-bai\\scripts\\cpfs\\installer_scripts\\cp3-networkpolicy\\egress\\zen\\zen-egress-zen-watchdog-create-tables-job.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "venmaniselvan",
+    "repo": "ibm-helm-charts",
+    "branch": "master",
+    "path": "components/ibm-watson-assistant-prod/charts/ibm-watson-assistant-ingress/charts/ibm-watson-gateway/templates/02-networkpolicy-intrapods.yaml",
+    "raw_url": "https://raw.githubusercontent.com/venmaniselvan/ibm-helm-charts/master/components/ibm-watson-assistant-prod/charts/ibm-watson-assistant-ingress/charts/ibm-watson-gateway/templates/02-networkpolicy-intrapods.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\venmaniselvan\\ibm-helm-charts\\components\\ibm-watson-assistant-prod\\charts\\ibm-watson-assistant-ingress\\charts\\ibm-watson-gateway\\templates\\02-networkpolicy-intrapods.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "LeeLisker",
+    "repo": "helm",
+    "branch": "master",
+    "path": "components/ibm-watson-assistant-prod/charts/ibm-watson-assistant-ingress/charts/ibm-watson-gateway/templates/02-networkpolicy-intrapods.yaml",
+    "raw_url": "https://raw.githubusercontent.com/LeeLisker/helm/master/components/ibm-watson-assistant-prod/charts/ibm-watson-assistant-ingress/charts/ibm-watson-gateway/templates/02-networkpolicy-intrapods.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\LeeLisker\\helm\\components\\ibm-watson-assistant-prod\\charts\\ibm-watson-assistant-ingress\\charts\\ibm-watson-gateway\\templates\\02-networkpolicy-intrapods.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "tom1299",
+    "repo": "web-ingress",
+    "branch": "main",
+    "path": "prod/deployment/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/tom1299/web-ingress/main/prod/deployment/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\tom1299\\web-ingress\\prod\\deployment\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "tom1299",
+    "repo": "web-ingress",
+    "branch": "main",
+    "path": "test/deployment/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/tom1299/web-ingress/main/test/deployment/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\tom1299\\web-ingress\\test\\deployment\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "alero-awani",
+    "repo": "eks-internals",
+    "branch": "master",
+    "path": "manifests/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/alero-awani/eks-internals/master/manifests/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\alero-awani\\eks-internals\\manifests\\modules\\networking\\network-policies\\apply-network-policies\\allow-ui-egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "rodrigobersa",
+    "repo": "public-resources",
+    "branch": "main",
+    "path": "demo-bootstrap/examples/demo-application/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/rodrigobersa/public-resources/main/demo-bootstrap/examples/demo-application/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\rodrigobersa\\public-resources\\demo-bootstrap\\examples\\demo-application\\modules\\networking\\network-policies\\apply-network-policies\\allow-ui-egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "pverbist",
+    "repo": "eks-workshop",
+    "branch": "main",
+    "path": "modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/pverbist/eks-workshop/main/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\pverbist\\eks-workshop\\modules\\networking\\network-policies\\apply-network-policies\\allow-ui-egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Pavan0604",
+    "repo": "Kubernetes",
+    "branch": "main",
+    "path": "eks-workshop-v2/manifests/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "raw_url": "https://raw.githubusercontent.com/Pavan0604/Kubernetes/main/eks-workshop-v2/manifests/modules/networking/network-policies/apply-network-policies/allow-ui-egress.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Pavan0604\\Kubernetes\\eks-workshop-v2\\manifests\\modules\\networking\\network-policies\\apply-network-policies\\allow-ui-egress.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "k8-scalar",
+    "repo": "grasshopper",
+    "branch": "main",
+    "path": "expt-old/deny-all.yaml",
+    "raw_url": "https://raw.githubusercontent.com/k8-scalar/grasshopper/main/expt-old/deny-all.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\k8-scalar\\grasshopper\\expt-old\\deny-all.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "SnekCode",
+    "repo": "cluster-auditor",
+    "branch": "main",
+    "path": "chart/templates/bigbang/network-policies/egress-dns.yaml",
+    "raw_url": "https://raw.githubusercontent.com/SnekCode/cluster-auditor/main/chart/templates/bigbang/network-policies/egress-dns.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\SnekCode\\cluster-auditor\\chart\\templates\\bigbang\\network-policies\\egress-dns.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "mauilion",
+    "repo": "kind-demo",
+    "branch": "master",
+    "path": "ha-cluster/manifests/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/mauilion/kind-demo/master/ha-cluster/manifests/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\mauilion\\kind-demo\\ha-cluster\\manifests\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "nkhine",
+    "repo": "kind-cni-playground",
+    "branch": "master",
+    "path": "calico/cni/calico.yaml",
+    "raw_url": "https://raw.githubusercontent.com/nkhine/kind-cni-playground/master/calico/cni/calico.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\nkhine\\kind-cni-playground\\calico\\cni\\calico.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "suomitek",
+    "repo": "suomitek-charts",
+    "branch": "master",
+    "path": "suomitek/influxdb/templates/networkpolicy.yaml",
+    "raw_url": "https://raw.githubusercontent.com/suomitek/suomitek-charts/master/suomitek/influxdb/templates/networkpolicy.yaml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\suomitek\\suomitek-charts\\suomitek\\influxdb\\templates\\networkpolicy.yaml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ms-jpq",
+    "repo": "lab",
+    "branch": "main",
+    "path": "k8s/networkpolicy.k8s.yml",
+    "raw_url": "https://raw.githubusercontent.com/ms-jpq/lab/main/k8s/networkpolicy.k8s.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ms-jpq\\lab\\k8s\\networkpolicy.k8s.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "asifehtesham",
+    "repo": "Kubernetes",
+    "branch": "main",
+    "path": "NetworkPolicy.yml",
+    "raw_url": "https://raw.githubusercontent.com/asifehtesham/Kubernetes/main/NetworkPolicy.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\asifehtesham\\Kubernetes\\NetworkPolicy.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "junghoon2",
+    "repo": "k8s-01",
+    "branch": "main",
+    "path": "61.Security/07.NetworkPolicy/allInOne-networkpolicy.yml",
+    "raw_url": "https://raw.githubusercontent.com/junghoon2/k8s-01/main/61.Security/07.NetworkPolicy/allInOne-networkpolicy.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\junghoon2\\k8s-01\\61.Security\\07.NetworkPolicy\\allInOne-networkpolicy.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "InfraBuilder",
+    "repo": "k8s-cni-benchmark",
+    "branch": "master",
+    "path": "cni/doc-canal.yml",
+    "raw_url": "https://raw.githubusercontent.com/InfraBuilder/k8s-cni-benchmark/master/cni/doc-canal.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\InfraBuilder\\k8s-cni-benchmark\\cni\\doc-canal.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "nmadesh20",
+    "repo": "Test-Actions1",
+    "branch": "main",
+    "path": "dev/networkpolicy.yml",
+    "raw_url": "https://raw.githubusercontent.com/nmadesh20/Test-Actions1/main/dev/networkpolicy.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\nmadesh20\\Test-Actions1\\dev\\networkpolicy.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "pluralsh",
+    "repo": "console",
+    "branch": "master",
+    "path": "static/versions.yml",
+    "raw_url": "https://raw.githubusercontent.com/pluralsh/console/master/static/versions.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\pluralsh\\console\\static\\versions.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "FabioChiodini",
+    "repo": "kiodo-pks-test",
+    "branch": "master",
+    "path": "apps/apps/nsx-pod-policy.yml",
+    "raw_url": "https://raw.githubusercontent.com/FabioChiodini/kiodo-pks-test/master/apps/apps/nsx-pod-policy.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\FabioChiodini\\kiodo-pks-test\\apps\\apps\\nsx-pod-policy.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "Punkte",
+    "repo": "idk-app",
+    "branch": "main",
+    "path": "back/komp.yml",
+    "raw_url": "https://raw.githubusercontent.com/Punkte/idk-app/main/back/komp.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\Punkte\\idk-app\\back\\komp.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ASpiteri-BCGov",
+    "repo": "open-shift-test",
+    "branch": "main",
+    "path": "openshift/knp.yml",
+    "raw_url": "https://raw.githubusercontent.com/ASpiteri-BCGov/open-shift-test/main/openshift/knp.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ASpiteri-BCGov\\open-shift-test\\openshift\\knp.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "nauyiq",
+    "repo": "hqy4cloud",
+    "branch": "dev",
+    "path": "doc/calico.yml",
+    "raw_url": "https://raw.githubusercontent.com/nauyiq/hqy4cloud/dev/doc/calico.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\nauyiq\\hqy4cloud\\doc\\calico.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "uk-gov-mirror",
+    "repo": "UKHomeOffice.docker-matomo",
+    "branch": "master",
+    "path": "kube/network-policy.yml",
+    "raw_url": "https://raw.githubusercontent.com/uk-gov-mirror/UKHomeOffice.docker-matomo/master/kube/network-policy.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\uk-gov-mirror\\UKHomeOffice.docker-matomo\\kube\\network-policy.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "yasensim",
+    "repo": "fe-redis",
+    "branch": "master",
+    "path": "playbooks/nwpolicy.yml",
+    "raw_url": "https://raw.githubusercontent.com/yasensim/fe-redis/master/playbooks/nwpolicy.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\yasensim\\fe-redis\\playbooks\\nwpolicy.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "MohamedMFouad",
+    "repo": "nodeapi",
+    "branch": "master",
+    "path": "k8s/Network-Policy.yml",
+    "raw_url": "https://raw.githubusercontent.com/MohamedMFouad/nodeapi/master/k8s/Network-Policy.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\MohamedMFouad\\nodeapi\\k8s\\Network-Policy.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "maheshz09",
+    "repo": "boilerplates",
+    "branch": "master",
+    "path": "k8s-practice/n/n/w.yml",
+    "raw_url": "https://raw.githubusercontent.com/maheshz09/boilerplates/master/k8s-practice/n/n/w.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\maheshz09\\boilerplates\\k8s-practice\\n\\n\\w.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "ministryofjustice",
+    "repo": "s3-antivirus-scan",
+    "branch": "main",
+    "path": "examples/clamav.yml",
+    "raw_url": "https://raw.githubusercontent.com/ministryofjustice/s3-antivirus-scan/main/examples/clamav.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\ministryofjustice\\s3-antivirus-scan\\examples\\clamav.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "BradJonesLLC",
+    "repo": "gke-rancher",
+    "branch": "master",
+    "path": "k8s/mysql.yml",
+    "raw_url": "https://raw.githubusercontent.com/BradJonesLLC/gke-rancher/master/k8s/mysql.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\BradJonesLLC\\gke-rancher\\k8s\\mysql.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "kube-burner",
+    "repo": "kube-burner-ocp",
+    "branch": "main",
+    "path": "cmd/config/rds-core/np-allow-from-clients.yml",
+    "raw_url": "https://raw.githubusercontent.com/kube-burner/kube-burner-ocp/main/cmd/config/rds-core/np-allow-from-clients.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\kube-burner\\kube-burner-ocp\\cmd\\config\\rds-core\\np-allow-from-clients.yml",
+    "size": null,
+    "stars": null
+  },
+  {
+    "owner": "khanadnanxyz",
+    "repo": "k8s-revisit-for-ckad",
+    "branch": "master",
+    "path": "network/egress.yml",
+    "raw_url": "https://raw.githubusercontent.com/khanadnanxyz/k8s-revisit-for-ckad/master/network/egress.yml",
+    "local_path": "data\\realworld_k8s_sources\\raw\\khanadnanxyz\\k8s-revisit-for-ckad\\network\\egress.yml",
+    "size": null,
+    "stars": null
+  }
+]

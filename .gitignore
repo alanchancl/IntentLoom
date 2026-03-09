@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local/editor
+.env
+.env.*
+.idea/
+.vscode/
+.windsurf_context.md
+
+# Project outputs
+artifacts/
+
+# Paper assets excluded from the public code repository
+paper/
+
+# Logs and generated files
+*.log
+texput.log
+
+# OS files
+Thumbs.db
+Desktop.ini

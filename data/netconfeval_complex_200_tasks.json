@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "complex_step_1_spec_conflict_81__synthiso__step_1_spec_conflict_31",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.6.0/24) AND Isolate(kiev, 100.0.24.0/24)",
+    "raw_intent": "Connectivity from kiev to 100.0.6.0/24 is established.\\n100.0.24.0/24 is accessible from kiev.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_63__synthiso__step_1_spec_conflict_29",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.21.0/24) AND Isolate(zurich, 100.0.9.0/24)",
+    "raw_intent": "zurich can reach 100.0.21.0/24.\\n100.0.9.0/24 is accessible from zurich.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_27__synthiso__step_1_spec_conflict_71",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.10.0/24) AND Isolate(sofia, 100.0.25.0/24)",
+    "raw_intent": "Traffic originating from sofia can reach the subnet 100.0.10.0/24.\\nConnectivity from sofia to 100.0.25.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_51__synthiso__step_1_spec_conflict_85",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.11.0/24) AND Isolate(lyon, 100.0.21.0/24)",
+    "raw_intent": "Connectivity from lyon to 100.0.11.0/24 is established.\\n100.0.21.0/24 is accessible from lyon.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_37__synthiso__step_1_spec_conflict_55",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.13.0/24) AND Isolate(vienna, 100.0.31.0/24)",
+    "raw_intent": "Traffic originating from vienna can reach the subnet 100.0.13.0/24.\\nConnectivity from vienna to 100.0.31.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_41__synthiso__step_1_spec_conflict_35",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.15.0/24) AND Isolate(london, 100.0.25.0/24)",
+    "raw_intent": "The subnet 100.0.15.0/24 is reachable from london.\\nlondon can reach 100.0.25.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_9__synthiso__step_1_spec_conflict_67",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(athens, 100.0.25.0/24) AND Isolate(athens, 100.0.31.0/24)",
+    "raw_intent": "Connectivity from athens to 100.0.25.0/24 is established.\\nTraffic originating from athens can reach the subnet 100.0.31.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_93__synthiso__step_1_spec_conflict_21",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.14.0/24) AND Isolate(bucharest, 100.0.31.0/24)",
+    "raw_intent": "100.0.14.0/24 is accessible from bucharest.\\n100.0.31.0/24 is accessible from bucharest.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_69__synthiso__step_1_spec_conflict_25",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.4.0/24) AND Isolate(praha, 100.0.22.0/24)",
+    "raw_intent": "100.0.4.0/24 is accessible from praha.\\nConnectivity from praha to 100.0.22.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_33__synthiso__step_1_spec_conflict_11",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(warsaw, 100.0.20.0/24) AND Isolate(warsaw, 100.0.9.0/24)",
+    "raw_intent": "The subnet 100.0.20.0/24 is reachable from warsaw.\\nThe subnet 100.0.9.0/24 is reachable from warsaw.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_43__synthiso__step_1_spec_conflict_39",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.15.0/24) AND Isolate(milan, 100.0.20.0/24)",
+    "raw_intent": "100.0.15.0/24 is accessible from milan.\\nmilan can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_73__synthiso__step_1_spec_conflict_99",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(basel, 100.0.14.0/24) AND Isolate(basel, 100.0.26.0/24)",
+    "raw_intent": "Connectivity from basel to 100.0.14.0/24 is established.\\nThe subnet 100.0.26.0/24 is reachable from basel.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_47__synthiso__step_1_spec_conflict_65",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(roma, 100.0.3.0/24) AND Isolate(roma, 100.0.4.0/24)",
+    "raw_intent": "Connectivity from roma to 100.0.3.0/24 is established.\\nThe subnet 100.0.4.0/24 is reachable from roma.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_15__synthiso__step_1_spec_conflict_19",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.31.0/24) AND Isolate(frankfurt, 100.0.1.0/24)",
+    "raw_intent": "Connectivity from frankfurt to 100.0.31.0/24 is established.\\n100.0.1.0/24 is accessible from frankfurt.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "complex_step_1_spec_conflict_83__synthiso__step_1_spec_conflict_59",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl;data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(madrid, 100.0.10.0/24) AND Isolate(madrid, 100.0.13.0/24)",
+    "raw_intent": "madrid can reach 100.0.10.0/24.\\nThe subnet 100.0.13.0/24 is reachable from madrid.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_182",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.29.0/24) AND Reach(london, 100.0.15.0/24) AND Reach(marseille, 100.0.29.0/24) AND Reach(milan, 100.0.15.0/24) AND Reach(roma, 100.0.8.0/24) AND Reach(praha, 100.0.5.0/24) AND Reach(amsterdam, 100.0.13.0/24) AND Reach(roma, 100.0.3.0/24) AND Reach(bucharest, 100.0.32.0/24) AND Reach(barcelona, 100.0.25.0/24) AND Isolate(praha, 100.0.18.0/24) AND Reach(praha, 100.0.18.0/24) AND Reach(lyon, 100.0.11.0/24) AND Reach(milan, 100.0.25.0/24) AND Reach(london, 100.0.14.0/24) AND Reach(london, 100.0.6.0/24) AND Reach(vienna, 100.0.31.0/24) AND Reach(bucharest, 100.0.11.0/24) AND Reach(sofia, 100.0.29.0/24) AND Reach(istanbul, 100.0.18.0/24) AND Reach(madrid, 100.0.13.0/24)",
+    "raw_intent": "Connectivity from brussels to 100.0.29.0/24 is established.\nlondon can reach 100.0.15.0/24.\nThe subnet 100.0.29.0/24 is reachable from marseille.\nTraffic originating from milan can reach the subnet 100.0.15.0/24.\nTraffic originating from roma can reach the subnet 100.0.8.0/24.\nThe subnet 100.0.5.0/24 is reachable from praha.\nConnectivity from amsterdam to 100.0.13.0/24 is established.\nThe subnet 100.0.3.0/24 is reachable from roma.\nTraffic originating from bucharest can reach the subnet 100.0.32.0/24.\nbarcelona can reach 100.0.25.0/24.\npraha cannot reach 100.0.18.0/24.\nTraffic originating from praha can reach the subnet 100.0.18.0/24.\n100.0.11.0/24 is accessible from lyon.\n100.0.25.0/24 is accessible from milan.\nConnectivity from london to 100.0.14.0/24 is established.\nConnectivity from london to 100.0.6.0/24 is established.\nThe subnet 100.0.31.0/24 is reachable from vienna.\nbucharest can reach 100.0.11.0/24.\nThe subnet 100.0.29.0/24 is reachable from sofia.\nTraffic originating from istanbul can reach the subnet 100.0.18.0/24.\n100.0.13.0/24 is accessible from madrid.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_183",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.2.0/24) AND Reach(roma, 100.0.15.0/24) AND Reach(rotterdam, 100.0.13.0/24) AND Reach(zurich, 100.0.21.0/24) AND Reach(zurich, 100.0.23.0/24) AND Reach(roma, 100.0.4.0/24) AND Reach(marseille, 100.0.22.0/24) AND Reach(athens, 100.0.31.0/24) AND Reach(bratislava, 100.0.8.0/24) AND Reach(praha, 100.0.4.0/24) AND Reach(praha, 100.0.20.0/24) AND Reach(sofia, 100.0.25.0/24) AND Reach(rotterdam, 100.0.8.0/24) AND Reach(basel, 100.0.14.0/24) AND Reach(frankfurt, 100.0.18.0/24) AND Reach(kiev, 100.0.20.0/24) AND Reach(geneva, 100.0.8.0/24) AND Reach(amsterdam, 100.0.15.0/24) AND Reach(basel, 100.0.10.0/24) AND Reach(kiev, 100.0.8.0/24)",
+    "raw_intent": "Connectivity from bucharest to 100.0.2.0/24 is established.\nTraffic originating from roma can reach the subnet 100.0.15.0/24.\n100.0.13.0/24 is accessible from rotterdam.\nConnectivity from zurich to 100.0.21.0/24 is established.\nzurich can reach 100.0.23.0/24.\nConnectivity from roma to 100.0.4.0/24 is established.\nConnectivity from marseille to 100.0.22.0/24 is established.\nathens can reach 100.0.31.0/24.\nbratislava can reach 100.0.8.0/24.\nConnectivity from praha to 100.0.4.0/24 is established.\nConnectivity from praha to 100.0.20.0/24 is established.\nTraffic originating from sofia can reach the subnet 100.0.25.0/24.\nrotterdam can reach 100.0.8.0/24.\nConnectivity from basel to 100.0.14.0/24 is established.\nConnectivity from frankfurt to 100.0.18.0/24 is established.\nConnectivity from kiev to 100.0.20.0/24 is established.\nThe subnet 100.0.8.0/24 is reachable from geneva.\nConnectivity from amsterdam to 100.0.15.0/24 is established.\nConnectivity from basel to 100.0.10.0/24 is established.\n100.0.8.0/24 is accessible from kiev.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_167",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.21.0/24) AND Reach(bucharest, 100.0.21.0/24) AND Reach(budapest, 100.0.20.0/24) AND Reach(amsterdam, 100.0.22.0/24) AND Reach(geneva, 100.0.4.0/24)",
+    "raw_intent": "Connectivity from lyon to 100.0.21.0/24 is established.\nThe subnet 100.0.21.0/24 is reachable from bucharest.\n100.0.20.0/24 is accessible from budapest.\namsterdam can reach 100.0.22.0/24.\nConnectivity from geneva to 100.0.4.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_151",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.22.0/24) AND Reach(milan, 100.0.10.0/24) AND Reach(london, 100.0.1.0/24) AND Reach(marseille, 100.0.1.0/24) AND Reach(athens, 100.0.25.0/24)",
+    "raw_intent": "The subnet 100.0.22.0/24 is reachable from kiev.\nThe subnet 100.0.10.0/24 is reachable from milan.\nlondon can reach 100.0.1.0/24.\nThe subnet 100.0.1.0/24 is reachable from marseille.\nConnectivity from athens to 100.0.25.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_143",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.21.0/24) AND Reach(budapest, 100.0.20.0/24)",
+    "raw_intent": "Connectivity from bucharest to 100.0.21.0/24 is established.\nThe subnet 100.0.20.0/24 is reachable from budapest.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_37",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.13.0/24)",
+    "raw_intent": "Traffic originating from vienna can reach the subnet 100.0.13.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_88",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(amsterdam, 100.0.22.0/24) AND Reach(amsterdam, 100.0.22.0/24)",
+    "raw_intent": "amsterdam cannot reach 100.0.22.0/24.\n100.0.22.0/24 is accessible from amsterdam.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_144",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(amsterdam, 100.0.22.0/24) AND Isolate(geneva, 100.0.4.0/24) AND Reach(geneva, 100.0.4.0/24)",
+    "raw_intent": "The subnet 100.0.22.0/24 is reachable from amsterdam.\ngeneva cannot reach 100.0.4.0/24.\n100.0.4.0/24 is accessible from geneva.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_39",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.20.0/24)",
+    "raw_intent": "milan can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_178",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.6.0/24) AND Reach(kiev, 100.0.6.0/24) AND Reach(zurich, 100.0.8.0/24) AND Isolate(madrid, 100.0.10.0/24) AND Reach(madrid, 100.0.10.0/24) AND Reach(luxembourg, 100.0.18.0/24) AND Reach(lyon, 100.0.21.0/24) AND Reach(bucharest, 100.0.21.0/24) AND Reach(budapest, 100.0.20.0/24) AND Reach(amsterdam, 100.0.22.0/24) AND Reach(geneva, 100.0.4.0/24)",
+    "raw_intent": "Connectivity from brussels to 100.0.6.0/24 is established.\n100.0.6.0/24 is accessible from kiev.\nzurich can reach 100.0.8.0/24.\nmadrid cannot reach 100.0.10.0/24.\nThe subnet 100.0.10.0/24 is reachable from madrid.\nluxembourg can reach 100.0.18.0/24.\nThe subnet 100.0.21.0/24 is reachable from lyon.\n100.0.21.0/24 is accessible from bucharest.\n100.0.20.0/24 is accessible from budapest.\nTraffic originating from amsterdam can reach the subnet 100.0.22.0/24.\nThe subnet 100.0.4.0/24 is reachable from geneva.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_41",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.15.0/24)",
+    "raw_intent": "The subnet 100.0.15.0/24 is reachable from london.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_135",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.20.0/24) AND Reach(sofia, 100.0.25.0/24)",
+    "raw_intent": "Traffic originating from praha can reach the subnet 100.0.20.0/24.\nTraffic originating from sofia can reach the subnet 100.0.25.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_105",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.18.0/24) AND Reach(warsaw, 100.0.9.0/24)",
+    "raw_intent": "Connectivity from paris to 100.0.18.0/24 is established.\nTraffic originating from warsaw can reach the subnet 100.0.9.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_95",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.20.0/24)",
+    "raw_intent": "lyon can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_35",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.25.0/24)",
+    "raw_intent": "london can reach 100.0.25.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_40",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(brussels, 100.0.29.0/24) AND Reach(brussels, 100.0.29.0/24)",
+    "raw_intent": "brussels cannot reach 100.0.29.0/24.\nThe subnet 100.0.29.0/24 is reachable from brussels.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_129",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(istanbul, 100.0.18.0/24) AND Reach(madrid, 100.0.13.0/24)",
+    "raw_intent": "100.0.18.0/24 is accessible from istanbul.\nmadrid can reach 100.0.13.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_176",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.2.0/24) AND Reach(roma, 100.0.15.0/24) AND Reach(rotterdam, 100.0.13.0/24) AND Reach(zurich, 100.0.21.0/24) AND Isolate(zurich, 100.0.23.0/24) AND Reach(zurich, 100.0.23.0/24) AND Reach(roma, 100.0.4.0/24) AND Reach(marseille, 100.0.22.0/24) AND Reach(athens, 100.0.31.0/24) AND Reach(bratislava, 100.0.8.0/24) AND Reach(praha, 100.0.4.0/24)",
+    "raw_intent": "bucharest can reach 100.0.2.0/24.\n100.0.15.0/24 is accessible from roma.\nThe subnet 100.0.13.0/24 is reachable from rotterdam.\nTraffic originating from zurich can reach the subnet 100.0.21.0/24.\nzurich cannot reach 100.0.23.0/24.\nzurich can reach 100.0.23.0/24.\nConnectivity from roma to 100.0.4.0/24 is established.\nTraffic originating from marseille can reach the subnet 100.0.22.0/24.\nTraffic originating from athens can reach the subnet 100.0.31.0/24.\nConnectivity from bratislava to 100.0.8.0/24 is established.\nThe subnet 100.0.4.0/24 is reachable from praha.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_58",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(istanbul, 100.0.18.0/24) AND Reach(istanbul, 100.0.18.0/24)",
+    "raw_intent": "istanbul cannot reach 100.0.18.0/24.\nConnectivity from istanbul to 100.0.18.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_1",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.1.0/24)",
+    "raw_intent": "Connectivity from milan to 100.0.1.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_119",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(amsterdam, 100.0.5.0/24) AND Reach(milan, 100.0.20.0/24)",
+    "raw_intent": "Connectivity from amsterdam to 100.0.5.0/24 is established.\nThe subnet 100.0.20.0/24 is reachable from milan.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_62",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(rotterdam, 100.0.13.0/24) AND Reach(rotterdam, 100.0.13.0/24)",
+    "raw_intent": "rotterdam cannot reach 100.0.13.0/24.\nConnectivity from rotterdam to 100.0.13.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_99",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "The subnet 100.0.26.0/24 is reachable from basel.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_168",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.10.0/24) AND Reach(vienna, 100.0.23.0/24) AND Reach(bratislava, 100.0.24.0/24) AND Isolate(bucharest, 100.0.14.0/24) AND Reach(bucharest, 100.0.14.0/24) AND Reach(marseille, 100.0.31.0/24)",
+    "raw_intent": "100.0.10.0/24 is accessible from brussels.\n100.0.23.0/24 is accessible from vienna.\nThe subnet 100.0.24.0/24 is reachable from bratislava.\nbucharest cannot reach 100.0.14.0/24.\nConnectivity from bucharest to 100.0.14.0/24 is established.\nThe subnet 100.0.31.0/24 is reachable from marseille.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_128",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(bucharest, 100.0.11.0/24) AND Reach(bucharest, 100.0.11.0/24) AND Reach(sofia, 100.0.29.0/24)",
+    "raw_intent": "bucharest cannot reach 100.0.11.0/24.\nConnectivity from bucharest to 100.0.11.0/24 is established.\nTraffic originating from sofia can reach the subnet 100.0.29.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_149",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(athens, 100.0.26.0/24) AND Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "Connectivity from athens to 100.0.26.0/24 is established.\n100.0.26.0/24 is accessible from basel.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_86",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(bucharest, 100.0.21.0/24) AND Reach(bucharest, 100.0.21.0/24)",
+    "raw_intent": "bucharest cannot reach 100.0.21.0/24.\nThe subnet 100.0.21.0/24 is reachable from bucharest.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_72",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(rotterdam, 100.0.8.0/24) AND Reach(rotterdam, 100.0.8.0/24)",
+    "raw_intent": "rotterdam cannot reach 100.0.8.0/24.\nThe subnet 100.0.8.0/24 is reachable from rotterdam.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_75",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.20.0/24)",
+    "raw_intent": "kiev can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_165",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.20.0/24) AND Reach(geneva, 100.0.8.0/24) AND Reach(amsterdam, 100.0.15.0/24) AND Reach(basel, 100.0.10.0/24) AND Reach(kiev, 100.0.8.0/24)",
+    "raw_intent": "The subnet 100.0.20.0/24 is reachable from kiev.\nThe subnet 100.0.8.0/24 is reachable from geneva.\nThe subnet 100.0.15.0/24 is reachable from amsterdam.\nConnectivity from basel to 100.0.10.0/24 is established.\nkiev can reach 100.0.8.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_57",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.29.0/24)",
+    "raw_intent": "sofia can reach 100.0.29.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_67",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(athens, 100.0.31.0/24)",
+    "raw_intent": "Traffic originating from athens can reach the subnet 100.0.31.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_19",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.1.0/24)",
+    "raw_intent": "100.0.1.0/24 is accessible from frankfurt.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_32",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(geneva, 100.0.18.0/24) AND Reach(geneva, 100.0.18.0/24)",
+    "raw_intent": "geneva cannot reach 100.0.18.0/24.\n100.0.18.0/24 is accessible from geneva.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_79",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.8.0/24)",
+    "raw_intent": "kiev can reach 100.0.8.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_53",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.14.0/24)",
+    "raw_intent": "Connectivity from london to 100.0.14.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_0",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(istanbul, 100.0.4.0/24) AND Reach(istanbul, 100.0.4.0/24)",
+    "raw_intent": "istanbul cannot reach 100.0.4.0/24.\nTraffic originating from istanbul can reach the subnet 100.0.4.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_136",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(rotterdam, 100.0.8.0/24) AND Isolate(basel, 100.0.14.0/24) AND Reach(basel, 100.0.14.0/24)",
+    "raw_intent": "100.0.8.0/24 is accessible from rotterdam.\nbasel cannot reach 100.0.14.0/24.\nConnectivity from basel to 100.0.14.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_71",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.25.0/24)",
+    "raw_intent": "Connectivity from sofia to 100.0.25.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_80",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(brussels, 100.0.6.0/24) AND Reach(brussels, 100.0.6.0/24)",
+    "raw_intent": "brussels cannot reach 100.0.6.0/24.\nConnectivity from brussels to 100.0.6.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_65",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(roma, 100.0.4.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from roma.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_192",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(istanbul, 100.0.4.0/24) AND Reach(milan, 100.0.1.0/24) AND Reach(sofia, 100.0.18.0/24) AND Reach(paris, 100.0.24.0/24) AND Reach(marseille, 100.0.0.0/24) AND Reach(kiev, 100.0.22.0/24) AND Reach(milan, 100.0.10.0/24) AND Reach(london, 100.0.1.0/24) AND Reach(marseille, 100.0.1.0/24) AND Reach(athens, 100.0.25.0/24) AND Reach(paris, 100.0.18.0/24) AND Reach(warsaw, 100.0.9.0/24) AND Reach(frankfurt, 100.0.13.0/24) AND Reach(lyon, 100.0.13.0/24) AND Reach(athens, 100.0.14.0/24) AND Reach(frankfurt, 100.0.31.0/24) AND Reach(istanbul, 100.0.8.0/24) AND Reach(luxembourg, 100.0.14.0/24) AND Reach(sofia, 100.0.4.0/24) AND Reach(frankfurt, 100.0.1.0/24) AND Reach(paris, 100.0.9.0/24) AND Reach(bucharest, 100.0.31.0/24) AND Reach(amsterdam, 100.0.27.0/24) AND Reach(brussels, 100.0.31.0/24) AND Reach(rotterdam, 100.0.24.0/24) AND Reach(praha, 100.0.22.0/24) AND Reach(roma, 100.0.32.0/24) AND Reach(sofia, 100.0.10.0/24) AND Reach(lyon, 100.0.8.0/24) AND Reach(zurich, 100.0.9.0/24) AND Reach(praha, 100.0.0.0/24) AND Reach(kiev, 100.0.24.0/24) AND Reach(geneva, 100.0.18.0/24) AND Reach(warsaw, 100.0.20.0/24) AND Reach(paris, 100.0.32.0/24) AND Reach(london, 100.0.25.0/24) AND Reach(brussels, 100.0.18.0/24) AND Reach(vienna, 100.0.13.0/24) AND Reach(amsterdam, 100.0.5.0/24) AND Reach(milan, 100.0.20.0/24) AND Reach(brussels, 100.0.29.0/24) AND Reach(london, 100.0.15.0/24) AND Reach(marseille, 100.0.29.0/24) AND Reach(milan, 100.0.15.0/24) AND Reach(roma, 100.0.8.0/24) AND Reach(praha, 100.0.5.0/24) AND Reach(amsterdam, 100.0.13.0/24) AND Reach(roma, 100.0.3.0/24) AND Reach(bucharest, 100.0.32.0/24) AND Reach(barcelona, 100.0.25.0/24) AND Reach(praha, 100.0.18.0/24) AND Reach(lyon, 100.0.11.0/24) AND Reach(milan, 100.0.25.0/24) AND Reach(london, 100.0.14.0/24) AND Reach(london, 100.0.6.0/24) AND Reach(vienna, 100.0.31.0/24) AND Reach(bucharest, 100.0.11.0/24) AND Reach(sofia, 100.0.29.0/24) AND Reach(istanbul, 100.0.18.0/24) AND Reach(madrid, 100.0.13.0/24) AND Reach(bucharest, 100.0.2.0/24) AND Reach(roma, 100.0.15.0/24) AND Reach(rotterdam, 100.0.13.0/24) AND Reach(zurich, 100.0.21.0/24) AND Reach(zurich, 100.0.23.0/24) AND Reach(roma, 100.0.4.0/24) AND Reach(marseille, 100.0.22.0/24) AND Reach(athens, 100.0.31.0/24) AND Reach(bratislava, 100.0.8.0/24) AND Reach(praha, 100.0.4.0/24) AND Reach(praha, 100.0.20.0/24) AND Reach(sofia, 100.0.25.0/24) AND Reach(rotterdam, 100.0.8.0/24) AND Reach(basel, 100.0.14.0/24) AND Reach(frankfurt, 100.0.18.0/24) AND Reach(kiev, 100.0.20.0/24) AND Reach(geneva, 100.0.8.0/24) AND Reach(amsterdam, 100.0.15.0/24) AND Reach(basel, 100.0.10.0/24) AND Reach(kiev, 100.0.8.0/24) AND Reach(brussels, 100.0.6.0/24) AND Reach(kiev, 100.0.6.0/24) AND Reach(zurich, 100.0.8.0/24) AND Reach(madrid, 100.0.10.0/24) AND Reach(luxembourg, 100.0.18.0/24) AND Reach(lyon, 100.0.21.0/24) AND Reach(bucharest, 100.0.21.0/24) AND Reach(budapest, 100.0.20.0/24) AND Reach(amsterdam, 100.0.22.0/24) AND Reach(geneva, 100.0.4.0/24) AND Reach(brussels, 100.0.10.0/24) AND Reach(vienna, 100.0.23.0/24) AND Reach(bratislava, 100.0.24.0/24) AND Reach(bucharest, 100.0.14.0/24) AND Reach(marseille, 100.0.31.0/24) AND Reach(lyon, 100.0.20.0/24) AND Reach(strasbourg, 100.0.20.0/24) AND Reach(zurich, 100.0.14.0/24) AND Reach(athens, 100.0.26.0/24) AND Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from istanbul.\nThe subnet 100.0.1.0/24 is reachable from milan.\nTraffic originating from sofia can reach the subnet 100.0.18.0/24.\nConnectivity from paris to 100.0.24.0/24 is established.\nConnectivity from marseille to 100.0.0.0/24 is established.\nThe subnet 100.0.22.0/24 is reachable from kiev.\n100.0.10.0/24 is accessible from milan.\nConnectivity from london to 100.0.1.0/24 is established.\nConnectivity from marseille to 100.0.1.0/24 is established.\nThe subnet 100.0.25.0/24 is reachable from athens.\nThe subnet 100.0.18.0/24 is reachable from paris.\n100.0.9.0/24 is accessible from warsaw.\nfrankfurt can reach 100.0.13.0/24.\nThe subnet 100.0.13.0/24 is reachable from lyon.\nTraffic originating from athens can reach the subnet 100.0.14.0/24.\nfrankfurt can reach 100.0.31.0/24.\n100.0.8.0/24 is accessible from istanbul.\nThe subnet 100.0.14.0/24 is reachable from luxembourg.\nConnectivity from sofia to 100.0.4.0/24 is established.\n100.0.1.0/24 is accessible from frankfurt.\nparis can reach 100.0.9.0/24.\nConnectivity from bucharest to 100.0.31.0/24 is established.\nThe subnet 100.0.27.0/24 is reachable from amsterdam.\n100.0.31.0/24 is accessible from brussels.\nThe subnet 100.0.24.0/24 is reachable from rotterdam.\nThe subnet 100.0.22.0/24 is reachable from praha.\n100.0.32.0/24 is accessible from roma.\nTraffic originating from sofia can reach the subnet 100.0.10.0/24.\n100.0.8.0/24 is accessible from lyon.\nThe subnet 100.0.9.0/24 is reachable from zurich.\nTraffic originating from praha can reach the subnet 100.0.0.0/24.\nConnectivity from kiev to 100.0.24.0/24 is established.\ngeneva can reach 100.0.18.0/24.\nConnectivity from warsaw to 100.0.20.0/24 is established.\n100.0.32.0/24 is accessible from paris.\nThe subnet 100.0.25.0/24 is reachable from london.\nbrussels can reach 100.0.18.0/24.\nConnectivity from vienna to 100.0.13.0/24 is established.\nConnectivity from amsterdam to 100.0.5.0/24 is established.\nTraffic originating from milan can reach the subnet 100.0.20.0/24.\nbrussels can reach 100.0.29.0/24.\nConnectivity from london to 100.0.15.0/24 is established.\nThe subnet 100.0.29.0/24 is reachable from marseille.\nTraffic originating from milan can reach the subnet 100.0.15.0/24.\nThe subnet 100.0.8.0/24 is reachable from roma.\npraha can reach 100.0.5.0/24.\nThe subnet 100.0.13.0/24 is reachable from amsterdam.\nThe subnet 100.0.3.0/24 is reachable from roma.\nTraffic originating from bucharest can reach the subnet 100.0.32.0/24.\nbarcelona can reach 100.0.25.0/24.\n100.0.18.0/24 is accessible from praha.\nTraffic originating from lyon can reach the subnet 100.0.11.0/24.\nConnectivity from milan to 100.0.25.0/24 is established.\nThe subnet 100.0.14.0/24 is reachable from london.\nConnectivity from london to 100.0.6.0/24 is established.\nThe subnet 100.0.31.0/24 is reachable from vienna.\nThe subnet 100.0.11.0/24 is reachable from bucharest.\nConnectivity from sofia to 100.0.29.0/24 is established.\nConnectivity from istanbul to 100.0.18.0/24 is established.\nTraffic originating from madrid can reach the subnet 100.0.13.0/24.\n100.0.2.0/24 is accessible from bucharest.\nroma can reach 100.0.15.0/24.\nrotterdam can reach 100.0.13.0/24.\nzurich can reach 100.0.21.0/24.\nTraffic originating from zurich can reach the subnet 100.0.23.0/24.\nConnectivity from roma to 100.0.4.0/24 is established.\nThe subnet 100.0.22.0/24 is reachable from marseille.\n100.0.31.0/24 is accessible from athens.\nThe subnet 100.0.8.0/24 is reachable from bratislava.\n100.0.4.0/24 is accessible from praha.\n100.0.20.0/24 is accessible from praha.\n100.0.25.0/24 is accessible from sofia.\nThe subnet 100.0.8.0/24 is reachable from rotterdam.\nThe subnet 100.0.14.0/24 is reachable from basel.\n100.0.18.0/24 is accessible from frankfurt.\nTraffic originating from kiev can reach the subnet 100.0.20.0/24.\nConnectivity from geneva to 100.0.8.0/24 is established.\nConnectivity from amsterdam to 100.0.15.0/24 is established.\nThe subnet 100.0.10.0/24 is reachable from basel.\nTraffic originating from kiev can reach the subnet 100.0.8.0/24.\nThe subnet 100.0.6.0/24 is reachable from brussels.\nkiev can reach 100.0.6.0/24.\nzurich can reach 100.0.8.0/24.\nmadrid can reach 100.0.10.0/24.\nluxembourg can reach 100.0.18.0/24.\nlyon can reach 100.0.21.0/24.\nConnectivity from bucharest to 100.0.21.0/24 is established.\nConnectivity from budapest to 100.0.20.0/24 is established.\nThe subnet 100.0.22.0/24 is reachable from amsterdam.\nThe subnet 100.0.4.0/24 is reachable from geneva.\n100.0.10.0/24 is accessible from brussels.\nTraffic originating from vienna can reach the subnet 100.0.23.0/24.\nTraffic originating from bratislava can reach the subnet 100.0.24.0/24.\nTraffic originating from bucharest can reach the subnet 100.0.14.0/24.\nThe subnet 100.0.31.0/24 is reachable from marseille.\nThe subnet 100.0.20.0/24 is reachable from lyon.\nTraffic originating from strasbourg can reach the subnet 100.0.20.0/24.\nConnectivity from zurich to 100.0.14.0/24 is established.\nTraffic originating from athens can reach the subnet 100.0.26.0/24.\nTraffic originating from basel can reach the subnet 100.0.26.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_92",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(bratislava, 100.0.24.0/24) AND Reach(bratislava, 100.0.24.0/24)",
+    "raw_intent": "bratislava cannot reach 100.0.24.0/24.\nTraffic originating from bratislava can reach the subnet 100.0.24.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_174",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.29.0/24) AND Reach(london, 100.0.15.0/24) AND Reach(marseille, 100.0.29.0/24) AND Reach(milan, 100.0.15.0/24) AND Reach(roma, 100.0.8.0/24) AND Isolate(praha, 100.0.5.0/24) AND Reach(praha, 100.0.5.0/24) AND Reach(amsterdam, 100.0.13.0/24) AND Reach(roma, 100.0.3.0/24) AND Reach(bucharest, 100.0.32.0/24) AND Reach(barcelona, 100.0.25.0/24)",
+    "raw_intent": "The subnet 100.0.29.0/24 is reachable from brussels.\n100.0.15.0/24 is accessible from london.\nmarseille can reach 100.0.29.0/24.\nmilan can reach 100.0.15.0/24.\nTraffic originating from roma can reach the subnet 100.0.8.0/24.\npraha cannot reach 100.0.5.0/24.\n100.0.5.0/24 is accessible from praha.\n100.0.13.0/24 is accessible from amsterdam.\nThe subnet 100.0.3.0/24 is reachable from roma.\nTraffic originating from bucharest can reach the subnet 100.0.32.0/24.\nbarcelona can reach 100.0.25.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_45",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.5.0/24)",
+    "raw_intent": "praha can reach 100.0.5.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_51",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.11.0/24)",
+    "raw_intent": "Connectivity from lyon to 100.0.11.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_49",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(barcelona, 100.0.25.0/24)",
+    "raw_intent": "100.0.25.0/24 is accessible from barcelona.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_97",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.14.0/24)",
+    "raw_intent": "zurich can reach 100.0.14.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_13",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.13.0/24)",
+    "raw_intent": "lyon can reach 100.0.13.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_43",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.15.0/24)",
+    "raw_intent": "100.0.15.0/24 is accessible from milan.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_63",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.21.0/24)",
+    "raw_intent": "zurich can reach 100.0.21.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_10",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(paris, 100.0.18.0/24) AND Reach(paris, 100.0.18.0/24)",
+    "raw_intent": "paris cannot reach 100.0.18.0/24.\nparis can reach 100.0.18.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_184",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.6.0/24) AND Reach(kiev, 100.0.6.0/24) AND Reach(zurich, 100.0.8.0/24) AND Reach(madrid, 100.0.10.0/24) AND Reach(luxembourg, 100.0.18.0/24) AND Reach(lyon, 100.0.21.0/24) AND Reach(bucharest, 100.0.21.0/24) AND Reach(budapest, 100.0.20.0/24) AND Reach(amsterdam, 100.0.22.0/24) AND Isolate(geneva, 100.0.4.0/24) AND Reach(geneva, 100.0.4.0/24) AND Reach(brussels, 100.0.10.0/24) AND Reach(vienna, 100.0.23.0/24) AND Reach(bratislava, 100.0.24.0/24) AND Reach(bucharest, 100.0.14.0/24) AND Reach(marseille, 100.0.31.0/24) AND Reach(lyon, 100.0.20.0/24) AND Reach(strasbourg, 100.0.20.0/24) AND Reach(zurich, 100.0.14.0/24) AND Reach(athens, 100.0.26.0/24) AND Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "brussels can reach 100.0.6.0/24.\n100.0.6.0/24 is accessible from kiev.\nThe subnet 100.0.8.0/24 is reachable from zurich.\nmadrid can reach 100.0.10.0/24.\nThe subnet 100.0.18.0/24 is reachable from luxembourg.\n100.0.21.0/24 is accessible from lyon.\nThe subnet 100.0.21.0/24 is reachable from bucharest.\nTraffic originating from budapest can reach the subnet 100.0.20.0/24.\namsterdam can reach 100.0.22.0/24.\ngeneva cannot reach 100.0.4.0/24.\n100.0.4.0/24 is accessible from geneva.\nbrussels can reach 100.0.10.0/24.\n100.0.23.0/24 is accessible from vienna.\n100.0.24.0/24 is accessible from bratislava.\n100.0.14.0/24 is accessible from bucharest.\n100.0.31.0/24 is accessible from marseille.\nTraffic originating from lyon can reach the subnet 100.0.20.0/24.\nTraffic originating from strasbourg can reach the subnet 100.0.20.0/24.\nConnectivity from zurich to 100.0.14.0/24 is established.\nathens can reach 100.0.26.0/24.\nTraffic originating from basel can reach the subnet 100.0.26.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_30",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(praha, 100.0.0.0/24) AND Reach(praha, 100.0.0.0/24)",
+    "raw_intent": "praha cannot reach 100.0.0.0/24.\n100.0.0.0/24 is accessible from praha.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_46",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(amsterdam, 100.0.13.0/24) AND Reach(amsterdam, 100.0.13.0/24)",
+    "raw_intent": "amsterdam cannot reach 100.0.13.0/24.\nThe subnet 100.0.13.0/24 is reachable from amsterdam.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_148",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(strasbourg, 100.0.20.0/24) AND Isolate(zurich, 100.0.14.0/24) AND Reach(zurich, 100.0.14.0/24)",
+    "raw_intent": "strasbourg can reach 100.0.20.0/24.\nzurich cannot reach 100.0.14.0/24.\n100.0.14.0/24 is accessible from zurich.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_189",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(istanbul, 100.0.4.0/24) AND Reach(milan, 100.0.1.0/24) AND Reach(sofia, 100.0.18.0/24) AND Reach(paris, 100.0.24.0/24) AND Reach(marseille, 100.0.0.0/24) AND Isolate(kiev, 100.0.22.0/24) AND Reach(kiev, 100.0.22.0/24) AND Reach(milan, 100.0.10.0/24) AND Reach(london, 100.0.1.0/24) AND Reach(marseille, 100.0.1.0/24) AND Reach(athens, 100.0.25.0/24) AND Reach(paris, 100.0.18.0/24) AND Reach(warsaw, 100.0.9.0/24) AND Reach(frankfurt, 100.0.13.0/24) AND Reach(lyon, 100.0.13.0/24) AND Reach(athens, 100.0.14.0/24) AND Reach(frankfurt, 100.0.31.0/24) AND Reach(istanbul, 100.0.8.0/24) AND Reach(luxembourg, 100.0.14.0/24) AND Reach(sofia, 100.0.4.0/24) AND Reach(frankfurt, 100.0.1.0/24) AND Reach(paris, 100.0.9.0/24) AND Reach(bucharest, 100.0.31.0/24) AND Reach(amsterdam, 100.0.27.0/24) AND Reach(brussels, 100.0.31.0/24) AND Reach(rotterdam, 100.0.24.0/24) AND Reach(praha, 100.0.22.0/24) AND Reach(roma, 100.0.32.0/24) AND Reach(sofia, 100.0.10.0/24) AND Reach(lyon, 100.0.8.0/24) AND Reach(zurich, 100.0.9.0/24) AND Reach(praha, 100.0.0.0/24) AND Reach(kiev, 100.0.24.0/24) AND Reach(geneva, 100.0.18.0/24) AND Reach(warsaw, 100.0.20.0/24) AND Reach(paris, 100.0.32.0/24) AND Reach(london, 100.0.25.0/24) AND Reach(brussels, 100.0.18.0/24) AND Reach(vienna, 100.0.13.0/24) AND Reach(amsterdam, 100.0.5.0/24) AND Reach(milan, 100.0.20.0/24) AND Reach(brussels, 100.0.29.0/24) AND Reach(london, 100.0.15.0/24) AND Reach(marseille, 100.0.29.0/24) AND Reach(milan, 100.0.15.0/24) AND Reach(roma, 100.0.8.0/24) AND Reach(praha, 100.0.5.0/24) AND Reach(amsterdam, 100.0.13.0/24) AND Reach(roma, 100.0.3.0/24) AND Reach(bucharest, 100.0.32.0/24) AND Reach(barcelona, 100.0.25.0/24)",
+    "raw_intent": "Traffic originating from istanbul can reach the subnet 100.0.4.0/24.\nTraffic originating from milan can reach the subnet 100.0.1.0/24.\nThe subnet 100.0.18.0/24 is reachable from sofia.\nTraffic originating from paris can reach the subnet 100.0.24.0/24.\nConnectivity from marseille to 100.0.0.0/24 is established.\nkiev cannot reach 100.0.22.0/24.\nConnectivity from kiev to 100.0.22.0/24 is established.\nThe subnet 100.0.10.0/24 is reachable from milan.\nlondon can reach 100.0.1.0/24.\nmarseille can reach 100.0.1.0/24.\n100.0.25.0/24 is accessible from athens.\nConnectivity from paris to 100.0.18.0/24 is established.\nwarsaw can reach 100.0.9.0/24.\nConnectivity from frankfurt to 100.0.13.0/24 is established.\nTraffic originating from lyon can reach the subnet 100.0.13.0/24.\n100.0.14.0/24 is accessible from athens.\nThe subnet 100.0.31.0/24 is reachable from frankfurt.\n100.0.8.0/24 is accessible from istanbul.\nThe subnet 100.0.14.0/24 is reachable from luxembourg.\nConnectivity from sofia to 100.0.4.0/24 is established.\nTraffic originating from frankfurt can reach the subnet 100.0.1.0/24.\nThe subnet 100.0.9.0/24 is reachable from paris.\nConnectivity from bucharest to 100.0.31.0/24 is established.\n100.0.27.0/24 is accessible from amsterdam.\nbrussels can reach 100.0.31.0/24.\nThe subnet 100.0.24.0/24 is reachable from rotterdam.\n100.0.22.0/24 is accessible from praha.\nThe subnet 100.0.32.0/24 is reachable from roma.\nTraffic originating from sofia can reach the subnet 100.0.10.0/24.\n100.0.8.0/24 is accessible from lyon.\n100.0.9.0/24 is accessible from zurich.\nThe subnet 100.0.0.0/24 is reachable from praha.\n100.0.24.0/24 is accessible from kiev.\nThe subnet 100.0.18.0/24 is reachable from geneva.\nwarsaw can reach 100.0.20.0/24.\n100.0.32.0/24 is accessible from paris.\nThe subnet 100.0.25.0/24 is reachable from london.\nThe subnet 100.0.18.0/24 is reachable from brussels.\nThe subnet 100.0.13.0/24 is reachable from vienna.\nConnectivity from amsterdam to 100.0.5.0/24 is established.\nConnectivity from milan to 100.0.20.0/24 is established.\nTraffic originating from brussels can reach the subnet 100.0.29.0/24.\nTraffic originating from london can reach the subnet 100.0.15.0/24.\nConnectivity from marseille to 100.0.29.0/24 is established.\n100.0.15.0/24 is accessible from milan.\nThe subnet 100.0.8.0/24 is reachable from roma.\nConnectivity from praha to 100.0.5.0/24 is established.\namsterdam can reach 100.0.13.0/24.\nConnectivity from roma to 100.0.3.0/24 is established.\nbucharest can reach 100.0.32.0/24.\nTraffic originating from barcelona can reach the subnet 100.0.25.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_156",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.0.0/24) AND Reach(kiev, 100.0.24.0/24) AND Isolate(geneva, 100.0.18.0/24) AND Reach(geneva, 100.0.18.0/24) AND Reach(warsaw, 100.0.20.0/24) AND Reach(paris, 100.0.32.0/24)",
+    "raw_intent": "praha can reach 100.0.0.0/24.\nThe subnet 100.0.24.0/24 is reachable from kiev.\ngeneva cannot reach 100.0.18.0/24.\nConnectivity from geneva to 100.0.18.0/24 is established.\n100.0.20.0/24 is accessible from warsaw.\nTraffic originating from paris can reach the subnet 100.0.32.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_25",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.22.0/24)",
+    "raw_intent": "Connectivity from praha to 100.0.22.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_116",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(geneva, 100.0.18.0/24) AND Reach(geneva, 100.0.18.0/24) AND Reach(warsaw, 100.0.20.0/24)",
+    "raw_intent": "geneva cannot reach 100.0.18.0/24.\n100.0.18.0/24 is accessible from geneva.\n100.0.20.0/24 is accessible from warsaw.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_6",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(milan, 100.0.10.0/24) AND Reach(milan, 100.0.10.0/24)",
+    "raw_intent": "milan cannot reach 100.0.10.0/24.\nTraffic originating from milan can reach the subnet 100.0.10.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_76",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(geneva, 100.0.8.0/24) AND Reach(geneva, 100.0.8.0/24)",
+    "raw_intent": "geneva cannot reach 100.0.8.0/24.\nTraffic originating from geneva can reach the subnet 100.0.8.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_127",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.6.0/24) AND Reach(vienna, 100.0.31.0/24)",
+    "raw_intent": "Traffic originating from london can reach the subnet 100.0.6.0/24.\nvienna can reach 100.0.31.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_59",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(madrid, 100.0.13.0/24)",
+    "raw_intent": "The subnet 100.0.13.0/24 is reachable from madrid.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_64",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(zurich, 100.0.23.0/24) AND Reach(zurich, 100.0.23.0/24)",
+    "raw_intent": "zurich cannot reach 100.0.23.0/24.\nConnectivity from zurich to 100.0.23.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_78",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(basel, 100.0.10.0/24) AND Reach(basel, 100.0.10.0/24)",
+    "raw_intent": "basel cannot reach 100.0.10.0/24.\nbasel can reach 100.0.10.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_82",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(zurich, 100.0.8.0/24) AND Reach(zurich, 100.0.8.0/24)",
+    "raw_intent": "zurich cannot reach 100.0.8.0/24.\nConnectivity from zurich to 100.0.8.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_137",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.18.0/24) AND Reach(kiev, 100.0.20.0/24)",
+    "raw_intent": "frankfurt can reach 100.0.18.0/24.\nTraffic originating from kiev can reach the subnet 100.0.20.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_44",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(roma, 100.0.8.0/24) AND Reach(roma, 100.0.8.0/24)",
+    "raw_intent": "roma cannot reach 100.0.8.0/24.\nConnectivity from roma to 100.0.8.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_146",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(bratislava, 100.0.24.0/24) AND Reach(bratislava, 100.0.24.0/24) AND Reach(bucharest, 100.0.14.0/24)",
+    "raw_intent": "bratislava cannot reach 100.0.24.0/24.\n100.0.24.0/24 is accessible from bratislava.\n100.0.14.0/24 is accessible from bucharest.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_160",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.18.0/24) AND Reach(lyon, 100.0.11.0/24) AND Reach(milan, 100.0.25.0/24) AND Isolate(london, 100.0.14.0/24) AND Reach(london, 100.0.14.0/24) AND Reach(london, 100.0.6.0/24)",
+    "raw_intent": "praha can reach 100.0.18.0/24.\nConnectivity from lyon to 100.0.11.0/24 is established.\nThe subnet 100.0.25.0/24 is reachable from milan.\nlondon cannot reach 100.0.14.0/24.\nTraffic originating from london can reach the subnet 100.0.14.0/24.\nTraffic originating from london can reach the subnet 100.0.6.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_106",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.13.0/24) AND Isolate(lyon, 100.0.13.0/24) AND Reach(lyon, 100.0.13.0/24)",
+    "raw_intent": "The subnet 100.0.13.0/24 is reachable from frankfurt.\nlyon cannot reach 100.0.13.0/24.\nConnectivity from lyon to 100.0.13.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_161",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.31.0/24) AND Reach(bucharest, 100.0.11.0/24) AND Reach(sofia, 100.0.29.0/24) AND Reach(istanbul, 100.0.18.0/24) AND Reach(madrid, 100.0.13.0/24)",
+    "raw_intent": "Traffic originating from vienna can reach the subnet 100.0.31.0/24.\nTraffic originating from bucharest can reach the subnet 100.0.11.0/24.\nTraffic originating from sofia can reach the subnet 100.0.29.0/24.\nTraffic originating from istanbul can reach the subnet 100.0.18.0/24.\nConnectivity from madrid to 100.0.13.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_158",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.29.0/24) AND Reach(london, 100.0.15.0/24) AND Isolate(marseille, 100.0.29.0/24) AND Reach(marseille, 100.0.29.0/24) AND Reach(milan, 100.0.15.0/24) AND Reach(roma, 100.0.8.0/24)",
+    "raw_intent": "100.0.29.0/24 is accessible from brussels.\n100.0.15.0/24 is accessible from london.\nmarseille cannot reach 100.0.29.0/24.\n100.0.29.0/24 is accessible from marseille.\nTraffic originating from milan can reach the subnet 100.0.15.0/24.\nroma can reach 100.0.8.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_110",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.9.0/24) AND Isolate(bucharest, 100.0.31.0/24) AND Reach(bucharest, 100.0.31.0/24)",
+    "raw_intent": "100.0.9.0/24 is accessible from paris.\nbucharest cannot reach 100.0.31.0/24.\nTraffic originating from bucharest can reach the subnet 100.0.31.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_163",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(roma, 100.0.4.0/24) AND Reach(marseille, 100.0.22.0/24) AND Reach(athens, 100.0.31.0/24) AND Reach(bratislava, 100.0.8.0/24) AND Reach(praha, 100.0.4.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from roma.\nThe subnet 100.0.22.0/24 is reachable from marseille.\n100.0.31.0/24 is accessible from athens.\nTraffic originating from bratislava can reach the subnet 100.0.8.0/24.\npraha can reach 100.0.4.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_69",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.4.0/24)",
+    "raw_intent": "100.0.4.0/24 is accessible from praha.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_84",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(luxembourg, 100.0.18.0/24) AND Reach(luxembourg, 100.0.18.0/24)",
+    "raw_intent": "luxembourg cannot reach 100.0.18.0/24.\n100.0.18.0/24 is accessible from luxembourg.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_111",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(amsterdam, 100.0.27.0/24) AND Reach(brussels, 100.0.31.0/24)",
+    "raw_intent": "The subnet 100.0.27.0/24 is reachable from amsterdam.\n100.0.31.0/24 is accessible from brussels.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_26",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(roma, 100.0.32.0/24) AND Reach(roma, 100.0.32.0/24)",
+    "raw_intent": "roma cannot reach 100.0.32.0/24.\nThe subnet 100.0.32.0/24 is reachable from roma.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_157",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.25.0/24) AND Reach(brussels, 100.0.18.0/24) AND Reach(vienna, 100.0.13.0/24) AND Reach(amsterdam, 100.0.5.0/24) AND Reach(milan, 100.0.20.0/24)",
+    "raw_intent": "The subnet 100.0.25.0/24 is reachable from london.\n100.0.18.0/24 is accessible from brussels.\nTraffic originating from vienna can reach the subnet 100.0.13.0/24.\namsterdam can reach 100.0.5.0/24.\nConnectivity from milan to 100.0.20.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_132",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.23.0/24) AND Isolate(roma, 100.0.4.0/24) AND Reach(roma, 100.0.4.0/24)",
+    "raw_intent": "The subnet 100.0.23.0/24 is reachable from zurich.\nroma cannot reach 100.0.4.0/24.\nroma can reach 100.0.4.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_162",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.2.0/24) AND Reach(roma, 100.0.15.0/24) AND Isolate(rotterdam, 100.0.13.0/24) AND Reach(rotterdam, 100.0.13.0/24) AND Reach(zurich, 100.0.21.0/24) AND Reach(zurich, 100.0.23.0/24)",
+    "raw_intent": "The subnet 100.0.2.0/24 is reachable from bucharest.\nroma can reach 100.0.15.0/24.\nrotterdam cannot reach 100.0.13.0/24.\nrotterdam can reach 100.0.13.0/24.\nTraffic originating from zurich can reach the subnet 100.0.21.0/24.\n100.0.23.0/24 is accessible from zurich.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_94",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(marseille, 100.0.31.0/24) AND Reach(marseille, 100.0.31.0/24)",
+    "raw_intent": "marseille cannot reach 100.0.31.0/24.\nConnectivity from marseille to 100.0.31.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_123",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(amsterdam, 100.0.13.0/24) AND Reach(roma, 100.0.3.0/24)",
+    "raw_intent": "The subnet 100.0.13.0/24 is reachable from amsterdam.\nConnectivity from roma to 100.0.3.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_122",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(roma, 100.0.8.0/24) AND Reach(roma, 100.0.8.0/24) AND Reach(praha, 100.0.5.0/24)",
+    "raw_intent": "roma cannot reach 100.0.8.0/24.\nTraffic originating from roma can reach the subnet 100.0.8.0/24.\nConnectivity from praha to 100.0.5.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_4",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(marseille, 100.0.0.0/24) AND Reach(marseille, 100.0.0.0/24)",
+    "raw_intent": "marseille cannot reach 100.0.0.0/24.\nTraffic originating from marseille can reach the subnet 100.0.0.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_120",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.29.0/24) AND Isolate(london, 100.0.15.0/24) AND Reach(london, 100.0.15.0/24)",
+    "raw_intent": "100.0.29.0/24 is accessible from brussels.\nlondon cannot reach 100.0.15.0/24.\nlondon can reach 100.0.15.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_117",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.32.0/24) AND Reach(london, 100.0.25.0/24)",
+    "raw_intent": "The subnet 100.0.32.0/24 is reachable from paris.\n100.0.25.0/24 is accessible from london.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_11",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(warsaw, 100.0.9.0/24)",
+    "raw_intent": "The subnet 100.0.9.0/24 is reachable from warsaw.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_50",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(praha, 100.0.18.0/24) AND Reach(praha, 100.0.18.0/24)",
+    "raw_intent": "praha cannot reach 100.0.18.0/24.\npraha can reach 100.0.18.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_96",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(strasbourg, 100.0.20.0/24) AND Reach(strasbourg, 100.0.20.0/24)",
+    "raw_intent": "strasbourg cannot reach 100.0.20.0/24.\n100.0.20.0/24 is accessible from strasbourg.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_103",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.10.0/24) AND Reach(london, 100.0.1.0/24)",
+    "raw_intent": "Traffic originating from milan can reach the subnet 100.0.10.0/24.\nTraffic originating from london can reach the subnet 100.0.1.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_109",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.4.0/24) AND Reach(frankfurt, 100.0.1.0/24)",
+    "raw_intent": "sofia can reach 100.0.4.0/24.\nTraffic originating from frankfurt can reach the subnet 100.0.1.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_177",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.20.0/24) AND Reach(sofia, 100.0.25.0/24) AND Reach(rotterdam, 100.0.8.0/24) AND Reach(basel, 100.0.14.0/24) AND Reach(frankfurt, 100.0.18.0/24) AND Reach(kiev, 100.0.20.0/24) AND Reach(geneva, 100.0.8.0/24) AND Reach(amsterdam, 100.0.15.0/24) AND Reach(basel, 100.0.10.0/24) AND Reach(kiev, 100.0.8.0/24)",
+    "raw_intent": "100.0.20.0/24 is accessible from praha.\nThe subnet 100.0.25.0/24 is reachable from sofia.\nrotterdam can reach 100.0.8.0/24.\nTraffic originating from basel can reach the subnet 100.0.14.0/24.\nfrankfurt can reach 100.0.18.0/24.\nTraffic originating from kiev can reach the subnet 100.0.20.0/24.\nTraffic originating from geneva can reach the subnet 100.0.8.0/24.\nThe subnet 100.0.15.0/24 is reachable from amsterdam.\nbasel can reach 100.0.10.0/24.\nConnectivity from kiev to 100.0.8.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_102",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(marseille, 100.0.0.0/24) AND Isolate(kiev, 100.0.22.0/24) AND Reach(kiev, 100.0.22.0/24)",
+    "raw_intent": "100.0.0.0/24 is accessible from marseille.\nkiev cannot reach 100.0.22.0/24.\nConnectivity from kiev to 100.0.22.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_15",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.31.0/24)",
+    "raw_intent": "Connectivity from frankfurt to 100.0.31.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_3",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.24.0/24)",
+    "raw_intent": "Connectivity from paris to 100.0.24.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_187",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.18.0/24) AND Reach(lyon, 100.0.11.0/24) AND Reach(milan, 100.0.25.0/24) AND Reach(london, 100.0.14.0/24) AND Reach(london, 100.0.6.0/24) AND Reach(vienna, 100.0.31.0/24) AND Reach(bucharest, 100.0.11.0/24) AND Reach(sofia, 100.0.29.0/24) AND Reach(istanbul, 100.0.18.0/24) AND Reach(madrid, 100.0.13.0/24) AND Reach(bucharest, 100.0.2.0/24) AND Reach(roma, 100.0.15.0/24) AND Isolate(rotterdam, 100.0.13.0/24) AND Reach(rotterdam, 100.0.13.0/24) AND Reach(zurich, 100.0.21.0/24) AND Reach(zurich, 100.0.23.0/24) AND Reach(roma, 100.0.4.0/24) AND Reach(marseille, 100.0.22.0/24) AND Reach(athens, 100.0.31.0/24) AND Reach(bratislava, 100.0.8.0/24) AND Reach(praha, 100.0.4.0/24) AND Reach(praha, 100.0.20.0/24) AND Reach(sofia, 100.0.25.0/24) AND Reach(rotterdam, 100.0.8.0/24) AND Reach(basel, 100.0.14.0/24) AND Reach(frankfurt, 100.0.18.0/24)",
+    "raw_intent": "praha can reach 100.0.18.0/24.\nConnectivity from lyon to 100.0.11.0/24 is established.\nThe subnet 100.0.25.0/24 is reachable from milan.\nlondon can reach 100.0.14.0/24.\nTraffic originating from london can reach the subnet 100.0.6.0/24.\nTraffic originating from vienna can reach the subnet 100.0.31.0/24.\nTraffic originating from bucharest can reach the subnet 100.0.11.0/24.\nThe subnet 100.0.29.0/24 is reachable from sofia.\nThe subnet 100.0.18.0/24 is reachable from istanbul.\nmadrid can reach 100.0.13.0/24.\n100.0.2.0/24 is accessible from bucharest.\nTraffic originating from roma can reach the subnet 100.0.15.0/24.\nrotterdam cannot reach 100.0.13.0/24.\nTraffic originating from rotterdam can reach the subnet 100.0.13.0/24.\n100.0.21.0/24 is accessible from zurich.\nzurich can reach 100.0.23.0/24.\nThe subnet 100.0.4.0/24 is reachable from roma.\nmarseille can reach 100.0.22.0/24.\nConnectivity from athens to 100.0.31.0/24 is established.\nConnectivity from bratislava to 100.0.8.0/24 is established.\npraha can reach 100.0.4.0/24.\n100.0.20.0/24 is accessible from praha.\nConnectivity from sofia to 100.0.25.0/24 is established.\nConnectivity from rotterdam to 100.0.8.0/24 is established.\nbasel can reach 100.0.14.0/24.\nfrankfurt can reach 100.0.18.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_87",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(budapest, 100.0.20.0/24)",
+    "raw_intent": "Connectivity from budapest to 100.0.20.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_175",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.18.0/24) AND Reach(lyon, 100.0.11.0/24) AND Reach(milan, 100.0.25.0/24) AND Reach(london, 100.0.14.0/24) AND Reach(london, 100.0.6.0/24) AND Reach(vienna, 100.0.31.0/24) AND Reach(bucharest, 100.0.11.0/24) AND Reach(sofia, 100.0.29.0/24) AND Reach(istanbul, 100.0.18.0/24) AND Reach(madrid, 100.0.13.0/24)",
+    "raw_intent": "praha can reach 100.0.18.0/24.\nTraffic originating from lyon can reach the subnet 100.0.11.0/24.\nmilan can reach 100.0.25.0/24.\nTraffic originating from london can reach the subnet 100.0.14.0/24.\nTraffic originating from london can reach the subnet 100.0.6.0/24.\nThe subnet 100.0.31.0/24 is reachable from vienna.\nConnectivity from bucharest to 100.0.11.0/24 is established.\nConnectivity from sofia to 100.0.29.0/24 is established.\nTraffic originating from istanbul can reach the subnet 100.0.18.0/24.\nmadrid can reach 100.0.13.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_68",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(bratislava, 100.0.8.0/24) AND Reach(bratislava, 100.0.8.0/24)",
+    "raw_intent": "bratislava cannot reach 100.0.8.0/24.\nConnectivity from bratislava to 100.0.8.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_159",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.5.0/24) AND Reach(amsterdam, 100.0.13.0/24) AND Reach(roma, 100.0.3.0/24) AND Reach(bucharest, 100.0.32.0/24) AND Reach(barcelona, 100.0.25.0/24)",
+    "raw_intent": "100.0.5.0/24 is accessible from praha.\nThe subnet 100.0.13.0/24 is reachable from amsterdam.\nroma can reach 100.0.3.0/24.\nThe subnet 100.0.32.0/24 is reachable from bucharest.\nThe subnet 100.0.25.0/24 is reachable from barcelona.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_164",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.20.0/24) AND Isolate(sofia, 100.0.25.0/24) AND Reach(sofia, 100.0.25.0/24) AND Reach(rotterdam, 100.0.8.0/24) AND Reach(basel, 100.0.14.0/24) AND Reach(frankfurt, 100.0.18.0/24)",
+    "raw_intent": "Traffic originating from praha can reach the subnet 100.0.20.0/24.\nsofia cannot reach 100.0.25.0/24.\nTraffic originating from sofia can reach the subnet 100.0.25.0/24.\nrotterdam can reach 100.0.8.0/24.\nThe subnet 100.0.14.0/24 is reachable from basel.\n100.0.18.0/24 is accessible from frankfurt.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_112",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(rotterdam, 100.0.24.0/24) AND Reach(rotterdam, 100.0.24.0/24) AND Reach(praha, 100.0.22.0/24)",
+    "raw_intent": "rotterdam cannot reach 100.0.24.0/24.\nrotterdam can reach 100.0.24.0/24.\nTraffic originating from praha can reach the subnet 100.0.22.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_5",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.22.0/24)",
+    "raw_intent": "100.0.22.0/24 is accessible from kiev.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_118",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.18.0/24) AND Isolate(vienna, 100.0.13.0/24) AND Reach(vienna, 100.0.13.0/24)",
+    "raw_intent": "The subnet 100.0.18.0/24 is reachable from brussels.\nvienna cannot reach 100.0.13.0/24.\nThe subnet 100.0.13.0/24 is reachable from vienna.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_89",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(geneva, 100.0.4.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from geneva.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_18",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(sofia, 100.0.4.0/24) AND Reach(sofia, 100.0.4.0/24)",
+    "raw_intent": "sofia cannot reach 100.0.4.0/24.\nThe subnet 100.0.4.0/24 is reachable from sofia.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_142",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(luxembourg, 100.0.18.0/24) AND Isolate(lyon, 100.0.21.0/24) AND Reach(lyon, 100.0.21.0/24)",
+    "raw_intent": "100.0.18.0/24 is accessible from luxembourg.\nlyon cannot reach 100.0.21.0/24.\nlyon can reach 100.0.21.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_12",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(frankfurt, 100.0.13.0/24) AND Reach(frankfurt, 100.0.13.0/24)",
+    "raw_intent": "frankfurt cannot reach 100.0.13.0/24.\nTraffic originating from frankfurt can reach the subnet 100.0.13.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_7",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(london, 100.0.1.0/24)",
+    "raw_intent": "100.0.1.0/24 is accessible from london.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_104",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(marseille, 100.0.1.0/24) AND Reach(marseille, 100.0.1.0/24) AND Reach(athens, 100.0.25.0/24)",
+    "raw_intent": "marseille cannot reach 100.0.1.0/24.\n100.0.1.0/24 is accessible from marseille.\nThe subnet 100.0.25.0/24 is reachable from athens.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_54",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(london, 100.0.6.0/24) AND Reach(london, 100.0.6.0/24)",
+    "raw_intent": "london cannot reach 100.0.6.0/24.\nConnectivity from london to 100.0.6.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_42",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(marseille, 100.0.29.0/24) AND Reach(marseille, 100.0.29.0/24)",
+    "raw_intent": "marseille cannot reach 100.0.29.0/24.\nmarseille can reach 100.0.29.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_131",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(rotterdam, 100.0.13.0/24) AND Reach(zurich, 100.0.21.0/24)",
+    "raw_intent": "The subnet 100.0.13.0/24 is reachable from rotterdam.\n100.0.21.0/24 is accessible from zurich.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_101",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.18.0/24) AND Reach(paris, 100.0.24.0/24)",
+    "raw_intent": "The subnet 100.0.18.0/24 is reachable from sofia.\nTraffic originating from paris can reach the subnet 100.0.24.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_153",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(frankfurt, 100.0.31.0/24) AND Reach(istanbul, 100.0.8.0/24) AND Reach(luxembourg, 100.0.14.0/24) AND Reach(sofia, 100.0.4.0/24) AND Reach(frankfurt, 100.0.1.0/24)",
+    "raw_intent": "The subnet 100.0.31.0/24 is reachable from frankfurt.\nistanbul can reach 100.0.8.0/24.\nTraffic originating from luxembourg can reach the subnet 100.0.14.0/24.\n100.0.4.0/24 is accessible from sofia.\n100.0.1.0/24 is accessible from frankfurt.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_28",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(lyon, 100.0.8.0/24) AND Reach(lyon, 100.0.8.0/24)",
+    "raw_intent": "lyon cannot reach 100.0.8.0/24.\nThe subnet 100.0.8.0/24 is reachable from lyon.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_90",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(brussels, 100.0.10.0/24) AND Reach(brussels, 100.0.10.0/24)",
+    "raw_intent": "brussels cannot reach 100.0.10.0/24.\nThe subnet 100.0.10.0/24 is reachable from brussels.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_14",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(athens, 100.0.14.0/24) AND Reach(athens, 100.0.14.0/24)",
+    "raw_intent": "athens cannot reach 100.0.14.0/24.\nathens can reach 100.0.14.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_34",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(paris, 100.0.32.0/24) AND Reach(paris, 100.0.32.0/24)",
+    "raw_intent": "paris cannot reach 100.0.32.0/24.\nConnectivity from paris to 100.0.32.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_93",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.14.0/24)",
+    "raw_intent": "100.0.14.0/24 is accessible from bucharest.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_2",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(sofia, 100.0.18.0/24) AND Reach(sofia, 100.0.18.0/24)",
+    "raw_intent": "sofia cannot reach 100.0.18.0/24.\n100.0.18.0/24 is accessible from sofia.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_172",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.9.0/24) AND Reach(bucharest, 100.0.31.0/24) AND Isolate(amsterdam, 100.0.27.0/24) AND Reach(amsterdam, 100.0.27.0/24) AND Reach(brussels, 100.0.31.0/24) AND Reach(rotterdam, 100.0.24.0/24) AND Reach(praha, 100.0.22.0/24) AND Reach(roma, 100.0.32.0/24) AND Reach(sofia, 100.0.10.0/24) AND Reach(lyon, 100.0.8.0/24) AND Reach(zurich, 100.0.9.0/24)",
+    "raw_intent": "Traffic originating from paris can reach the subnet 100.0.9.0/24.\nbucharest can reach 100.0.31.0/24.\namsterdam cannot reach 100.0.27.0/24.\nConnectivity from amsterdam to 100.0.27.0/24 is established.\n100.0.31.0/24 is accessible from brussels.\nThe subnet 100.0.24.0/24 is reachable from rotterdam.\npraha can reach 100.0.22.0/24.\n100.0.32.0/24 is accessible from roma.\n100.0.10.0/24 is accessible from sofia.\n100.0.8.0/24 is accessible from lyon.\nzurich can reach 100.0.9.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_24",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(rotterdam, 100.0.24.0/24) AND Reach(rotterdam, 100.0.24.0/24)",
+    "raw_intent": "rotterdam cannot reach 100.0.24.0/24.\nrotterdam can reach 100.0.24.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_108",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(istanbul, 100.0.8.0/24) AND Reach(istanbul, 100.0.8.0/24) AND Reach(luxembourg, 100.0.14.0/24)",
+    "raw_intent": "istanbul cannot reach 100.0.8.0/24.\nThe subnet 100.0.8.0/24 is reachable from istanbul.\nConnectivity from luxembourg to 100.0.14.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_170",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(istanbul, 100.0.4.0/24) AND Reach(milan, 100.0.1.0/24) AND Reach(sofia, 100.0.18.0/24) AND Reach(paris, 100.0.24.0/24) AND Isolate(marseille, 100.0.0.0/24) AND Reach(marseille, 100.0.0.0/24) AND Reach(kiev, 100.0.22.0/24) AND Reach(milan, 100.0.10.0/24) AND Reach(london, 100.0.1.0/24) AND Reach(marseille, 100.0.1.0/24) AND Reach(athens, 100.0.25.0/24)",
+    "raw_intent": "Connectivity from istanbul to 100.0.4.0/24 is established.\nmilan can reach 100.0.1.0/24.\n100.0.18.0/24 is accessible from sofia.\nparis can reach 100.0.24.0/24.\nmarseille cannot reach 100.0.0.0/24.\n100.0.0.0/24 is accessible from marseille.\n100.0.22.0/24 is accessible from kiev.\n100.0.10.0/24 is accessible from milan.\nConnectivity from london to 100.0.1.0/24 is established.\nTraffic originating from marseille can reach the subnet 100.0.1.0/24.\nathens can reach 100.0.25.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_124",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.32.0/24) AND Isolate(barcelona, 100.0.25.0/24) AND Reach(barcelona, 100.0.25.0/24)",
+    "raw_intent": "100.0.32.0/24 is accessible from bucharest.\nbarcelona cannot reach 100.0.25.0/24.\n100.0.25.0/24 is accessible from barcelona.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_29",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.9.0/24)",
+    "raw_intent": "100.0.9.0/24 is accessible from zurich.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_191",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(istanbul, 100.0.4.0/24) AND Reach(milan, 100.0.1.0/24) AND Reach(sofia, 100.0.18.0/24) AND Reach(paris, 100.0.24.0/24) AND Reach(marseille, 100.0.0.0/24) AND Reach(kiev, 100.0.22.0/24) AND Reach(milan, 100.0.10.0/24) AND Reach(london, 100.0.1.0/24) AND Reach(marseille, 100.0.1.0/24) AND Reach(athens, 100.0.25.0/24) AND Reach(paris, 100.0.18.0/24) AND Reach(warsaw, 100.0.9.0/24) AND Reach(frankfurt, 100.0.13.0/24) AND Reach(lyon, 100.0.13.0/24) AND Reach(athens, 100.0.14.0/24) AND Reach(frankfurt, 100.0.31.0/24) AND Reach(istanbul, 100.0.8.0/24) AND Reach(luxembourg, 100.0.14.0/24) AND Reach(sofia, 100.0.4.0/24) AND Reach(frankfurt, 100.0.1.0/24) AND Reach(paris, 100.0.9.0/24) AND Reach(bucharest, 100.0.31.0/24) AND Reach(amsterdam, 100.0.27.0/24) AND Reach(brussels, 100.0.31.0/24) AND Reach(rotterdam, 100.0.24.0/24) AND Reach(praha, 100.0.22.0/24) AND Reach(roma, 100.0.32.0/24) AND Reach(sofia, 100.0.10.0/24) AND Reach(lyon, 100.0.8.0/24) AND Reach(zurich, 100.0.9.0/24) AND Reach(praha, 100.0.0.0/24) AND Reach(kiev, 100.0.24.0/24) AND Reach(geneva, 100.0.18.0/24) AND Reach(warsaw, 100.0.20.0/24) AND Reach(paris, 100.0.32.0/24) AND Reach(london, 100.0.25.0/24) AND Reach(brussels, 100.0.18.0/24) AND Reach(vienna, 100.0.13.0/24) AND Reach(amsterdam, 100.0.5.0/24) AND Reach(milan, 100.0.20.0/24) AND Reach(brussels, 100.0.29.0/24) AND Reach(london, 100.0.15.0/24) AND Reach(marseille, 100.0.29.0/24) AND Reach(milan, 100.0.15.0/24) AND Reach(roma, 100.0.8.0/24) AND Reach(praha, 100.0.5.0/24) AND Reach(amsterdam, 100.0.13.0/24) AND Reach(roma, 100.0.3.0/24) AND Reach(bucharest, 100.0.32.0/24) AND Reach(barcelona, 100.0.25.0/24) AND Reach(praha, 100.0.18.0/24) AND Reach(lyon, 100.0.11.0/24) AND Reach(milan, 100.0.25.0/24) AND Reach(london, 100.0.14.0/24) AND Reach(london, 100.0.6.0/24) AND Reach(vienna, 100.0.31.0/24) AND Reach(bucharest, 100.0.11.0/24) AND Reach(sofia, 100.0.29.0/24) AND Reach(istanbul, 100.0.18.0/24) AND Reach(madrid, 100.0.13.0/24) AND Reach(bucharest, 100.0.2.0/24) AND Reach(roma, 100.0.15.0/24) AND Reach(rotterdam, 100.0.13.0/24) AND Reach(zurich, 100.0.21.0/24) AND Reach(zurich, 100.0.23.0/24) AND Reach(roma, 100.0.4.0/24) AND Reach(marseille, 100.0.22.0/24) AND Reach(athens, 100.0.31.0/24) AND Reach(bratislava, 100.0.8.0/24) AND Reach(praha, 100.0.4.0/24) AND Reach(praha, 100.0.20.0/24) AND Reach(sofia, 100.0.25.0/24) AND Reach(rotterdam, 100.0.8.0/24) AND Reach(basel, 100.0.14.0/24) AND Reach(frankfurt, 100.0.18.0/24) AND Reach(kiev, 100.0.20.0/24) AND Reach(geneva, 100.0.8.0/24) AND Reach(amsterdam, 100.0.15.0/24) AND Reach(basel, 100.0.10.0/24) AND Reach(kiev, 100.0.8.0/24) AND Reach(brussels, 100.0.6.0/24) AND Reach(kiev, 100.0.6.0/24) AND Reach(zurich, 100.0.8.0/24) AND Reach(madrid, 100.0.10.0/24) AND Reach(luxembourg, 100.0.18.0/24) AND Reach(lyon, 100.0.21.0/24) AND Reach(bucharest, 100.0.21.0/24) AND Reach(budapest, 100.0.20.0/24) AND Reach(amsterdam, 100.0.22.0/24) AND Reach(geneva, 100.0.4.0/24) AND Reach(brussels, 100.0.10.0/24) AND Isolate(vienna, 100.0.23.0/24) AND Reach(vienna, 100.0.23.0/24) AND Reach(bratislava, 100.0.24.0/24) AND Reach(bucharest, 100.0.14.0/24) AND Reach(marseille, 100.0.31.0/24) AND Reach(lyon, 100.0.20.0/24) AND Reach(strasbourg, 100.0.20.0/24) AND Reach(zurich, 100.0.14.0/24) AND Reach(athens, 100.0.26.0/24) AND Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from istanbul.\nConnectivity from milan to 100.0.1.0/24 is established.\nConnectivity from sofia to 100.0.18.0/24 is established.\n100.0.24.0/24 is accessible from paris.\n100.0.0.0/24 is accessible from marseille.\nThe subnet 100.0.22.0/24 is reachable from kiev.\nmilan can reach 100.0.10.0/24.\nThe subnet 100.0.1.0/24 is reachable from london.\nTraffic originating from marseille can reach the subnet 100.0.1.0/24.\n100.0.25.0/24 is accessible from athens.\n100.0.18.0/24 is accessible from paris.\n100.0.9.0/24 is accessible from warsaw.\nTraffic originating from frankfurt can reach the subnet 100.0.13.0/24.\n100.0.13.0/24 is accessible from lyon.\nathens can reach 100.0.14.0/24.\nThe subnet 100.0.31.0/24 is reachable from frankfurt.\nTraffic originating from istanbul can reach the subnet 100.0.8.0/24.\nTraffic originating from luxembourg can reach the subnet 100.0.14.0/24.\n100.0.4.0/24 is accessible from sofia.\nThe subnet 100.0.1.0/24 is reachable from frankfurt.\nparis can reach 100.0.9.0/24.\nbucharest can reach 100.0.31.0/24.\nConnectivity from amsterdam to 100.0.27.0/24 is established.\nThe subnet 100.0.31.0/24 is reachable from brussels.\nrotterdam can reach 100.0.24.0/24.\n100.0.22.0/24 is accessible from praha.\nTraffic originating from roma can reach the subnet 100.0.32.0/24.\nThe subnet 100.0.10.0/24 is reachable from sofia.\nTraffic originating from lyon can reach the subnet 100.0.8.0/24.\nThe subnet 100.0.9.0/24 is reachable from zurich.\nConnectivity from praha to 100.0.0.0/24 is established.\nConnectivity from kiev to 100.0.24.0/24 is established.\nConnectivity from geneva to 100.0.18.0/24 is established.\n100.0.20.0/24 is accessible from warsaw.\nparis can reach 100.0.32.0/24.\n100.0.25.0/24 is accessible from london.\nThe subnet 100.0.18.0/24 is reachable from brussels.\nTraffic originating from vienna can reach the subnet 100.0.13.0/24.\nThe subnet 100.0.5.0/24 is reachable from amsterdam.\nTraffic originating from milan can reach the subnet 100.0.20.0/24.\n100.0.29.0/24 is accessible from brussels.\nTraffic originating from london can reach the subnet 100.0.15.0/24.\n100.0.29.0/24 is accessible from marseille.\nmilan can reach 100.0.15.0/24.\nConnectivity from roma to 100.0.8.0/24 is established.\nTraffic originating from praha can reach the subnet 100.0.5.0/24.\nConnectivity from amsterdam to 100.0.13.0/24 is established.\nroma can reach 100.0.3.0/24.\nConnectivity from bucharest to 100.0.32.0/24 is established.\nTraffic originating from barcelona can reach the subnet 100.0.25.0/24.\n100.0.18.0/24 is accessible from praha.\n100.0.11.0/24 is accessible from lyon.\nTraffic originating from milan can reach the subnet 100.0.25.0/24.\n100.0.14.0/24 is accessible from london.\nThe subnet 100.0.6.0/24 is reachable from london.\nvienna can reach 100.0.31.0/24.\nTraffic originating from bucharest can reach the subnet 100.0.11.0/24.\nConnectivity from sofia to 100.0.29.0/24 is established.\n100.0.18.0/24 is accessible from istanbul.\nTraffic originating from madrid can reach the subnet 100.0.13.0/24.\nConnectivity from bucharest to 100.0.2.0/24 is established.\nroma can reach 100.0.15.0/24.\nThe subnet 100.0.13.0/24 is reachable from rotterdam.\nConnectivity from zurich to 100.0.21.0/24 is established.\nTraffic originating from zurich can reach the subnet 100.0.23.0/24.\nroma can reach 100.0.4.0/24.\nThe subnet 100.0.22.0/24 is reachable from marseille.\nConnectivity from athens to 100.0.31.0/24 is established.\nThe subnet 100.0.8.0/24 is reachable from bratislava.\nThe subnet 100.0.4.0/24 is reachable from praha.\n100.0.20.0/24 is accessible from praha.\nThe subnet 100.0.25.0/24 is reachable from sofia.\nThe subnet 100.0.8.0/24 is reachable from rotterdam.\nbasel can reach 100.0.14.0/24.\n100.0.18.0/24 is accessible from frankfurt.\nThe subnet 100.0.20.0/24 is reachable from kiev.\ngeneva can reach 100.0.8.0/24.\n100.0.15.0/24 is accessible from amsterdam.\nTraffic originating from basel can reach the subnet 100.0.10.0/24.\n100.0.8.0/24 is accessible from kiev.\nbrussels can reach 100.0.6.0/24.\nThe subnet 100.0.6.0/24 is reachable from kiev.\nzurich can reach 100.0.8.0/24.\nmadrid can reach 100.0.10.0/24.\nThe subnet 100.0.18.0/24 is reachable from luxembourg.\n100.0.21.0/24 is accessible from lyon.\n100.0.21.0/24 is accessible from bucharest.\nbudapest can reach 100.0.20.0/24.\namsterdam can reach 100.0.22.0/24.\nThe subnet 100.0.4.0/24 is reachable from geneva.\nTraffic originating from brussels can reach the subnet 100.0.10.0/24.\nvienna cannot reach 100.0.23.0/24.\nThe subnet 100.0.23.0/24 is reachable from vienna.\nTraffic originating from bratislava can reach the subnet 100.0.24.0/24.\n100.0.14.0/24 is accessible from bucharest.\nConnectivity from marseille to 100.0.31.0/24 is established.\nThe subnet 100.0.20.0/24 is reachable from lyon.\nConnectivity from strasbourg to 100.0.20.0/24 is established.\nTraffic originating from zurich can reach the subnet 100.0.14.0/24.\n100.0.26.0/24 is accessible from athens.\n100.0.26.0/24 is accessible from basel.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_21",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.31.0/24)",
+    "raw_intent": "100.0.31.0/24 is accessible from bucharest.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_91",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.23.0/24)",
+    "raw_intent": "Connectivity from vienna to 100.0.23.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_126",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(milan, 100.0.25.0/24) AND Isolate(london, 100.0.14.0/24) AND Reach(london, 100.0.14.0/24)",
+    "raw_intent": "Traffic originating from milan can reach the subnet 100.0.25.0/24.\nlondon cannot reach 100.0.14.0/24.\nlondon can reach 100.0.14.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_115",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.0.0/24) AND Reach(kiev, 100.0.24.0/24)",
+    "raw_intent": "Connectivity from praha to 100.0.0.0/24 is established.\nConnectivity from kiev to 100.0.24.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_166",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.6.0/24) AND Reach(kiev, 100.0.6.0/24) AND Reach(zurich, 100.0.8.0/24) AND Reach(madrid, 100.0.10.0/24) AND Isolate(luxembourg, 100.0.18.0/24) AND Reach(luxembourg, 100.0.18.0/24)",
+    "raw_intent": "100.0.6.0/24 is accessible from brussels.\nkiev can reach 100.0.6.0/24.\nTraffic originating from zurich can reach the subnet 100.0.8.0/24.\n100.0.10.0/24 is accessible from madrid.\nluxembourg cannot reach 100.0.18.0/24.\nConnectivity from luxembourg to 100.0.18.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_107",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(athens, 100.0.14.0/24) AND Reach(frankfurt, 100.0.31.0/24)",
+    "raw_intent": "Connectivity from athens to 100.0.14.0/24 is established.\n100.0.31.0/24 is accessible from frankfurt.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_55",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(vienna, 100.0.31.0/24)",
+    "raw_intent": "Connectivity from vienna to 100.0.31.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_60",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(bucharest, 100.0.2.0/24) AND Reach(bucharest, 100.0.2.0/24)",
+    "raw_intent": "bucharest cannot reach 100.0.2.0/24.\n100.0.2.0/24 is accessible from bucharest.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_133",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(marseille, 100.0.22.0/24) AND Reach(athens, 100.0.31.0/24)",
+    "raw_intent": "The subnet 100.0.22.0/24 is reachable from marseille.\nThe subnet 100.0.31.0/24 is reachable from athens.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_70",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(praha, 100.0.20.0/24) AND Reach(praha, 100.0.20.0/24)",
+    "raw_intent": "praha cannot reach 100.0.20.0/24.\nThe subnet 100.0.20.0/24 is reachable from praha.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_134",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bratislava, 100.0.8.0/24) AND Isolate(praha, 100.0.4.0/24) AND Reach(praha, 100.0.4.0/24)",
+    "raw_intent": "Connectivity from bratislava to 100.0.8.0/24 is established.\npraha cannot reach 100.0.4.0/24.\nConnectivity from praha to 100.0.4.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_100",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(istanbul, 100.0.4.0/24) AND Isolate(milan, 100.0.1.0/24) AND Reach(milan, 100.0.1.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from istanbul.\nmilan cannot reach 100.0.1.0/24.\nTraffic originating from milan can reach the subnet 100.0.1.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_169",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.20.0/24) AND Reach(strasbourg, 100.0.20.0/24) AND Reach(zurich, 100.0.14.0/24) AND Reach(athens, 100.0.26.0/24) AND Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "lyon can reach 100.0.20.0/24.\nThe subnet 100.0.20.0/24 is reachable from strasbourg.\nzurich can reach 100.0.14.0/24.\n100.0.26.0/24 is accessible from athens.\nConnectivity from basel to 100.0.26.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_190",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.18.0/24) AND Reach(lyon, 100.0.11.0/24) AND Reach(milan, 100.0.25.0/24) AND Reach(london, 100.0.14.0/24) AND Reach(london, 100.0.6.0/24) AND Reach(vienna, 100.0.31.0/24) AND Reach(bucharest, 100.0.11.0/24) AND Reach(sofia, 100.0.29.0/24) AND Reach(istanbul, 100.0.18.0/24) AND Reach(madrid, 100.0.13.0/24) AND Reach(bucharest, 100.0.2.0/24) AND Reach(roma, 100.0.15.0/24) AND Reach(rotterdam, 100.0.13.0/24) AND Reach(zurich, 100.0.21.0/24) AND Reach(zurich, 100.0.23.0/24) AND Reach(roma, 100.0.4.0/24) AND Reach(marseille, 100.0.22.0/24) AND Reach(athens, 100.0.31.0/24) AND Reach(bratislava, 100.0.8.0/24) AND Reach(praha, 100.0.4.0/24) AND Reach(praha, 100.0.20.0/24) AND Reach(sofia, 100.0.25.0/24) AND Reach(rotterdam, 100.0.8.0/24) AND Reach(basel, 100.0.14.0/24) AND Reach(frankfurt, 100.0.18.0/24) AND Reach(kiev, 100.0.20.0/24) AND Reach(geneva, 100.0.8.0/24) AND Reach(amsterdam, 100.0.15.0/24) AND Reach(basel, 100.0.10.0/24) AND Reach(kiev, 100.0.8.0/24) AND Reach(brussels, 100.0.6.0/24) AND Reach(kiev, 100.0.6.0/24) AND Reach(zurich, 100.0.8.0/24) AND Reach(madrid, 100.0.10.0/24) AND Reach(luxembourg, 100.0.18.0/24) AND Reach(lyon, 100.0.21.0/24) AND Reach(bucharest, 100.0.21.0/24) AND Reach(budapest, 100.0.20.0/24) AND Reach(amsterdam, 100.0.22.0/24) AND Reach(geneva, 100.0.4.0/24) AND Reach(brussels, 100.0.10.0/24) AND Reach(vienna, 100.0.23.0/24) AND Reach(bratislava, 100.0.24.0/24) AND Reach(bucharest, 100.0.14.0/24) AND Reach(marseille, 100.0.31.0/24) AND Reach(lyon, 100.0.20.0/24) AND Reach(strasbourg, 100.0.20.0/24) AND Reach(zurich, 100.0.14.0/24) AND Reach(athens, 100.0.26.0/24) AND Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "Connectivity from praha to 100.0.18.0/24 is established.\nTraffic originating from lyon can reach the subnet 100.0.11.0/24.\n100.0.25.0/24 is accessible from milan.\n100.0.14.0/24 is accessible from london.\nConnectivity from london to 100.0.6.0/24 is established.\nConnectivity from vienna to 100.0.31.0/24 is established.\nConnectivity from bucharest to 100.0.11.0/24 is established.\nsofia can reach 100.0.29.0/24.\n100.0.18.0/24 is accessible from istanbul.\nmadrid can reach 100.0.13.0/24.\nThe subnet 100.0.2.0/24 is reachable from bucharest.\nroma can reach 100.0.15.0/24.\n100.0.13.0/24 is accessible from rotterdam.\nThe subnet 100.0.21.0/24 is reachable from zurich.\nConnectivity from zurich to 100.0.23.0/24 is established.\n100.0.4.0/24 is accessible from roma.\nmarseille can reach 100.0.22.0/24.\nTraffic originating from athens can reach the subnet 100.0.31.0/24.\nThe subnet 100.0.8.0/24 is reachable from bratislava.\n100.0.4.0/24 is accessible from praha.\npraha can reach 100.0.20.0/24.\n100.0.25.0/24 is accessible from sofia.\n100.0.8.0/24 is accessible from rotterdam.\nConnectivity from basel to 100.0.14.0/24 is established.\nfrankfurt can reach 100.0.18.0/24.\n100.0.20.0/24 is accessible from kiev.\nThe subnet 100.0.8.0/24 is reachable from geneva.\nTraffic originating from amsterdam can reach the subnet 100.0.15.0/24.\n100.0.10.0/24 is accessible from basel.\nConnectivity from kiev to 100.0.8.0/24 is established.\nTraffic originating from brussels can reach the subnet 100.0.6.0/24.\nkiev can reach 100.0.6.0/24.\n100.0.8.0/24 is accessible from zurich.\n100.0.10.0/24 is accessible from madrid.\nluxembourg can reach 100.0.18.0/24.\nThe subnet 100.0.21.0/24 is reachable from lyon.\nbucharest can reach 100.0.21.0/24.\nThe subnet 100.0.20.0/24 is reachable from budapest.\nTraffic originating from amsterdam can reach the subnet 100.0.22.0/24.\nTraffic originating from geneva can reach the subnet 100.0.4.0/24.\nConnectivity from brussels to 100.0.10.0/24 is established.\n100.0.23.0/24 is accessible from vienna.\nConnectivity from bratislava to 100.0.24.0/24 is established.\nTraffic originating from bucharest can reach the subnet 100.0.14.0/24.\nmarseille can reach 100.0.31.0/24.\n100.0.20.0/24 is accessible from lyon.\nstrasbourg can reach 100.0.20.0/24.\nzurich can reach 100.0.14.0/24.\nThe subnet 100.0.26.0/24 is reachable from athens.\nTraffic originating from basel can reach the subnet 100.0.26.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_9",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(athens, 100.0.25.0/24)",
+    "raw_intent": "Connectivity from athens to 100.0.25.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_38",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(amsterdam, 100.0.5.0/24) AND Reach(amsterdam, 100.0.5.0/24)",
+    "raw_intent": "amsterdam cannot reach 100.0.5.0/24.\nConnectivity from amsterdam to 100.0.5.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_33",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(warsaw, 100.0.20.0/24)",
+    "raw_intent": "The subnet 100.0.20.0/24 is reachable from warsaw.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_22",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(amsterdam, 100.0.27.0/24) AND Reach(amsterdam, 100.0.27.0/24)",
+    "raw_intent": "amsterdam cannot reach 100.0.27.0/24.\namsterdam can reach 100.0.27.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_17",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(luxembourg, 100.0.14.0/24)",
+    "raw_intent": "The subnet 100.0.14.0/24 is reachable from luxembourg.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_121",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(marseille, 100.0.29.0/24) AND Reach(milan, 100.0.15.0/24)",
+    "raw_intent": "Connectivity from marseille to 100.0.29.0/24 is established.\n100.0.15.0/24 is accessible from milan.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_66",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(marseille, 100.0.22.0/24) AND Reach(marseille, 100.0.22.0/24)",
+    "raw_intent": "marseille cannot reach 100.0.22.0/24.\nTraffic originating from marseille can reach the subnet 100.0.22.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_8",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(marseille, 100.0.1.0/24) AND Reach(marseille, 100.0.1.0/24)",
+    "raw_intent": "marseille cannot reach 100.0.1.0/24.\nConnectivity from marseille to 100.0.1.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_155",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.22.0/24) AND Reach(roma, 100.0.32.0/24) AND Reach(sofia, 100.0.10.0/24) AND Reach(lyon, 100.0.8.0/24) AND Reach(zurich, 100.0.9.0/24)",
+    "raw_intent": "Traffic originating from praha can reach the subnet 100.0.22.0/24.\nroma can reach 100.0.32.0/24.\nTraffic originating from sofia can reach the subnet 100.0.10.0/24.\nThe subnet 100.0.8.0/24 is reachable from lyon.\nzurich can reach 100.0.9.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_188",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.20.0/24) AND Reach(geneva, 100.0.8.0/24) AND Reach(amsterdam, 100.0.15.0/24) AND Reach(basel, 100.0.10.0/24) AND Reach(kiev, 100.0.8.0/24) AND Reach(brussels, 100.0.6.0/24) AND Reach(kiev, 100.0.6.0/24) AND Reach(zurich, 100.0.8.0/24) AND Reach(madrid, 100.0.10.0/24) AND Reach(luxembourg, 100.0.18.0/24) AND Reach(lyon, 100.0.21.0/24) AND Reach(bucharest, 100.0.21.0/24) AND Reach(budapest, 100.0.20.0/24) AND Reach(amsterdam, 100.0.22.0/24) AND Reach(geneva, 100.0.4.0/24) AND Reach(brussels, 100.0.10.0/24) AND Reach(vienna, 100.0.23.0/24) AND Reach(bratislava, 100.0.24.0/24) AND Reach(bucharest, 100.0.14.0/24) AND Reach(marseille, 100.0.31.0/24) AND Reach(lyon, 100.0.20.0/24) AND Reach(strasbourg, 100.0.20.0/24) AND Reach(zurich, 100.0.14.0/24) AND Reach(athens, 100.0.26.0/24) AND Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "The subnet 100.0.20.0/24 is reachable from kiev.\nThe subnet 100.0.8.0/24 is reachable from geneva.\nConnectivity from amsterdam to 100.0.15.0/24 is established.\nTraffic originating from basel can reach the subnet 100.0.10.0/24.\nkiev can reach 100.0.8.0/24.\n100.0.6.0/24 is accessible from brussels.\nThe subnet 100.0.6.0/24 is reachable from kiev.\nzurich can reach 100.0.8.0/24.\nmadrid can reach 100.0.10.0/24.\nTraffic originating from luxembourg can reach the subnet 100.0.18.0/24.\nConnectivity from lyon to 100.0.21.0/24 is established.\nConnectivity from bucharest to 100.0.21.0/24 is established.\nConnectivity from budapest to 100.0.20.0/24 is established.\nThe subnet 100.0.22.0/24 is reachable from amsterdam.\nTraffic originating from geneva can reach the subnet 100.0.4.0/24.\nConnectivity from brussels to 100.0.10.0/24 is established.\nTraffic originating from vienna can reach the subnet 100.0.23.0/24.\nThe subnet 100.0.24.0/24 is reachable from bratislava.\nConnectivity from bucharest to 100.0.14.0/24 is established.\nTraffic originating from marseille can reach the subnet 100.0.31.0/24.\nConnectivity from lyon to 100.0.20.0/24 is established.\nThe subnet 100.0.20.0/24 is reachable from strasbourg.\nConnectivity from zurich to 100.0.14.0/24 is established.\nThe subnet 100.0.26.0/24 is reachable from athens.\nThe subnet 100.0.26.0/24 is reachable from basel.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_47",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(roma, 100.0.3.0/24)",
+    "raw_intent": "Connectivity from roma to 100.0.3.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_173",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.0.0/24) AND Reach(kiev, 100.0.24.0/24) AND Reach(geneva, 100.0.18.0/24) AND Reach(warsaw, 100.0.20.0/24) AND Reach(paris, 100.0.32.0/24) AND Reach(london, 100.0.25.0/24) AND Reach(brussels, 100.0.18.0/24) AND Reach(vienna, 100.0.13.0/24) AND Reach(amsterdam, 100.0.5.0/24) AND Reach(milan, 100.0.20.0/24)",
+    "raw_intent": "Connectivity from praha to 100.0.0.0/24 is established.\nTraffic originating from kiev can reach the subnet 100.0.24.0/24.\ngeneva can reach 100.0.18.0/24.\nConnectivity from warsaw to 100.0.20.0/24 is established.\nThe subnet 100.0.32.0/24 is reachable from paris.\nTraffic originating from london can reach the subnet 100.0.25.0/24.\nConnectivity from brussels to 100.0.18.0/24 is established.\nvienna can reach 100.0.13.0/24.\nTraffic originating from amsterdam can reach the subnet 100.0.5.0/24.\nConnectivity from milan to 100.0.20.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_185",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(istanbul, 100.0.4.0/24) AND Reach(milan, 100.0.1.0/24) AND Isolate(sofia, 100.0.18.0/24) AND Reach(sofia, 100.0.18.0/24) AND Reach(paris, 100.0.24.0/24) AND Reach(marseille, 100.0.0.0/24) AND Reach(kiev, 100.0.22.0/24) AND Reach(milan, 100.0.10.0/24) AND Reach(london, 100.0.1.0/24) AND Reach(marseille, 100.0.1.0/24) AND Reach(athens, 100.0.25.0/24) AND Reach(paris, 100.0.18.0/24) AND Reach(warsaw, 100.0.9.0/24) AND Reach(frankfurt, 100.0.13.0/24) AND Reach(lyon, 100.0.13.0/24) AND Reach(athens, 100.0.14.0/24) AND Reach(frankfurt, 100.0.31.0/24) AND Reach(istanbul, 100.0.8.0/24) AND Reach(luxembourg, 100.0.14.0/24) AND Reach(sofia, 100.0.4.0/24) AND Reach(frankfurt, 100.0.1.0/24) AND Reach(paris, 100.0.9.0/24) AND Reach(bucharest, 100.0.31.0/24) AND Reach(amsterdam, 100.0.27.0/24) AND Reach(brussels, 100.0.31.0/24) AND Reach(rotterdam, 100.0.24.0/24)",
+    "raw_intent": "The subnet 100.0.4.0/24 is reachable from istanbul.\nConnectivity from milan to 100.0.1.0/24 is established.\nsofia cannot reach 100.0.18.0/24.\nThe subnet 100.0.18.0/24 is reachable from sofia.\nConnectivity from paris to 100.0.24.0/24 is established.\nThe subnet 100.0.0.0/24 is reachable from marseille.\nkiev can reach 100.0.22.0/24.\nTraffic originating from milan can reach the subnet 100.0.10.0/24.\nlondon can reach 100.0.1.0/24.\nConnectivity from marseille to 100.0.1.0/24 is established.\nConnectivity from athens to 100.0.25.0/24 is established.\nConnectivity from paris to 100.0.18.0/24 is established.\n100.0.9.0/24 is accessible from warsaw.\nThe subnet 100.0.13.0/24 is reachable from frankfurt.\nThe subnet 100.0.13.0/24 is reachable from lyon.\nConnectivity from athens to 100.0.14.0/24 is established.\nThe subnet 100.0.31.0/24 is reachable from frankfurt.\nThe subnet 100.0.8.0/24 is reachable from istanbul.\nThe subnet 100.0.14.0/24 is reachable from luxembourg.\nTraffic originating from sofia can reach the subnet 100.0.4.0/24.\nConnectivity from frankfurt to 100.0.1.0/24 is established.\nConnectivity from paris to 100.0.9.0/24 is established.\nThe subnet 100.0.31.0/24 is reachable from bucharest.\n100.0.27.0/24 is accessible from amsterdam.\nbrussels can reach 100.0.31.0/24.\nTraffic originating from rotterdam can reach the subnet 100.0.24.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_147",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(marseille, 100.0.31.0/24) AND Reach(lyon, 100.0.20.0/24)",
+    "raw_intent": "100.0.31.0/24 is accessible from marseille.\nConnectivity from lyon to 100.0.20.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_179",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.10.0/24) AND Reach(vienna, 100.0.23.0/24) AND Reach(bratislava, 100.0.24.0/24) AND Reach(bucharest, 100.0.14.0/24) AND Reach(marseille, 100.0.31.0/24) AND Reach(lyon, 100.0.20.0/24) AND Reach(strasbourg, 100.0.20.0/24) AND Reach(zurich, 100.0.14.0/24) AND Reach(athens, 100.0.26.0/24) AND Reach(basel, 100.0.26.0/24)",
+    "raw_intent": "100.0.10.0/24 is accessible from brussels.\nThe subnet 100.0.23.0/24 is reachable from vienna.\n100.0.24.0/24 is accessible from bratislava.\n100.0.14.0/24 is accessible from bucharest.\nmarseille can reach 100.0.31.0/24.\n100.0.20.0/24 is accessible from lyon.\nstrasbourg can reach 100.0.20.0/24.\nThe subnet 100.0.14.0/24 is reachable from zurich.\n100.0.26.0/24 is accessible from athens.\nTraffic originating from basel can reach the subnet 100.0.26.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_98",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(athens, 100.0.26.0/24) AND Reach(athens, 100.0.26.0/24)",
+    "raw_intent": "athens cannot reach 100.0.26.0/24.\nTraffic originating from athens can reach the subnet 100.0.26.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_152",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.18.0/24) AND Reach(warsaw, 100.0.9.0/24) AND Reach(frankfurt, 100.0.13.0/24) AND Isolate(lyon, 100.0.13.0/24) AND Reach(lyon, 100.0.13.0/24) AND Reach(athens, 100.0.14.0/24)",
+    "raw_intent": "Connectivity from paris to 100.0.18.0/24 is established.\n100.0.9.0/24 is accessible from warsaw.\nThe subnet 100.0.13.0/24 is reachable from frankfurt.\nlyon cannot reach 100.0.13.0/24.\nTraffic originating from lyon can reach the subnet 100.0.13.0/24.\nThe subnet 100.0.14.0/24 is reachable from athens.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_181",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.9.0/24) AND Reach(bucharest, 100.0.31.0/24) AND Reach(amsterdam, 100.0.27.0/24) AND Reach(brussels, 100.0.31.0/24) AND Reach(rotterdam, 100.0.24.0/24) AND Reach(praha, 100.0.22.0/24) AND Reach(roma, 100.0.32.0/24) AND Reach(sofia, 100.0.10.0/24) AND Reach(lyon, 100.0.8.0/24) AND Reach(zurich, 100.0.9.0/24) AND Reach(praha, 100.0.0.0/24) AND Reach(kiev, 100.0.24.0/24) AND Reach(geneva, 100.0.18.0/24) AND Reach(warsaw, 100.0.20.0/24) AND Reach(paris, 100.0.32.0/24) AND Reach(london, 100.0.25.0/24) AND Reach(brussels, 100.0.18.0/24) AND Reach(vienna, 100.0.13.0/24) AND Reach(amsterdam, 100.0.5.0/24) AND Reach(milan, 100.0.20.0/24)",
+    "raw_intent": "Traffic originating from paris can reach the subnet 100.0.9.0/24.\nConnectivity from bucharest to 100.0.31.0/24 is established.\n100.0.27.0/24 is accessible from amsterdam.\nbrussels can reach 100.0.31.0/24.\nTraffic originating from rotterdam can reach the subnet 100.0.24.0/24.\nThe subnet 100.0.22.0/24 is reachable from praha.\nThe subnet 100.0.32.0/24 is reachable from roma.\nTraffic originating from sofia can reach the subnet 100.0.10.0/24.\nlyon can reach 100.0.8.0/24.\nConnectivity from zurich to 100.0.9.0/24 is established.\nConnectivity from praha to 100.0.0.0/24 is established.\nThe subnet 100.0.24.0/24 is reachable from kiev.\nConnectivity from geneva to 100.0.18.0/24 is established.\nTraffic originating from warsaw can reach the subnet 100.0.20.0/24.\nThe subnet 100.0.32.0/24 is reachable from paris.\nConnectivity from london to 100.0.25.0/24 is established.\n100.0.18.0/24 is accessible from brussels.\nTraffic originating from vienna can reach the subnet 100.0.13.0/24.\nThe subnet 100.0.5.0/24 is reachable from amsterdam.\nmilan can reach 100.0.20.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_113",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(roma, 100.0.32.0/24) AND Reach(sofia, 100.0.10.0/24)",
+    "raw_intent": "100.0.32.0/24 is accessible from roma.\nsofia can reach 100.0.10.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_73",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(basel, 100.0.14.0/24)",
+    "raw_intent": "Connectivity from basel to 100.0.14.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_150",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(istanbul, 100.0.4.0/24) AND Reach(istanbul, 100.0.4.0/24) AND Reach(milan, 100.0.1.0/24) AND Reach(sofia, 100.0.18.0/24) AND Reach(paris, 100.0.24.0/24) AND Reach(marseille, 100.0.0.0/24)",
+    "raw_intent": "istanbul cannot reach 100.0.4.0/24.\n100.0.4.0/24 is accessible from istanbul.\n100.0.1.0/24 is accessible from milan.\nConnectivity from sofia to 100.0.18.0/24 is established.\n100.0.24.0/24 is accessible from paris.\nTraffic originating from marseille can reach the subnet 100.0.0.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_171",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.18.0/24) AND Reach(warsaw, 100.0.9.0/24) AND Reach(frankfurt, 100.0.13.0/24) AND Reach(lyon, 100.0.13.0/24) AND Reach(athens, 100.0.14.0/24) AND Reach(frankfurt, 100.0.31.0/24) AND Reach(istanbul, 100.0.8.0/24) AND Reach(luxembourg, 100.0.14.0/24) AND Reach(sofia, 100.0.4.0/24) AND Reach(frankfurt, 100.0.1.0/24)",
+    "raw_intent": "paris can reach 100.0.18.0/24.\nwarsaw can reach 100.0.9.0/24.\nfrankfurt can reach 100.0.13.0/24.\nConnectivity from lyon to 100.0.13.0/24 is established.\n100.0.14.0/24 is accessible from athens.\nThe subnet 100.0.31.0/24 is reachable from frankfurt.\nConnectivity from istanbul to 100.0.8.0/24 is established.\nConnectivity from luxembourg to 100.0.14.0/24 is established.\nThe subnet 100.0.4.0/24 is reachable from sofia.\n100.0.1.0/24 is accessible from frankfurt.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_154",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(paris, 100.0.9.0/24) AND Isolate(bucharest, 100.0.31.0/24) AND Reach(bucharest, 100.0.31.0/24) AND Reach(amsterdam, 100.0.27.0/24) AND Reach(brussels, 100.0.31.0/24) AND Reach(rotterdam, 100.0.24.0/24)",
+    "raw_intent": "100.0.9.0/24 is accessible from paris.\nbucharest cannot reach 100.0.31.0/24.\n100.0.31.0/24 is accessible from bucharest.\n100.0.27.0/24 is accessible from amsterdam.\nTraffic originating from brussels can reach the subnet 100.0.31.0/24.\nThe subnet 100.0.24.0/24 is reachable from rotterdam.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_52",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(milan, 100.0.25.0/24) AND Reach(milan, 100.0.25.0/24)",
+    "raw_intent": "milan cannot reach 100.0.25.0/24.\nConnectivity from milan to 100.0.25.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_138",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(geneva, 100.0.8.0/24) AND Reach(geneva, 100.0.8.0/24) AND Reach(amsterdam, 100.0.15.0/24)",
+    "raw_intent": "geneva cannot reach 100.0.8.0/24.\nTraffic originating from geneva can reach the subnet 100.0.8.0/24.\namsterdam can reach 100.0.15.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_85",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.21.0/24)",
+    "raw_intent": "100.0.21.0/24 is accessible from lyon.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_140",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.6.0/24) AND Isolate(kiev, 100.0.6.0/24) AND Reach(kiev, 100.0.6.0/24)",
+    "raw_intent": "Connectivity from brussels to 100.0.6.0/24 is established.\nkiev cannot reach 100.0.6.0/24.\nTraffic originating from kiev can reach the subnet 100.0.6.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_31",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.24.0/24)",
+    "raw_intent": "100.0.24.0/24 is accessible from kiev.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_74",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(frankfurt, 100.0.18.0/24) AND Reach(frankfurt, 100.0.18.0/24)",
+    "raw_intent": "frankfurt cannot reach 100.0.18.0/24.\nConnectivity from frankfurt to 100.0.18.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_141",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(zurich, 100.0.8.0/24) AND Reach(madrid, 100.0.10.0/24)",
+    "raw_intent": "100.0.8.0/24 is accessible from zurich.\nConnectivity from madrid to 100.0.10.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_77",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(amsterdam, 100.0.15.0/24)",
+    "raw_intent": "100.0.15.0/24 is accessible from amsterdam.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_27",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(sofia, 100.0.10.0/24)",
+    "raw_intent": "Traffic originating from sofia can reach the subnet 100.0.10.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_125",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(praha, 100.0.18.0/24) AND Reach(lyon, 100.0.11.0/24)",
+    "raw_intent": "Connectivity from praha to 100.0.18.0/24 is established.\nThe subnet 100.0.11.0/24 is reachable from lyon.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_130",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(bucharest, 100.0.2.0/24) AND Isolate(roma, 100.0.15.0/24) AND Reach(roma, 100.0.15.0/24)",
+    "raw_intent": "bucharest can reach 100.0.2.0/24.\nroma cannot reach 100.0.15.0/24.\nConnectivity from roma to 100.0.15.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_81",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(kiev, 100.0.6.0/24)",
+    "raw_intent": "Connectivity from kiev to 100.0.6.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_20",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(paris, 100.0.9.0/24) AND Reach(paris, 100.0.9.0/24)",
+    "raw_intent": "paris cannot reach 100.0.9.0/24.\nConnectivity from paris to 100.0.9.0/24 is established.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_23",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(brussels, 100.0.31.0/24)",
+    "raw_intent": "brussels can reach 100.0.31.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_114",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(lyon, 100.0.8.0/24) AND Isolate(zurich, 100.0.9.0/24) AND Reach(zurich, 100.0.9.0/24)",
+    "raw_intent": "Connectivity from lyon to 100.0.8.0/24 is established.\nzurich cannot reach 100.0.9.0/24.\nTraffic originating from zurich can reach the subnet 100.0.9.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_139",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Reach(basel, 100.0.10.0/24) AND Reach(kiev, 100.0.8.0/24)",
+    "raw_intent": "Traffic originating from basel can reach the subnet 100.0.10.0/24.\nTraffic originating from kiev can reach the subnet 100.0.8.0/24.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "step_1_spec_conflict_36",
+    "source": "data\\netconfeval\\conext24-NetConfEval-main\\datasets\\step_1_spec_conflict.jsonl",
+    "intent": "Isolate(brussels, 100.0.18.0/24) AND Reach(brussels, 100.0.18.0/24)",
+    "raw_intent": "brussels cannot reach 100.0.18.0/24.\n100.0.18.0/24 is accessible from brussels.",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 6
+  }
+]

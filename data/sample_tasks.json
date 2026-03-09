@@ -1,0 +1,38 @@
+[
+  {
+    "id": "t1_isolate_and_reach",
+    "intent": "Isolate finance from office AND Reach finance internet",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [["finance", "office"], ["finance", "internet"]],
+        "acl": []
+      }
+    },
+    "max_rounds": 3
+  },
+  {
+    "id": "t2_allow_required",
+    "intent": "Allow finance internet",
+    "llm": {
+      "type": "rule_based",
+      "initial_cfg": {
+        "links": [],
+        "acl": []
+      }
+    },
+    "max_rounds": 2
+  },
+  {
+    "id": "t3_or_branch",
+    "intent": "(Reach a b) OR (Reach a c)",
+    "llm": {
+      "type": "mock",
+      "candidates": [
+        {"links": [], "acl": []},
+        {"links": [["a", "c"]], "acl": []}
+      ]
+    },
+    "max_rounds": 2
+  }
+]

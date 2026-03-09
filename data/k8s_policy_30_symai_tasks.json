@@ -1,0 +1,4744 @@
+[
+  {
+    "id": "k8sgen_0001_reach_service_label_mismatch",
+    "intent": "Reach pod:cron5046 svc:orders2604 port=8080 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "billing4049",
+            "namespace": "ops",
+            "labels": {
+              "app": "billing4049"
+            }
+          },
+          {
+            "name": "metrics4765",
+            "namespace": "ops",
+            "labels": {
+              "app": "metrics4765"
+            }
+          },
+          {
+            "name": "cron5046",
+            "namespace": "ops",
+            "labels": {
+              "app": "cron5046",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "users2505",
+            "namespace": "staging",
+            "labels": {
+              "app": "users2505"
+            }
+          },
+          {
+            "name": "backup8102",
+            "namespace": "staging",
+            "labels": {
+              "app": "backup8102"
+            }
+          },
+          {
+            "name": "metrics7298",
+            "namespace": "staging",
+            "labels": {
+              "app": "metrics7298"
+            }
+          },
+          {
+            "name": "profile4721",
+            "namespace": "staging",
+            "labels": {
+              "app": "profile4721",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "gateway6108",
+            "namespace": "staging",
+            "labels": {
+              "app": "gateway6108"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "orders2604",
+            "namespace": "ops",
+            "selector": {
+              "app": "metrics4765"
+            }
+          },
+          {
+            "name": "auth140",
+            "namespace": "ops",
+            "selector": {
+              "app": "cron5046"
+            }
+          },
+          {
+            "name": "orders6681",
+            "namespace": "staging",
+            "selector": {
+              "app": "backup8102"
+            }
+          },
+          {
+            "name": "auth8676",
+            "namespace": "staging",
+            "selector": {
+              "app": "users2505"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-cron5046-to-orders2604-typo",
+          "action": "allow",
+          "from": {
+            "namespace": "ops",
+            "podSelector": {
+              "app": "cron5046"
+            }
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": {
+              "app": "typo-metrics4765"
+            }
+          },
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0003_reach_pod_missing_policy",
+    "intent": "Reach pod:auth9805 pod:frontend9610 port=5432 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "users5759",
+            "namespace": "test",
+            "labels": {
+              "app": "users5759",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "auth9805",
+            "namespace": "test",
+            "labels": {
+              "app": "auth9805",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "frontend9610",
+            "namespace": "test",
+            "labels": {
+              "app": "frontend9610",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cache2105",
+            "namespace": "test",
+            "labels": {
+              "app": "cache2105"
+            }
+          },
+          {
+            "name": "frontend4256",
+            "namespace": "qa",
+            "labels": {
+              "app": "frontend4256",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "debug2208",
+            "namespace": "qa",
+            "labels": {
+              "app": "debug2208"
+            }
+          },
+          {
+            "name": "auth1803",
+            "namespace": "qa",
+            "labels": {
+              "app": "auth1803"
+            }
+          },
+          {
+            "name": "frontend1009",
+            "namespace": "qa",
+            "labels": {
+              "app": "frontend1009"
+            }
+          },
+          {
+            "name": "api3585",
+            "namespace": "qa",
+            "labels": {
+              "app": "api3585"
+            }
+          },
+          {
+            "name": "cron1694",
+            "namespace": "prod",
+            "labels": {
+              "app": "cron1694"
+            }
+          },
+          {
+            "name": "backup580",
+            "namespace": "prod",
+            "labels": {
+              "app": "backup580"
+            }
+          },
+          {
+            "name": "admin3423",
+            "namespace": "prod",
+            "labels": {
+              "app": "admin3423",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "orders4423",
+            "namespace": "prod",
+            "labels": {
+              "app": "orders4423",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "search4099",
+            "namespace": "prod",
+            "labels": {
+              "app": "search4099"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "metrics8376",
+            "namespace": "test",
+            "selector": {
+              "app": "auth9805"
+            }
+          },
+          {
+            "name": "gateway124",
+            "namespace": "test",
+            "selector": {
+              "app": "auth9805"
+            }
+          },
+          {
+            "name": "db2808",
+            "namespace": "qa",
+            "selector": {
+              "app": "debug2208"
+            }
+          },
+          {
+            "name": "users3522",
+            "namespace": "qa",
+            "selector": {
+              "app": "debug2208"
+            }
+          },
+          {
+            "name": "users6337",
+            "namespace": "prod",
+            "selector": {
+              "app": "backup580"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": []
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0010_isolate_ns_and_reach_service",
+    "intent": "Isolate ns:sandbox ns:dev port=3306 protocol=tcp AND Reach pod:payments2910 svc:orders4461 port=3306 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "api8976",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "api8976"
+            }
+          },
+          {
+            "name": "admin3158",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "admin3158",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "payments2910",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "payments2910"
+            }
+          },
+          {
+            "name": "frontend1322",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "frontend1322",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "db4202",
+            "namespace": "dev",
+            "labels": {
+              "app": "db4202"
+            }
+          },
+          {
+            "name": "inventory1422",
+            "namespace": "dev",
+            "labels": {
+              "app": "inventory1422"
+            }
+          },
+          {
+            "name": "users845",
+            "namespace": "dev",
+            "labels": {
+              "app": "users845"
+            }
+          },
+          {
+            "name": "cron578",
+            "namespace": "prod",
+            "labels": {
+              "app": "cron578"
+            }
+          },
+          {
+            "name": "gateway7281",
+            "namespace": "prod",
+            "labels": {
+              "app": "gateway7281",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "worker2933",
+            "namespace": "prod",
+            "labels": {
+              "app": "worker2933"
+            }
+          },
+          {
+            "name": "backup7965",
+            "namespace": "prod",
+            "labels": {
+              "app": "backup7965",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "orders4461",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "payments2910"
+            }
+          },
+          {
+            "name": "search4317",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "admin3158"
+            }
+          },
+          {
+            "name": "users1425",
+            "namespace": "dev",
+            "selector": {
+              "app": "inventory1422"
+            }
+          },
+          {
+            "name": "auth2036",
+            "namespace": "prod",
+            "selector": {
+              "app": "worker2933"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-payments2910-to-svc-orders4461",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "payments2910"
+            }
+          },
+          "to": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "payments2910"
+            }
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-sandbox-to-dev-any",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-sandbox-to-dev-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0012_isolate_ns_allow_all_public",
+    "intent": "Isolate ns:test ns:staging port=9090 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "metrics7452",
+            "namespace": "test",
+            "labels": {
+              "app": "metrics7452",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "users255",
+            "namespace": "test",
+            "labels": {
+              "app": "users255"
+            }
+          },
+          {
+            "name": "report101",
+            "namespace": "test",
+            "labels": {
+              "app": "report101"
+            }
+          },
+          {
+            "name": "report6862",
+            "namespace": "staging",
+            "labels": {
+              "app": "report6862"
+            }
+          },
+          {
+            "name": "profile64",
+            "namespace": "staging",
+            "labels": {
+              "app": "profile64",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "users9996",
+            "namespace": "staging",
+            "labels": {
+              "app": "users9996"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "api7516",
+            "namespace": "test",
+            "selector": {
+              "app": "report101"
+            }
+          },
+          {
+            "name": "db4608",
+            "namespace": "test",
+            "selector": {
+              "app": "metrics7452"
+            }
+          },
+          {
+            "name": "metrics8972",
+            "namespace": "staging",
+            "selector": {
+              "app": "report6862"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-public-anywhere",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-public-anywhere-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0018_reach_and_isolate_pod_level",
+    "intent": "Reach pod:payments2657 pod:cron1738 port=3306 protocol=tcp AND Isolate pod:payments2657 pod:admin7500 port=3306 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "cron1738",
+            "namespace": "qa",
+            "labels": {
+              "app": "cron1738",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "profile1574",
+            "namespace": "qa",
+            "labels": {
+              "app": "profile1574",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "billing7966",
+            "namespace": "qa",
+            "labels": {
+              "app": "billing7966"
+            }
+          },
+          {
+            "name": "payments2657",
+            "namespace": "qa",
+            "labels": {
+              "app": "payments2657",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "backup7179",
+            "namespace": "ops",
+            "labels": {
+              "app": "backup7179"
+            }
+          },
+          {
+            "name": "billing5545",
+            "namespace": "ops",
+            "labels": {
+              "app": "billing5545"
+            }
+          },
+          {
+            "name": "api7825",
+            "namespace": "ops",
+            "labels": {
+              "app": "api7825"
+            }
+          },
+          {
+            "name": "admin7500",
+            "namespace": "ops",
+            "labels": {
+              "app": "admin7500",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cron5632",
+            "namespace": "dev",
+            "labels": {
+              "app": "cron5632",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cron5615",
+            "namespace": "dev",
+            "labels": {
+              "app": "cron5615"
+            }
+          },
+          {
+            "name": "users8041",
+            "namespace": "dev",
+            "labels": {
+              "app": "users8041",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "frontend5290",
+            "namespace": "dev",
+            "labels": {
+              "app": "frontend5290"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "gateway4969",
+            "namespace": "qa",
+            "selector": {
+              "app": "billing7966"
+            }
+          },
+          {
+            "name": "api8917",
+            "namespace": "qa",
+            "selector": {
+              "app": "billing7966"
+            }
+          },
+          {
+            "name": "users779",
+            "namespace": "ops",
+            "selector": {
+              "app": "admin7500"
+            }
+          },
+          {
+            "name": "auth5088",
+            "namespace": "dev",
+            "selector": {
+              "app": "users8041"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-payments2657-to-cron1738",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "payments2657"
+            }
+          },
+          "to": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "cron1738"
+            }
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-qa-to-ops-any",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-qa-to-ops-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0020_reach_pod_missing_policy",
+    "intent": "Reach pod:metrics598 pod:payments467 port=9090 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "metrics598",
+            "namespace": "test",
+            "labels": {
+              "app": "metrics598",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cache4808",
+            "namespace": "test",
+            "labels": {
+              "app": "cache4808"
+            }
+          },
+          {
+            "name": "payments467",
+            "namespace": "test",
+            "labels": {
+              "app": "payments467"
+            }
+          },
+          {
+            "name": "frontend5549",
+            "namespace": "test",
+            "labels": {
+              "app": "frontend5549"
+            }
+          },
+          {
+            "name": "cron3446",
+            "namespace": "dev",
+            "labels": {
+              "app": "cron3446"
+            }
+          },
+          {
+            "name": "db5597",
+            "namespace": "dev",
+            "labels": {
+              "app": "db5597"
+            }
+          },
+          {
+            "name": "worker2609",
+            "namespace": "dev",
+            "labels": {
+              "app": "worker2609"
+            }
+          },
+          {
+            "name": "debug2592",
+            "namespace": "dev",
+            "labels": {
+              "app": "debug2592"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "users5527",
+            "namespace": "test",
+            "selector": {
+              "app": "metrics598"
+            }
+          },
+          {
+            "name": "gateway6415",
+            "namespace": "test",
+            "selector": {
+              "app": "metrics598"
+            }
+          },
+          {
+            "name": "orders716",
+            "namespace": "dev",
+            "selector": {
+              "app": "debug2592"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": []
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0022_isolate_ns_allow_all_public",
+    "intent": "Isolate ns:staging ns:ops port=9090 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "search330",
+            "namespace": "staging",
+            "labels": {
+              "app": "search330"
+            }
+          },
+          {
+            "name": "users2870",
+            "namespace": "staging",
+            "labels": {
+              "app": "users2870",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "auth1568",
+            "namespace": "staging",
+            "labels": {
+              "app": "auth1568"
+            }
+          },
+          {
+            "name": "cache1746",
+            "namespace": "staging",
+            "labels": {
+              "app": "cache1746"
+            }
+          },
+          {
+            "name": "users2425",
+            "namespace": "staging",
+            "labels": {
+              "app": "users2425"
+            }
+          },
+          {
+            "name": "cron4829",
+            "namespace": "ops",
+            "labels": {
+              "app": "cron4829"
+            }
+          },
+          {
+            "name": "profile441",
+            "namespace": "ops",
+            "labels": {
+              "app": "profile441",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "debug1700",
+            "namespace": "ops",
+            "labels": {
+              "app": "debug1700",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "worker8783",
+            "namespace": "ops",
+            "labels": {
+              "app": "worker8783"
+            }
+          },
+          {
+            "name": "cache5649",
+            "namespace": "prod",
+            "labels": {
+              "app": "cache5649",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cron56",
+            "namespace": "prod",
+            "labels": {
+              "app": "cron56",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "admin9998",
+            "namespace": "prod",
+            "labels": {
+              "app": "admin9998",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "admin5100",
+            "namespace": "prod",
+            "labels": {
+              "app": "admin5100",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "payments1119",
+            "namespace": "prod",
+            "labels": {
+              "app": "payments1119"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "metrics264",
+            "namespace": "staging",
+            "selector": {
+              "app": "cache1746"
+            }
+          },
+          {
+            "name": "users3329",
+            "namespace": "staging",
+            "selector": {
+              "app": "auth1568"
+            }
+          },
+          {
+            "name": "auth5333",
+            "namespace": "ops",
+            "selector": {
+              "app": "cron4829"
+            }
+          },
+          {
+            "name": "gateway9660",
+            "namespace": "prod",
+            "selector": {
+              "app": "admin9998"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-public-anywhere",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-public-anywhere-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0024_reach_and_isolate_pod_level",
+    "intent": "Reach pod:cache9627 pod:inventory7164 port=80 protocol=tcp AND Isolate pod:cache9627 pod:cron9845 port=80 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "admin3569",
+            "namespace": "prod",
+            "labels": {
+              "app": "admin3569"
+            }
+          },
+          {
+            "name": "inventory7164",
+            "namespace": "prod",
+            "labels": {
+              "app": "inventory7164",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cache9627",
+            "namespace": "prod",
+            "labels": {
+              "app": "cache9627"
+            }
+          },
+          {
+            "name": "gateway8632",
+            "namespace": "prod",
+            "labels": {
+              "app": "gateway8632"
+            }
+          },
+          {
+            "name": "billing3317",
+            "namespace": "dev",
+            "labels": {
+              "app": "billing3317"
+            }
+          },
+          {
+            "name": "cron9845",
+            "namespace": "dev",
+            "labels": {
+              "app": "cron9845"
+            }
+          },
+          {
+            "name": "metrics8804",
+            "namespace": "dev",
+            "labels": {
+              "app": "metrics8804"
+            }
+          },
+          {
+            "name": "metrics9487",
+            "namespace": "dev",
+            "labels": {
+              "app": "metrics9487"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "orders6834",
+            "namespace": "prod",
+            "selector": {
+              "app": "gateway8632"
+            }
+          },
+          {
+            "name": "db5954",
+            "namespace": "prod",
+            "selector": {
+              "app": "admin3569"
+            }
+          },
+          {
+            "name": "auth6968",
+            "namespace": "dev",
+            "selector": {
+              "app": "metrics9487"
+            }
+          },
+          {
+            "name": "cache6443",
+            "namespace": "dev",
+            "selector": {
+              "app": "metrics8804"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-cache9627-to-inventory7164",
+          "action": "allow",
+          "from": {
+            "namespace": "prod",
+            "podSelector": {
+              "app": "cache9627"
+            }
+          },
+          "to": {
+            "namespace": "prod",
+            "podSelector": {
+              "app": "inventory7164"
+            }
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-prod-to-dev-any",
+          "action": "allow",
+          "from": {
+            "namespace": "prod",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-prod-to-dev-any-p443",
+          "action": "allow",
+          "from": {
+            "namespace": "prod",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0025_reach_and_isolate_pod_level",
+    "intent": "Reach pod:admin779 pod:orders2538 port=9090 protocol=tcp AND Isolate pod:admin779 pod:report5649 port=9090 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "search1081",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "search1081"
+            }
+          },
+          {
+            "name": "orders2538",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "orders2538"
+            }
+          },
+          {
+            "name": "payments9227",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "payments9227"
+            }
+          },
+          {
+            "name": "admin779",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "admin779"
+            }
+          },
+          {
+            "name": "cron1680",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "cron1680"
+            }
+          },
+          {
+            "name": "report5171",
+            "namespace": "ops",
+            "labels": {
+              "app": "report5171"
+            }
+          },
+          {
+            "name": "worker7081",
+            "namespace": "ops",
+            "labels": {
+              "app": "worker7081"
+            }
+          },
+          {
+            "name": "frontend1342",
+            "namespace": "ops",
+            "labels": {
+              "app": "frontend1342",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "report5649",
+            "namespace": "ops",
+            "labels": {
+              "app": "report5649"
+            }
+          },
+          {
+            "name": "cron867",
+            "namespace": "ops",
+            "labels": {
+              "app": "cron867"
+            }
+          },
+          {
+            "name": "billing4555",
+            "namespace": "prod",
+            "labels": {
+              "app": "billing4555"
+            }
+          },
+          {
+            "name": "cache8331",
+            "namespace": "prod",
+            "labels": {
+              "app": "cache8331"
+            }
+          },
+          {
+            "name": "users4726",
+            "namespace": "prod",
+            "labels": {
+              "app": "users4726",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "billing1595",
+            "namespace": "prod",
+            "labels": {
+              "app": "billing1595"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "db684",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "search1081"
+            }
+          },
+          {
+            "name": "users5561",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "orders2538"
+            }
+          },
+          {
+            "name": "db1410",
+            "namespace": "ops",
+            "selector": {
+              "app": "worker7081"
+            }
+          },
+          {
+            "name": "orders8229",
+            "namespace": "prod",
+            "selector": {
+              "app": "billing4555"
+            }
+          },
+          {
+            "name": "gateway70",
+            "namespace": "prod",
+            "selector": {
+              "app": "billing4555"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-admin779-to-orders2538",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "admin779"
+            }
+          },
+          "to": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "orders2538"
+            }
+          },
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-sandbox-to-ops-any",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-sandbox-to-ops-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0028_isolate_ns_allow_all_public",
+    "intent": "Isolate ns:staging ns:prod port=3306 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "users9349",
+            "namespace": "staging",
+            "labels": {
+              "app": "users9349",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "inventory1977",
+            "namespace": "staging",
+            "labels": {
+              "app": "inventory1977",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "report8461",
+            "namespace": "staging",
+            "labels": {
+              "app": "report8461",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "worker9283",
+            "namespace": "prod",
+            "labels": {
+              "app": "worker9283",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "admin4358",
+            "namespace": "prod",
+            "labels": {
+              "app": "admin4358",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "payments6157",
+            "namespace": "prod",
+            "labels": {
+              "app": "payments6157",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "orders6771",
+            "namespace": "staging",
+            "selector": {
+              "app": "report8461"
+            }
+          },
+          {
+            "name": "gateway920",
+            "namespace": "staging",
+            "selector": {
+              "app": "inventory1977"
+            }
+          },
+          {
+            "name": "api6923",
+            "namespace": "prod",
+            "selector": {
+              "app": "payments6157"
+            }
+          },
+          {
+            "name": "gateway3789",
+            "namespace": "prod",
+            "selector": {
+              "app": "admin4358"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-public-anywhere",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-public-anywhere-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0029_reach_and_isolate_pod_level",
+    "intent": "Reach pod:gateway3772 pod:search4549 port=6379 protocol=tcp AND Isolate pod:gateway3772 pod:inventory60 port=6379 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "cron1245",
+            "namespace": "qa",
+            "labels": {
+              "app": "cron1245"
+            }
+          },
+          {
+            "name": "search4549",
+            "namespace": "qa",
+            "labels": {
+              "app": "search4549",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "gateway3772",
+            "namespace": "qa",
+            "labels": {
+              "app": "gateway3772"
+            }
+          },
+          {
+            "name": "admin2335",
+            "namespace": "dev",
+            "labels": {
+              "app": "admin2335",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "search9350",
+            "namespace": "dev",
+            "labels": {
+              "app": "search9350",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "inventory60",
+            "namespace": "dev",
+            "labels": {
+              "app": "inventory60"
+            }
+          },
+          {
+            "name": "payments4460",
+            "namespace": "dev",
+            "labels": {
+              "app": "payments4460"
+            }
+          },
+          {
+            "name": "search2282",
+            "namespace": "prod",
+            "labels": {
+              "app": "search2282",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "profile5994",
+            "namespace": "prod",
+            "labels": {
+              "app": "profile5994"
+            }
+          },
+          {
+            "name": "backup5223",
+            "namespace": "prod",
+            "labels": {
+              "app": "backup5223",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "search9461",
+            "namespace": "qa",
+            "selector": {
+              "app": "search4549"
+            }
+          },
+          {
+            "name": "orders8051",
+            "namespace": "dev",
+            "selector": {
+              "app": "admin2335"
+            }
+          },
+          {
+            "name": "search4114",
+            "namespace": "prod",
+            "selector": {
+              "app": "profile5994"
+            }
+          },
+          {
+            "name": "metrics7870",
+            "namespace": "prod",
+            "selector": {
+              "app": "search2282"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-gateway3772-to-search4549",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "gateway3772"
+            }
+          },
+          "to": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "search4549"
+            }
+          },
+          "ports": [
+            {
+              "port": 6379,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-qa-to-dev-any",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 6379,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-qa-to-dev-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0031_isolate_ns_and_reach_service",
+    "intent": "Isolate ns:ops ns:staging port=9090 protocol=tcp AND Reach pod:backup278 svc:auth3194 port=9090 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "backup278",
+            "namespace": "ops",
+            "labels": {
+              "app": "backup278"
+            }
+          },
+          {
+            "name": "billing1533",
+            "namespace": "ops",
+            "labels": {
+              "app": "billing1533",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "orders2784",
+            "namespace": "ops",
+            "labels": {
+              "app": "orders2784"
+            }
+          },
+          {
+            "name": "auth5068",
+            "namespace": "staging",
+            "labels": {
+              "app": "auth5068",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "admin2638",
+            "namespace": "staging",
+            "labels": {
+              "app": "admin2638",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "api6269",
+            "namespace": "staging",
+            "labels": {
+              "app": "api6269"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "auth3194",
+            "namespace": "ops",
+            "selector": {
+              "app": "orders2784"
+            }
+          },
+          {
+            "name": "metrics6644",
+            "namespace": "staging",
+            "selector": {
+              "app": "auth5068"
+            }
+          },
+          {
+            "name": "search8851",
+            "namespace": "staging",
+            "selector": {
+              "app": "api6269"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-backup278-to-svc-auth3194",
+          "action": "allow",
+          "from": {
+            "namespace": "ops",
+            "podSelector": {
+              "app": "backup278"
+            }
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": {
+              "app": "orders2784"
+            }
+          },
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-ops-to-staging-any",
+          "action": "allow",
+          "from": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "staging",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-ops-to-staging-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "staging",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0033_reach_service_label_mismatch",
+    "intent": "Reach pod:debug1146 svc:orders4894 port=5432 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "admin3083",
+            "namespace": "test",
+            "labels": {
+              "app": "admin3083"
+            }
+          },
+          {
+            "name": "backup351",
+            "namespace": "test",
+            "labels": {
+              "app": "backup351"
+            }
+          },
+          {
+            "name": "debug1146",
+            "namespace": "test",
+            "labels": {
+              "app": "debug1146"
+            }
+          },
+          {
+            "name": "billing3463",
+            "namespace": "ops",
+            "labels": {
+              "app": "billing3463"
+            }
+          },
+          {
+            "name": "gateway5319",
+            "namespace": "ops",
+            "labels": {
+              "app": "gateway5319"
+            }
+          },
+          {
+            "name": "db9794",
+            "namespace": "ops",
+            "labels": {
+              "app": "db9794"
+            }
+          },
+          {
+            "name": "api2410",
+            "namespace": "ops",
+            "labels": {
+              "app": "api2410"
+            }
+          },
+          {
+            "name": "profile313",
+            "namespace": "ops",
+            "labels": {
+              "app": "profile313"
+            }
+          },
+          {
+            "name": "debug8708",
+            "namespace": "dev",
+            "labels": {
+              "app": "debug8708"
+            }
+          },
+          {
+            "name": "metrics5478",
+            "namespace": "dev",
+            "labels": {
+              "app": "metrics5478"
+            }
+          },
+          {
+            "name": "frontend7084",
+            "namespace": "dev",
+            "labels": {
+              "app": "frontend7084"
+            }
+          },
+          {
+            "name": "profile1400",
+            "namespace": "dev",
+            "labels": {
+              "app": "profile1400"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "gateway2534",
+            "namespace": "test",
+            "selector": {
+              "app": "backup351"
+            }
+          },
+          {
+            "name": "orders4894",
+            "namespace": "test",
+            "selector": {
+              "app": "admin3083"
+            }
+          },
+          {
+            "name": "metrics5207",
+            "namespace": "ops",
+            "selector": {
+              "app": "billing3463"
+            }
+          },
+          {
+            "name": "metrics2384",
+            "namespace": "dev",
+            "selector": {
+              "app": "profile1400"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-debug1146-to-orders4894-typo",
+          "action": "allow",
+          "from": {
+            "namespace": "test",
+            "podSelector": {
+              "app": "debug1146"
+            }
+          },
+          "to": {
+            "namespace": "test",
+            "podSelector": {
+              "app": "typo-admin3083"
+            }
+          },
+          "ports": [
+            {
+              "port": 5432,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0034_reach_service_label_mismatch",
+    "intent": "Reach pod:inventory8541 svc:auth2124 port=5432 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "worker2816",
+            "namespace": "qa",
+            "labels": {
+              "app": "worker2816"
+            }
+          },
+          {
+            "name": "search9367",
+            "namespace": "qa",
+            "labels": {
+              "app": "search9367",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "inventory8541",
+            "namespace": "qa",
+            "labels": {
+              "app": "inventory8541",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "worker3008",
+            "namespace": "ops",
+            "labels": {
+              "app": "worker3008",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "orders2503",
+            "namespace": "ops",
+            "labels": {
+              "app": "orders2503",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "worker8206",
+            "namespace": "ops",
+            "labels": {
+              "app": "worker8206"
+            }
+          },
+          {
+            "name": "cron2433",
+            "namespace": "prod",
+            "labels": {
+              "app": "cron2433"
+            }
+          },
+          {
+            "name": "report5814",
+            "namespace": "prod",
+            "labels": {
+              "app": "report5814",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "worker9876",
+            "namespace": "prod",
+            "labels": {
+              "app": "worker9876",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "report7950",
+            "namespace": "prod",
+            "labels": {
+              "app": "report7950"
+            }
+          },
+          {
+            "name": "inventory7899",
+            "namespace": "prod",
+            "labels": {
+              "app": "inventory7899"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "auth2124",
+            "namespace": "qa",
+            "selector": {
+              "app": "worker2816"
+            }
+          },
+          {
+            "name": "cache859",
+            "namespace": "ops",
+            "selector": {
+              "app": "orders2503"
+            }
+          },
+          {
+            "name": "orders817",
+            "namespace": "ops",
+            "selector": {
+              "app": "worker3008"
+            }
+          },
+          {
+            "name": "search4503",
+            "namespace": "prod",
+            "selector": {
+              "app": "inventory7899"
+            }
+          },
+          {
+            "name": "metrics3452",
+            "namespace": "prod",
+            "selector": {
+              "app": "report5814"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-inventory8541-to-auth2124-typo",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "inventory8541"
+            }
+          },
+          "to": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "typo-worker2816"
+            }
+          },
+          "ports": [
+            {
+              "port": 5432,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0035_isolate_ns_and_reach_service",
+    "intent": "Isolate ns:qa ns:ops port=443 protocol=tcp AND Reach pod:metrics4334 svc:gateway7820 port=443 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "metrics4334",
+            "namespace": "qa",
+            "labels": {
+              "app": "metrics4334"
+            }
+          },
+          {
+            "name": "profile521",
+            "namespace": "qa",
+            "labels": {
+              "app": "profile521"
+            }
+          },
+          {
+            "name": "backup4588",
+            "namespace": "qa",
+            "labels": {
+              "app": "backup4588",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "worker1032",
+            "namespace": "qa",
+            "labels": {
+              "app": "worker1032",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "frontend8735",
+            "namespace": "ops",
+            "labels": {
+              "app": "frontend8735"
+            }
+          },
+          {
+            "name": "api1735",
+            "namespace": "ops",
+            "labels": {
+              "app": "api1735"
+            }
+          },
+          {
+            "name": "auth8117",
+            "namespace": "ops",
+            "labels": {
+              "app": "auth8117",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "backup164",
+            "namespace": "ops",
+            "labels": {
+              "app": "backup164"
+            }
+          },
+          {
+            "name": "cron8312",
+            "namespace": "ops",
+            "labels": {
+              "app": "cron8312",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "auth3632",
+            "namespace": "qa",
+            "selector": {
+              "app": "profile521"
+            }
+          },
+          {
+            "name": "gateway7820",
+            "namespace": "qa",
+            "selector": {
+              "app": "profile521"
+            }
+          },
+          {
+            "name": "db5316",
+            "namespace": "ops",
+            "selector": {
+              "app": "backup164"
+            }
+          },
+          {
+            "name": "cache9208",
+            "namespace": "ops",
+            "selector": {
+              "app": "api1735"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-metrics4334-to-svc-gateway7820",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "metrics4334"
+            }
+          },
+          "to": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "profile521"
+            }
+          },
+          "ports": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-qa-to-ops-any",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-qa-to-ops-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0043_isolate_ns_and_reach_service",
+    "intent": "Isolate ns:sandbox ns:dev port=3306 protocol=tcp AND Reach pod:cron5362 svc:search5177 port=3306 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "cron5362",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "cron5362"
+            }
+          },
+          {
+            "name": "admin2988",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "admin2988"
+            }
+          },
+          {
+            "name": "db3666",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "db3666"
+            }
+          },
+          {
+            "name": "worker427",
+            "namespace": "dev",
+            "labels": {
+              "app": "worker427"
+            }
+          },
+          {
+            "name": "profile5893",
+            "namespace": "dev",
+            "labels": {
+              "app": "profile5893"
+            }
+          },
+          {
+            "name": "debug5858",
+            "namespace": "dev",
+            "labels": {
+              "app": "debug5858"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "gateway6788",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "cron5362"
+            }
+          },
+          {
+            "name": "search5177",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "admin2988"
+            }
+          },
+          {
+            "name": "gateway131",
+            "namespace": "dev",
+            "selector": {
+              "app": "profile5893"
+            }
+          },
+          {
+            "name": "gateway7669",
+            "namespace": "dev",
+            "selector": {
+              "app": "worker427"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-cron5362-to-svc-search5177",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "cron5362"
+            }
+          },
+          "to": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "admin2988"
+            }
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-sandbox-to-dev-any",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-sandbox-to-dev-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0048_isolate_ns_and_reach_service",
+    "intent": "Isolate ns:test ns:ops port=9090 protocol=tcp AND Reach pod:debug9717 svc:orders4971 port=9090 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "payments4188",
+            "namespace": "test",
+            "labels": {
+              "app": "payments4188"
+            }
+          },
+          {
+            "name": "inventory642",
+            "namespace": "test",
+            "labels": {
+              "app": "inventory642",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "metrics6433",
+            "namespace": "test",
+            "labels": {
+              "app": "metrics6433",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "users7615",
+            "namespace": "test",
+            "labels": {
+              "app": "users7615"
+            }
+          },
+          {
+            "name": "debug9717",
+            "namespace": "test",
+            "labels": {
+              "app": "debug9717"
+            }
+          },
+          {
+            "name": "users6733",
+            "namespace": "ops",
+            "labels": {
+              "app": "users6733",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "profile4315",
+            "namespace": "ops",
+            "labels": {
+              "app": "profile4315"
+            }
+          },
+          {
+            "name": "inventory9739",
+            "namespace": "ops",
+            "labels": {
+              "app": "inventory9739"
+            }
+          },
+          {
+            "name": "admin5861",
+            "namespace": "ops",
+            "labels": {
+              "app": "admin5861"
+            }
+          },
+          {
+            "name": "auth4187",
+            "namespace": "prod",
+            "labels": {
+              "app": "auth4187"
+            }
+          },
+          {
+            "name": "users1699",
+            "namespace": "prod",
+            "labels": {
+              "app": "users1699",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "gateway4408",
+            "namespace": "prod",
+            "labels": {
+              "app": "gateway4408",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "worker3314",
+            "namespace": "prod",
+            "labels": {
+              "app": "worker3314",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "orders4971",
+            "namespace": "test",
+            "selector": {
+              "app": "payments4188"
+            }
+          },
+          {
+            "name": "db9431",
+            "namespace": "test",
+            "selector": {
+              "app": "payments4188"
+            }
+          },
+          {
+            "name": "cache6542",
+            "namespace": "ops",
+            "selector": {
+              "app": "inventory9739"
+            }
+          },
+          {
+            "name": "metrics4315",
+            "namespace": "prod",
+            "selector": {
+              "app": "worker3314"
+            }
+          },
+          {
+            "name": "metrics9579",
+            "namespace": "prod",
+            "selector": {
+              "app": "users1699"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-debug9717-to-svc-orders4971",
+          "action": "allow",
+          "from": {
+            "namespace": "test",
+            "podSelector": {
+              "app": "debug9717"
+            }
+          },
+          "to": {
+            "namespace": "test",
+            "podSelector": {
+              "app": "payments4188"
+            }
+          },
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-test-to-ops-any",
+          "action": "allow",
+          "from": {
+            "namespace": "test",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 9090,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-test-to-ops-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "test",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0062_isolate_ns_and_reach_service",
+    "intent": "Isolate ns:qa ns:staging port=3306 protocol=tcp AND Reach pod:api6583 svc:search2197 port=3306 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "orders8800",
+            "namespace": "qa",
+            "labels": {
+              "app": "orders8800"
+            }
+          },
+          {
+            "name": "api6583",
+            "namespace": "qa",
+            "labels": {
+              "app": "api6583",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cache5133",
+            "namespace": "qa",
+            "labels": {
+              "app": "cache5133"
+            }
+          },
+          {
+            "name": "inventory8920",
+            "namespace": "staging",
+            "labels": {
+              "app": "inventory8920"
+            }
+          },
+          {
+            "name": "cache6833",
+            "namespace": "staging",
+            "labels": {
+              "app": "cache6833"
+            }
+          },
+          {
+            "name": "profile9334",
+            "namespace": "staging",
+            "labels": {
+              "app": "profile9334",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "db9250",
+            "namespace": "qa",
+            "selector": {
+              "app": "orders8800"
+            }
+          },
+          {
+            "name": "search2197",
+            "namespace": "qa",
+            "selector": {
+              "app": "orders8800"
+            }
+          },
+          {
+            "name": "search7448",
+            "namespace": "staging",
+            "selector": {
+              "app": "cache6833"
+            }
+          },
+          {
+            "name": "orders4501",
+            "namespace": "staging",
+            "selector": {
+              "app": "profile9334"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-api6583-to-svc-search2197",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "api6583"
+            }
+          },
+          "to": {
+            "namespace": "qa",
+            "podSelector": {
+              "app": "orders8800"
+            }
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-qa-to-staging-any",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "staging",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 3306,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-qa-to-staging-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "qa",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "staging",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0065_reach_service_label_mismatch",
+    "intent": "Reach pod:profile8490 svc:cache9471 port=443 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "orders5406",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "orders5406"
+            }
+          },
+          {
+            "name": "gateway1719",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "gateway1719",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "profile8490",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "profile8490"
+            }
+          },
+          {
+            "name": "users2290",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "users2290",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "report7663",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "report7663"
+            }
+          },
+          {
+            "name": "backup3301",
+            "namespace": "ops",
+            "labels": {
+              "app": "backup3301"
+            }
+          },
+          {
+            "name": "frontend7944",
+            "namespace": "ops",
+            "labels": {
+              "app": "frontend7944"
+            }
+          },
+          {
+            "name": "cron1549",
+            "namespace": "ops",
+            "labels": {
+              "app": "cron1549",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "gateway187",
+            "namespace": "dev",
+            "labels": {
+              "app": "gateway187",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "payments7642",
+            "namespace": "dev",
+            "labels": {
+              "app": "payments7642",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cron3675",
+            "namespace": "dev",
+            "labels": {
+              "app": "cron3675"
+            }
+          },
+          {
+            "name": "metrics9863",
+            "namespace": "dev",
+            "labels": {
+              "app": "metrics9863"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "cache9471",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "orders5406"
+            }
+          },
+          {
+            "name": "cache5243",
+            "namespace": "ops",
+            "selector": {
+              "app": "cron1549"
+            }
+          },
+          {
+            "name": "users5055",
+            "namespace": "ops",
+            "selector": {
+              "app": "frontend7944"
+            }
+          },
+          {
+            "name": "gateway6252",
+            "namespace": "dev",
+            "selector": {
+              "app": "payments7642"
+            }
+          },
+          {
+            "name": "cache2554",
+            "namespace": "dev",
+            "selector": {
+              "app": "gateway187"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-profile8490-to-cache9471-typo",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "profile8490"
+            }
+          },
+          "to": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "typo-orders5406"
+            }
+          },
+          "ports": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0066_reach_service_label_mismatch",
+    "intent": "Reach pod:orders6588 svc:orders6133 port=443 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "db7966",
+            "namespace": "ops",
+            "labels": {
+              "app": "db7966",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "profile8193",
+            "namespace": "ops",
+            "labels": {
+              "app": "profile8193"
+            }
+          },
+          {
+            "name": "worker1577",
+            "namespace": "ops",
+            "labels": {
+              "app": "worker1577"
+            }
+          },
+          {
+            "name": "orders6588",
+            "namespace": "ops",
+            "labels": {
+              "app": "orders6588"
+            }
+          },
+          {
+            "name": "frontend1364",
+            "namespace": "dev",
+            "labels": {
+              "app": "frontend1364"
+            }
+          },
+          {
+            "name": "backup5676",
+            "namespace": "dev",
+            "labels": {
+              "app": "backup5676"
+            }
+          },
+          {
+            "name": "admin9959",
+            "namespace": "dev",
+            "labels": {
+              "app": "admin9959",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "orders6133",
+            "namespace": "ops",
+            "selector": {
+              "app": "profile8193"
+            }
+          },
+          {
+            "name": "users8411",
+            "namespace": "ops",
+            "selector": {
+              "app": "profile8193"
+            }
+          },
+          {
+            "name": "metrics4050",
+            "namespace": "dev",
+            "selector": {
+              "app": "backup5676"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-orders6588-to-orders6133-typo",
+          "action": "allow",
+          "from": {
+            "namespace": "ops",
+            "podSelector": {
+              "app": "orders6588"
+            }
+          },
+          "to": {
+            "namespace": "ops",
+            "podSelector": {
+              "app": "typo-profile8193"
+            }
+          },
+          "ports": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0067_reach_pod_missing_policy",
+    "intent": "Reach pod:billing2190 pod:cache177 port=9090 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "cache177",
+            "namespace": "test",
+            "labels": {
+              "app": "cache177"
+            }
+          },
+          {
+            "name": "payments3136",
+            "namespace": "test",
+            "labels": {
+              "app": "payments3136"
+            }
+          },
+          {
+            "name": "billing2190",
+            "namespace": "test",
+            "labels": {
+              "app": "billing2190"
+            }
+          },
+          {
+            "name": "profile2712",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "profile2712",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "report6233",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "report6233"
+            }
+          },
+          {
+            "name": "worker66",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "worker66"
+            }
+          },
+          {
+            "name": "cache2534",
+            "namespace": "dev",
+            "labels": {
+              "app": "cache2534"
+            }
+          },
+          {
+            "name": "orders5537",
+            "namespace": "dev",
+            "labels": {
+              "app": "orders5537"
+            }
+          },
+          {
+            "name": "cron3901",
+            "namespace": "dev",
+            "labels": {
+              "app": "cron3901"
+            }
+          },
+          {
+            "name": "report9550",
+            "namespace": "dev",
+            "labels": {
+              "app": "report9550"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "auth7179",
+            "namespace": "test",
+            "selector": {
+              "app": "billing2190"
+            }
+          },
+          {
+            "name": "search3962",
+            "namespace": "test",
+            "selector": {
+              "app": "cache177"
+            }
+          },
+          {
+            "name": "orders2901",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "report6233"
+            }
+          },
+          {
+            "name": "metrics9963",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "report6233"
+            }
+          },
+          {
+            "name": "orders9467",
+            "namespace": "dev",
+            "selector": {
+              "app": "report9550"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": []
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0072_isolate_ns_allow_all_public",
+    "intent": "Isolate ns:sandbox ns:staging port=443 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "debug3805",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "debug3805"
+            }
+          },
+          {
+            "name": "backup8303",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "backup8303"
+            }
+          },
+          {
+            "name": "metrics1950",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "metrics1950",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cron1638",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "cron1638",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "report2447",
+            "namespace": "staging",
+            "labels": {
+              "app": "report2447"
+            }
+          },
+          {
+            "name": "auth8631",
+            "namespace": "staging",
+            "labels": {
+              "app": "auth8631"
+            }
+          },
+          {
+            "name": "search6796",
+            "namespace": "staging",
+            "labels": {
+              "app": "search6796"
+            }
+          },
+          {
+            "name": "users8081",
+            "namespace": "staging",
+            "labels": {
+              "app": "users8081"
+            }
+          },
+          {
+            "name": "debug3902",
+            "namespace": "staging",
+            "labels": {
+              "app": "debug3902",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "metrics3331",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "cron1638"
+            }
+          },
+          {
+            "name": "search406",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "backup8303"
+            }
+          },
+          {
+            "name": "gateway141",
+            "namespace": "staging",
+            "selector": {
+              "app": "users8081"
+            }
+          },
+          {
+            "name": "cache6163",
+            "namespace": "staging",
+            "selector": {
+              "app": "report2447"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-public-anywhere",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 443,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-public-anywhere-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0076_isolate_ns_allow_all_public",
+    "intent": "Isolate ns:dev ns:prod port=6379 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "auth6301",
+            "namespace": "dev",
+            "labels": {
+              "app": "auth6301",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "users7100",
+            "namespace": "dev",
+            "labels": {
+              "app": "users7100"
+            }
+          },
+          {
+            "name": "profile5673",
+            "namespace": "dev",
+            "labels": {
+              "app": "profile5673",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "users8028",
+            "namespace": "prod",
+            "labels": {
+              "app": "users8028",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "profile3637",
+            "namespace": "prod",
+            "labels": {
+              "app": "profile3637"
+            }
+          },
+          {
+            "name": "frontend1011",
+            "namespace": "prod",
+            "labels": {
+              "app": "frontend1011"
+            }
+          },
+          {
+            "name": "report3102",
+            "namespace": "prod",
+            "labels": {
+              "app": "report3102"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "search4351",
+            "namespace": "dev",
+            "selector": {
+              "app": "auth6301"
+            }
+          },
+          {
+            "name": "cache8215",
+            "namespace": "dev",
+            "selector": {
+              "app": "auth6301"
+            }
+          },
+          {
+            "name": "auth1610",
+            "namespace": "prod",
+            "selector": {
+              "app": "profile3637"
+            }
+          },
+          {
+            "name": "auth739",
+            "namespace": "prod",
+            "selector": {
+              "app": "report3102"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-public-anywhere",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 6379,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-public-anywhere-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0079_reach_pod_missing_policy",
+    "intent": "Reach pod:orders9760 pod:auth7883 port=5432 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "orders9760",
+            "namespace": "ops",
+            "labels": {
+              "app": "orders9760"
+            }
+          },
+          {
+            "name": "cache1349",
+            "namespace": "ops",
+            "labels": {
+              "app": "cache1349",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "auth7883",
+            "namespace": "ops",
+            "labels": {
+              "app": "auth7883"
+            }
+          },
+          {
+            "name": "db4086",
+            "namespace": "ops",
+            "labels": {
+              "app": "db4086"
+            }
+          },
+          {
+            "name": "payments2798",
+            "namespace": "ops",
+            "labels": {
+              "app": "payments2798"
+            }
+          },
+          {
+            "name": "metrics2044",
+            "namespace": "staging",
+            "labels": {
+              "app": "metrics2044"
+            }
+          },
+          {
+            "name": "billing729",
+            "namespace": "staging",
+            "labels": {
+              "app": "billing729",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "users8400",
+            "namespace": "staging",
+            "labels": {
+              "app": "users8400",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "billing7747",
+            "namespace": "dev",
+            "labels": {
+              "app": "billing7747",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "auth4618",
+            "namespace": "dev",
+            "labels": {
+              "app": "auth4618"
+            }
+          },
+          {
+            "name": "backup5053",
+            "namespace": "dev",
+            "labels": {
+              "app": "backup5053"
+            }
+          },
+          {
+            "name": "backup8941",
+            "namespace": "dev",
+            "labels": {
+              "app": "backup8941",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "report3131",
+            "namespace": "dev",
+            "labels": {
+              "app": "report3131"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "users7945",
+            "namespace": "ops",
+            "selector": {
+              "app": "db4086"
+            }
+          },
+          {
+            "name": "metrics8858",
+            "namespace": "ops",
+            "selector": {
+              "app": "payments2798"
+            }
+          },
+          {
+            "name": "metrics2390",
+            "namespace": "staging",
+            "selector": {
+              "app": "metrics2044"
+            }
+          },
+          {
+            "name": "metrics3751",
+            "namespace": "staging",
+            "selector": {
+              "app": "users8400"
+            }
+          },
+          {
+            "name": "api8196",
+            "namespace": "dev",
+            "selector": {
+              "app": "backup5053"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": []
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0083_reach_service_label_mismatch",
+    "intent": "Reach pod:backup4373 svc:search9735 port=6379 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "backup3049",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "backup3049",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "metrics9668",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "metrics9668",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "search8511",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "search8511",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "search2640",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "search2640"
+            }
+          },
+          {
+            "name": "backup4373",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "backup4373",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "report3429",
+            "namespace": "test",
+            "labels": {
+              "app": "report3429",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "search6408",
+            "namespace": "test",
+            "labels": {
+              "app": "search6408"
+            }
+          },
+          {
+            "name": "db934",
+            "namespace": "test",
+            "labels": {
+              "app": "db934"
+            }
+          },
+          {
+            "name": "billing6496",
+            "namespace": "test",
+            "labels": {
+              "app": "billing6496",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "gateway3413",
+            "namespace": "test",
+            "labels": {
+              "app": "gateway3413"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "search9735",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "backup3049"
+            }
+          },
+          {
+            "name": "auth6375",
+            "namespace": "test",
+            "selector": {
+              "app": "report3429"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-backup4373-to-search9735-typo",
+          "action": "allow",
+          "from": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "backup4373"
+            }
+          },
+          "to": {
+            "namespace": "sandbox",
+            "podSelector": {
+              "app": "typo-backup3049"
+            }
+          },
+          "ports": [
+            {
+              "port": 6379,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0088_isolate_ns_allow_all_public",
+    "intent": "Isolate ns:qa ns:ops port=5432 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "orders7714",
+            "namespace": "qa",
+            "labels": {
+              "app": "orders7714"
+            }
+          },
+          {
+            "name": "profile8069",
+            "namespace": "qa",
+            "labels": {
+              "app": "profile8069"
+            }
+          },
+          {
+            "name": "api7046",
+            "namespace": "qa",
+            "labels": {
+              "app": "api7046"
+            }
+          },
+          {
+            "name": "gateway3036",
+            "namespace": "qa",
+            "labels": {
+              "app": "gateway3036",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cron6857",
+            "namespace": "qa",
+            "labels": {
+              "app": "cron6857"
+            }
+          },
+          {
+            "name": "metrics7822",
+            "namespace": "ops",
+            "labels": {
+              "app": "metrics7822"
+            }
+          },
+          {
+            "name": "admin5441",
+            "namespace": "ops",
+            "labels": {
+              "app": "admin5441"
+            }
+          },
+          {
+            "name": "admin7065",
+            "namespace": "ops",
+            "labels": {
+              "app": "admin7065",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "payments8179",
+            "namespace": "ops",
+            "labels": {
+              "app": "payments8179"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "auth8254",
+            "namespace": "qa",
+            "selector": {
+              "app": "api7046"
+            }
+          },
+          {
+            "name": "metrics1776",
+            "namespace": "ops",
+            "selector": {
+              "app": "payments8179"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-public-anywhere",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 5432,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-public-anywhere-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "to": {
+            "namespace": "*",
+            "podSelector": {
+              "exposure": "public"
+            }
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0092_reach_and_isolate_pod_level",
+    "intent": "Reach pod:report5120 pod:metrics6785 port=5432 protocol=tcp AND Isolate pod:report5120 pod:debug1759 port=5432 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "report5120",
+            "namespace": "staging",
+            "labels": {
+              "app": "report5120"
+            }
+          },
+          {
+            "name": "auth9913",
+            "namespace": "staging",
+            "labels": {
+              "app": "auth9913",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "metrics6785",
+            "namespace": "staging",
+            "labels": {
+              "app": "metrics6785"
+            }
+          },
+          {
+            "name": "auth4089",
+            "namespace": "staging",
+            "labels": {
+              "app": "auth4089",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "debug5220",
+            "namespace": "prod",
+            "labels": {
+              "app": "debug5220",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "search8649",
+            "namespace": "prod",
+            "labels": {
+              "app": "search8649"
+            }
+          },
+          {
+            "name": "orders1741",
+            "namespace": "prod",
+            "labels": {
+              "app": "orders1741",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "debug1759",
+            "namespace": "prod",
+            "labels": {
+              "app": "debug1759"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "search8473",
+            "namespace": "staging",
+            "selector": {
+              "app": "auth4089"
+            }
+          },
+          {
+            "name": "api2056",
+            "namespace": "prod",
+            "selector": {
+              "app": "search8649"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-report5120-to-metrics6785",
+          "action": "allow",
+          "from": {
+            "namespace": "staging",
+            "podSelector": {
+              "app": "report5120"
+            }
+          },
+          "to": {
+            "namespace": "staging",
+            "podSelector": {
+              "app": "metrics6785"
+            }
+          },
+          "ports": [
+            {
+              "port": 5432,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-staging-to-prod-any",
+          "action": "allow",
+          "from": {
+            "namespace": "staging",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "prod",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 5432,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-staging-to-prod-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "staging",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "prod",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0094_reach_and_isolate_pod_level",
+    "intent": "Reach pod:inventory6862 pod:orders7854 port=8080 protocol=tcp AND Isolate pod:inventory6862 pod:admin4772 port=8080 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "payments9182",
+            "namespace": "prod",
+            "labels": {
+              "app": "payments9182"
+            }
+          },
+          {
+            "name": "orders7854",
+            "namespace": "prod",
+            "labels": {
+              "app": "orders7854",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "inventory6862",
+            "namespace": "prod",
+            "labels": {
+              "app": "inventory6862",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "admin2420",
+            "namespace": "dev",
+            "labels": {
+              "app": "admin2420",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cache3072",
+            "namespace": "dev",
+            "labels": {
+              "app": "cache3072",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "admin4772",
+            "namespace": "dev",
+            "labels": {
+              "app": "admin4772"
+            }
+          },
+          {
+            "name": "worker6992",
+            "namespace": "dev",
+            "labels": {
+              "app": "worker6992"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "db778",
+            "namespace": "prod",
+            "selector": {
+              "app": "inventory6862"
+            }
+          },
+          {
+            "name": "orders7456",
+            "namespace": "dev",
+            "selector": {
+              "app": "worker6992"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": [
+        {
+          "name": "allow-inventory6862-to-orders7854",
+          "action": "allow",
+          "from": {
+            "namespace": "prod",
+            "podSelector": {
+              "app": "inventory6862"
+            }
+          },
+          "to": {
+            "namespace": "prod",
+            "podSelector": {
+              "app": "orders7854"
+            }
+          },
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-prod-to-dev-any",
+          "action": "allow",
+          "from": {
+            "namespace": "prod",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 8080,
+              "protocol": "TCP"
+            }
+          ]
+        },
+        {
+          "name": "allow-prod-to-dev-any-p80",
+          "action": "allow",
+          "from": {
+            "namespace": "prod",
+            "podSelector": null
+          },
+          "to": {
+            "namespace": "dev",
+            "podSelector": null
+          },
+          "ports": [
+            {
+              "port": 80,
+              "protocol": "TCP"
+            }
+          ]
+        }
+      ]
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0097_reach_pod_missing_policy",
+    "intent": "Reach pod:cache3309 pod:worker5574 port=9090 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "worker5574",
+            "namespace": "ops",
+            "labels": {
+              "app": "worker5574"
+            }
+          },
+          {
+            "name": "billing2131",
+            "namespace": "ops",
+            "labels": {
+              "app": "billing2131",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cache3309",
+            "namespace": "ops",
+            "labels": {
+              "app": "cache3309",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "billing1110",
+            "namespace": "prod",
+            "labels": {
+              "app": "billing1110",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "cache8607",
+            "namespace": "prod",
+            "labels": {
+              "app": "cache8607"
+            }
+          },
+          {
+            "name": "metrics4411",
+            "namespace": "prod",
+            "labels": {
+              "app": "metrics4411",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "inventory5091",
+            "namespace": "prod",
+            "labels": {
+              "app": "inventory5091",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "frontend4376",
+            "namespace": "dev",
+            "labels": {
+              "app": "frontend4376"
+            }
+          },
+          {
+            "name": "report6027",
+            "namespace": "dev",
+            "labels": {
+              "app": "report6027"
+            }
+          },
+          {
+            "name": "cron5105",
+            "namespace": "dev",
+            "labels": {
+              "app": "cron5105",
+              "exposure": "public"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "auth4738",
+            "namespace": "ops",
+            "selector": {
+              "app": "worker5574"
+            }
+          },
+          {
+            "name": "cache2597",
+            "namespace": "prod",
+            "selector": {
+              "app": "billing1110"
+            }
+          },
+          {
+            "name": "users2697",
+            "namespace": "dev",
+            "selector": {
+              "app": "cron5105"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": []
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  },
+  {
+    "id": "k8sgen_0099_reach_pod_missing_policy",
+    "intent": "Reach pod:debug5218 pod:db5433 port=8080 protocol=tcp",
+    "initial_prompt": {
+      "domain": "k8s_networkpolicy",
+      "instruction": "Do not change k8s.pods or k8s.services. Only edit policies. Prefer minimal diffs."
+    },
+    "initial_cfg": {
+      "k8s": {
+        "pods": [
+          {
+            "name": "db1174",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "db1174"
+            }
+          },
+          {
+            "name": "db5433",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "db5433"
+            }
+          },
+          {
+            "name": "debug5218",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "debug5218"
+            }
+          },
+          {
+            "name": "api9294",
+            "namespace": "sandbox",
+            "labels": {
+              "app": "api9294"
+            }
+          },
+          {
+            "name": "auth9181",
+            "namespace": "ops",
+            "labels": {
+              "app": "auth9181"
+            }
+          },
+          {
+            "name": "admin3293",
+            "namespace": "ops",
+            "labels": {
+              "app": "admin3293",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "db7794",
+            "namespace": "ops",
+            "labels": {
+              "app": "db7794"
+            }
+          },
+          {
+            "name": "search953",
+            "namespace": "ops",
+            "labels": {
+              "app": "search953",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "admin5586",
+            "namespace": "ops",
+            "labels": {
+              "app": "admin5586",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "auth2658",
+            "namespace": "staging",
+            "labels": {
+              "app": "auth2658",
+              "exposure": "public"
+            }
+          },
+          {
+            "name": "frontend9551",
+            "namespace": "staging",
+            "labels": {
+              "app": "frontend9551"
+            }
+          },
+          {
+            "name": "profile5655",
+            "namespace": "staging",
+            "labels": {
+              "app": "profile5655"
+            }
+          }
+        ],
+        "services": [
+          {
+            "name": "gateway148",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "db5433"
+            }
+          },
+          {
+            "name": "db4435",
+            "namespace": "sandbox",
+            "selector": {
+              "app": "db5433"
+            }
+          },
+          {
+            "name": "search8459",
+            "namespace": "ops",
+            "selector": {
+              "app": "admin5586"
+            }
+          },
+          {
+            "name": "db4649",
+            "namespace": "ops",
+            "selector": {
+              "app": "db7794"
+            }
+          },
+          {
+            "name": "cache9846",
+            "namespace": "staging",
+            "selector": {
+              "app": "auth2658"
+            }
+          },
+          {
+            "name": "gateway9922",
+            "namespace": "staging",
+            "selector": {
+              "app": "frontend9551"
+            }
+          }
+        ],
+        "semantics": "option_b"
+      },
+      "policies": []
+    },
+    "llm": {
+      "type": "openai",
+      "model": "gpt-4o-mini"
+    },
+    "max_rounds": 6
+  }
+]
