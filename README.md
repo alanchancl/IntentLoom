@@ -8,12 +8,6 @@ This repository contains:
 - `scripts/`: experiment runners, dataset builders, and analysis utilities
 - `data/`: released task files used for experiments, plus the real-world source index used to reconstruct the RealK8s dataset
 
-This public repository intentionally excludes:
-
-- `paper/`: manuscript sources
-- `artifacts/`: large experiment outputs
-- third-party mirrored datasets and raw source snapshots
-
 ## Installation
 
 ```bash
